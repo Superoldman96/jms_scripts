@@ -15,13 +15,12 @@ function setup() {
     var map = eim.setInstanceMap(924000100);
     map.resetFully();
     eim.startEventTimer(1200000);
-
     return eim;
 }
 
 function playerEntry(eim, player) {
     var map = eim.getMapFactory().getMap(924000100);
-    player.changeMap(map, map.getPortal(0));
+    player.changeMap(map, map.getPortal("out00"));
 }
 
 function playerDead(eim, player) {
@@ -36,9 +35,9 @@ function scheduledTimeout(eim) {
 
 function changedMap(eim, player, mapid) {
     if (mapid != 924000100) {
-	eim.unregisterPlayer(player);
+        eim.unregisterPlayer(player);
 
-	eim.disposeIfPlayerBelow(0, 0);
+        eim.disposeIfPlayerBelow(0, 0);
     }
 }
 
@@ -58,7 +57,7 @@ function disbandParty(eim) {
 function playerExit(eim, player) {
     eim.unregisterPlayer(player);
     var map = eim.getMapFactory().getMap(240010700);
-    player.changeMap(map, map.getPortal(0));
+    player.changeMap(map, map.getPortal("pt00"));
 }
 
 function clearPQ(eim) {
@@ -66,7 +65,7 @@ function clearPQ(eim) {
 }
 
 function allMonstersDead(eim) {
-//has nothing to do with monster killing
+    //has nothing to do with monster killing
 }
 
 function cancelSchedule() {

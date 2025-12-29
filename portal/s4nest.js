@@ -7,13 +7,6 @@ function enter(pi) {
 					return false;
 				}
 
-
-				var map = pi.getMap(924000100);
-				pi.resetMap(924000100);
-				map.resetFully();
-				pi.warp(924000100, "out00");
-				pi.spawnMonster(9300089, -145, -426);
-				/*
 				var em = pi.getEventManager("s4nest");
 				if (em == null) {
 					pi.playerMessage("You're not allowed to enter with unknown reason. Try again.");
@@ -21,7 +14,7 @@ function enter(pi) {
 					em.startInstance(pi.getPlayer());
 					return true;
 				}
-				*/
+
 			} else {
 				pi.playerMessage("You don't have Phoenix's Egg. You can't enter.");
 			}
