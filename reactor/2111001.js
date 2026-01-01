@@ -1,12 +1,15 @@
 /*
-Zakum Altar - Summons Zakum.
+	ジャクム召喚
 */
 
 function act() {
-    rm.changeMusic("Bgm06/FinalFight");
-	rm.getMap().spawnZakum(-10, -217);
-    rm.mapMessage("火の目の力でジャクムが召喚されます。");
+	rm.changeMusic("Bgm06/FinalFight");
+	rm.spawnZakum();
+	rm.mapMessage("火の目の力でジャクムが召喚されます。");
+
 	if (!rm.getPlayer().isGM()) {
 		rm.getMap().startSpeedRun();
 	}
+
+	return true;
 }

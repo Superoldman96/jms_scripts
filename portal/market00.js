@@ -1,7 +1,7 @@
 // フリーマーケットから街へ戻る処理
 
 function enter(pi) {
-	
+
 	pi.playPortalSE();
 	var returnMap = pi.getSavedLocation("FREE_MARKET");
 	pi.clearSavedLocation("FREE_MARKET");
@@ -20,7 +20,11 @@ function enter(pi) {
 	if (portal == null) {
 		portal = target.getPortal(0);
 	}
+
 	if (pi.getMapId() != target) {
 		pi.getPlayer().changeMap(target, portal);
+		return true;
 	}
+
+	return false;
 }

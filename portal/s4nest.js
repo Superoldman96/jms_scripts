@@ -1,5 +1,6 @@
 function enter(pi) {
-	if (pi.getQuestStatus(6241) == 1 || pi.getQuestStatus(6243) == 1) {
+	var test_mode = true;
+	if (test_mode || pi.getQuestStatus(6241) == 1 || pi.getQuestStatus(6243) == 1) {
 		if (pi.getJob() == 312) {
 			if (pi.haveItem(4001113)) {
 				if (pi.getPlayerCount(924000100) > 0) {
