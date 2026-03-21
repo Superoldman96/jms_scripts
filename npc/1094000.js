@@ -1,4 +1,4 @@
-/*
+﻿/*
 Bart - Nautilus' Port
 */
 

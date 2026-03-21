@@ -1,4 +1,4 @@
-
+﻿
 
 function action(mode, type, selection) {
 	cm.removeAll(4032248);

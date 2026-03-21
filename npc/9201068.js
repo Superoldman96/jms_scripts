@@ -1,4 +1,4 @@
-var sw;
+﻿var sw;
 
 function start() {
     status = -1;

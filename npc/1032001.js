@@ -1,4 +1,4 @@
-/* Grendel the Really Old
+﻿/* Grendel the Really Old
 	Magician Job Advancement
 	Victoria Road : Magic Library (101000003)
 

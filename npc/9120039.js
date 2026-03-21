@@ -1,4 +1,4 @@
-/*
+﻿/*
 	NPC Name: 		Old Fox Flagship Al
 	Map(s): 		2102 Old Fox Flagship Deck : Zipangu
 	Description: 		Nibergen Battle starter

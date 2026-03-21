@@ -1,4 +1,4 @@
-/* Gina
+﻿/* Gina
 	Ludibrium Skin Change.
 */
 var status = -1;

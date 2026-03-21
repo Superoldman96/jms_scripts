@@ -1,4 +1,4 @@
-/*
+﻿/*
 Enter the Haunted House (used to be NX only o.op)
 */
 

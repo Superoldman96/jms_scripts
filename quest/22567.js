@@ -1,4 +1,4 @@
-var status = -1;
+﻿var status = -1;
 //this quest is SECRET ORGANIZATION 1
 function start(mode, type, selection) {
 	qm.sendNext("Make a Growth Accelerant.");

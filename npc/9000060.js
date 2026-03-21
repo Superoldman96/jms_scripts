@@ -1,4 +1,4 @@
-/*
+﻿/*
 	Gingerman - Witch Tower [Easy Mode]
 */
 

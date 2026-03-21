@@ -1,4 +1,4 @@
-/**
+﻿/**
 	Kyrin's Training Ground, 4th job Quest [Viper]
 **/
 

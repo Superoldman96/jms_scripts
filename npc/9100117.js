@@ -1,5 +1,5 @@
-// ƒKƒVƒƒƒ|ƒ“
-// ƒm[ƒ`ƒ‰ƒXƒKƒVƒƒƒ|ƒ“ –¢À‘•“I‚È“z?
+ï»¿// ã‚¬ã‚·ãƒ£ãƒãƒ³
+// ãƒãƒ¼ãƒãƒ©ã‚¹ã‚¬ã‚·ãƒ£ãƒãƒ³ æœªå®Ÿè£…çš„ãªå¥´?
 
 var rewards = new Array(
 	1102040,
@@ -29,16 +29,16 @@ function action(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 1:
 			{
-				// ƒfƒoƒbƒOƒ‚[ƒh
+				// ãƒ‡ãƒãƒƒã‚°ãƒ¢ãƒ¼ãƒ‰
 				if (!cm.haveItem(ticket_itemid)) {
 					cm.gainItem(ticket_itemid, 1);
 				}
 				if (!cm.haveItem(ticket_itemid)) {
 					npc_talk_status = -1;
-					var text = "ƒm[ƒ`ƒ‰ƒXƒKƒVƒƒƒ|ƒ“‚ª’u‚¢‚Ä‚ ‚éc";
+					var text = "ãƒãƒ¼ãƒãƒ©ã‚¹ã‚¬ã‚·ãƒ£ãƒãƒ³ãŒç½®ã„ã¦ã‚ã‚‹â€¦";
 					return cm.sendSimple(text);
 				}
-				var text = "ƒm[ƒ`ƒ‰ƒXƒKƒVƒƒƒ|ƒ“‚ª’u‚¢‚Ä‚ ‚éB#b#z" + ticket_itemid + "##k‚ğg‚¢‚Ü‚·‚©H";
+				var text = "ãƒãƒ¼ãƒãƒ©ã‚¹ã‚¬ã‚·ãƒ£ãƒãƒ³ãŒç½®ã„ã¦ã‚ã‚‹ã€‚#b#z" + ticket_itemid + "##kã‚’ä½¿ã„ã¾ã™ã‹ï¼Ÿ";
 				return cm.sendYesNo(text);
 			}
 		case 2:
@@ -47,7 +47,7 @@ function action(mode, type, selection) {
 					var reward = RandomRewards();
 					cm.gainItem(ticket_itemid, -1);
 					cm.Gashapon(reward, 1);
-					cm.sendOk("#b#t" + reward + "##k‚PŒÂ‚ğŠl“¾‚µ‚Ü‚µ‚½I");
+					cm.sendOk("#b#t" + reward + "##kï¼‘å€‹ã‚’ç²å¾—ã—ã¾ã—ãŸï¼");
 				}
 				return cm.dispose();
 			}

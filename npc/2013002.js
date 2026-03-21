@@ -1,4 +1,4 @@
-function action(mode, type, selection) {
+﻿function action(mode, type, selection) {
 	var em = cm.getEventManager("OrbisPQ");
 	if (em == null) {
 		cm.dispose();

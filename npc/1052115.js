@@ -1,4 +1,4 @@
-// —ÑŸ’·
+ï»¿// æ—æ¬¡é•·
 var status = 0;
 var section = 0;
 //questid 29931, infoquest 7662
@@ -25,7 +25,7 @@ function action(mode, type, selection) {
 			cm.sendYesNo("Would you like to exit this place?");
 			status = 99;
 		} else {
-			cm.sendSimple("„‚Í—ÑŸ’·‚Å‚·B\r\n#b#e#L1#ƒzƒRƒŠ‚¾‚ç‚¯‚Ìƒvƒ‰ƒbƒgƒtƒH[ƒ€‚É‰º‚é#l#n\r\n#L2#999”Ô‚Ì‹qÔ‚És‚­#l\r\n#L3#<–¼—_‰w–±ˆõ> ŒMÍ‚ğó‚¯æ‚é#l#k");
+			cm.sendSimple("ç§ã¯æ—æ¬¡é•·ã§ã™ã€‚\r\n#b#e#L1#ãƒ›ã‚³ãƒªã ã‚‰ã‘ã®ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã«ä¸‹ã‚‹#l#n\r\n#L2#999ç•ªã®å®¢è»Šã«è¡Œã#l\r\n#L3#<åèª‰é§…å‹™å“¡> å‹²ç« ã‚’å—ã‘å–ã‚‹#l#k");
 		}
 	} else if (status == 2) {
 		section = selection;

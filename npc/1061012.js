@@ -1,4 +1,4 @@
-/*
+﻿/*
 	NPC Name: 		Insiginificant Being
 	Map(s): 		Dungeon : Another Entrance
 	Description: 		Takes you to another Dimension

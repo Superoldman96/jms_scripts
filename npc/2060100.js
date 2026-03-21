@@ -1,4 +1,4 @@
-// Carta
+﻿// Carta
 
 function start() {
     if (cm.getQuestStatus(6301) == 1) {

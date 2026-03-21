@@ -1,4 +1,4 @@
-var npc_talk_status = -1;
+ï»¿var npc_talk_status = -1;
 
 function action(mode, type, selection) {
 	if (mode != 1) {
@@ -9,14 +9,14 @@ function action(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 0:
 			{
-				// BBŒã
-				var text = "‚Ç‚¤‚µ‚Ü‚µ‚½‚©H\r\n";
-				text += "#L" + 0 + "##b‚ ‚È‚½‚Æ˜b‚µ‚½‚¢‚Å‚·B#k#l\r\n";
+				// BBå¾Œ
+				var text = "ã©ã†ã—ã¾ã—ãŸã‹ï¼Ÿ\r\n";
+				text += "#L" + 0 + "##bã‚ãªãŸã¨è©±ã—ãŸã„ã§ã™ã€‚#k#l\r\n";
 				return cm.sendSimple(text);
 			}
 		case 1:
 			{
-				var text = "„‚ª‚ ‚È‚½‚Æ˜b‚·——R‚ª‚ ‚è‚Ü‚·‚©H‚»‚ñ‚È‚É‚â‚·‚â‚·˜b‚Í‚µ‚Ü‚¹‚ñB\r\n";
+				var text = "ç§ãŒã‚ãªãŸã¨è©±ã™ç†ç”±ãŒã‚ã‚Šã¾ã™ã‹ï¼Ÿãã‚“ãªã«ã‚„ã™ã‚„ã™è©±ã¯ã—ã¾ã›ã‚“ã€‚\r\n";
 				return cm.sendSimple(text);
 			}
 		default:

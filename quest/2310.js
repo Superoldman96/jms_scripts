@@ -1,4 +1,4 @@
-/* ===========================================================
+﻿/* ===========================================================
 			Resonance
 	NPC Name: 		Maple Administrator
 	Description: 	Quest -  Kingdom of Mushroom in Danger

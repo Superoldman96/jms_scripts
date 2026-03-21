@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
 try {
 	if (pi.getPlayer().getParty() != null && pi.getMap().getMonsterById(9300275) == null && pi.isLeader()) {
 		if (pi.getPlayer().getEventInstance() != null) {

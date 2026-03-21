@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     var map = pi.getMapId();
     var shortval = (map / 100) - 9800400;
     

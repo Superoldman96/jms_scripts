@@ -1,6 +1,6 @@
-// Š|‚¯² ‘Şê
+ï»¿// æ›ã‘è»¸ é€€å ´
 // !spawn 9600025, 9310044
-// •—Ñ—d‘m
+// æ­¦æ—å¦–åƒ§
 var status = -1;
 function action(mode, type, selection) {
 	if (mode == 1) {
@@ -12,7 +12,7 @@ function action(mode, type, selection) {
 	switch (status) {
 		case 0:
 			{
-				cm.sendYesNo("‘Şê‚µ‚Ü‚·‚©H");
+				cm.sendYesNo("é€€å ´ã—ã¾ã™ã‹ï¼Ÿ");
 				return;
 			}
 		case -1:

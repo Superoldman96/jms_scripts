@@ -1,4 +1,4 @@
-/*
+﻿/*
  Berserk 4th job quest rock - Drop shield
 */
 

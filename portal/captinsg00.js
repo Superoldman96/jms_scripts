@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     if (!pi.haveItem(4000381)) {
 	pi.playerMessage(5, "You do not have White Essence.");
     } else {

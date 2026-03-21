@@ -1,4 +1,4 @@
-
+﻿
 function act() {
     if (rm.getReactor().getState() >= 7) {
 	rm.mapMessage(6, "One of the beakers has been completed.");

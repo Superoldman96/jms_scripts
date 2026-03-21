@@ -1,4 +1,4 @@
-/* Grandpa Luo
+﻿/* Grandpa Luo
 	Mu Lung VIP Hair/Hair Color Change.
 */
 var status = -1;

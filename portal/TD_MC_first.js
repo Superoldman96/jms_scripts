@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     var level = pi.getPlayerStat("LVL");
     if (level >= 30 && level <= 38) {
 	pi.playPortalSE();

@@ -1,4 +1,4 @@
-/* Brittany
+﻿/* Brittany
 	Henesys Random Hair/Hair Color Change.
 */
 var status = -1;

@@ -1,14 +1,14 @@
-function enter(pi) {
+ï»¿function enter(pi) {
 	pi.playPortalSE();
 	var return_mapid = pi.getSavedLocation("MULUNG_TC");
 	pi.clearSavedLocation("MULUNG_TC");
 
 	switch (return_mapid) {
-		// ƒ‹ƒfƒBƒuƒŠƒAƒ€ ƒpƒ`ƒ“ƒR‰®“üŒû
+		// ãƒ«ãƒ‡ã‚£ãƒ–ãƒªã‚¢ãƒ  ãƒ‘ãƒãƒ³ã‚³å±‹å…¥å£
 		case 810000000:
 			pi.warp(return_mapid, "in00");
 			break;
-		// ƒVƒ‡[ƒ’¬’Ê‚è
+		// ã‚·ãƒ§ãƒ¼ãƒ¯ç”ºé€šã‚Š
 		case 801000300:
 			pi.warp(return_mapid, "in00");
 			break;

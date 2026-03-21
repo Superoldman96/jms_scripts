@@ -1,4 +1,4 @@
-/*
+﻿/*
 Summons alternate Toy Trojans (no drops except for the Maintenance Manual quest item)
 */
 

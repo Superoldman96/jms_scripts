@@ -1,4 +1,4 @@
-/*
+﻿/*
 Stage 2: Key door - Guild Quest
 
 @Author Lerk

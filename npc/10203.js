@@ -1,13 +1,13 @@
-// �R�u�V���J���ė���
-// �I���̕����ꓹ
+﻿// コブシを開いて立て
+// 選択の分かれ道
 
 var npc_talk_status = 0;
 
 function action(mode, type, selection) {
 	if (mode != 1) {
 		if (npc_talk_status == 2) {
-			// BB��
-			var text = "������̌����Ă݂��������������x���ɐ��������Ă����B";
+			// BB後
+			var text = "盗賊を体験してみたかったらもう一度俺に声をかけてくれよ。";
 			cm.sendSimple(text);
 		}
 		return cm.dispose();
@@ -17,19 +17,19 @@ function action(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 1:
 			{
-				// BB��
-				var text = "������LUK�ƁA������x��DEX��STR���d�v�ɂȂ�E�ƂŁA�퓬�ł́A�������P������A�p���B������c����ȃX�L�����g����񂾁B�����@���͂Ɖ�𗦂��������́A�l�X�ȃX�L������g���Đ키���Ƃ��ł���B";
+				// BB後
+				var text = "盗賊はLUKと、ある程度のDEXとSTRが重要になる職業で、戦闘では、相手を奇襲したり、姿を隠したり…特殊なスキルを使えるんだ。高い機動力と回避率を持つ盗賊は、様々なスキルを駆使して戦うことができる。";
 				return cm.sendSimple(text);
 			}
 		case 2:
 			{
-				// BB��
-				var text = "�ǂ������H������̌����Ă݂Ȃ����H";
+				// BB後
+				var text = "どうだい？盗賊を体験してみないか？";
 				return cm.sendYesNo(text);
 			}
 		case 3:
 			{
-				// �E�Ƒ̌��J�b�g�V�[��
+				// 職業体験カットシーン
 				cm.MovieClipIntroUI(true);
 				cm.warp(1020400, 0);
 				return cm.dispose();

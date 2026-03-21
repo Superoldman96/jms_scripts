@@ -1,7 +1,7 @@
-// ƒWƒƒƒ“ƒPƒ“ƒ}ƒXƒ^[
+ï»¿// ã‚¸ãƒ£ãƒ³ã‚±ãƒ³ãƒã‚¹ã‚¿ãƒ¼
 var npc_talk_status = -1;
 function action(mode, type, selection) {
-	// ƒLƒƒƒ“ƒZƒ‹•s‰Â
+	// ã‚­ãƒ£ãƒ³ã‚»ãƒ«ä¸å¯
 	npc_talk_status++;
 	cm.dispose();
 	cm.sendRPS();

@@ -1,4 +1,4 @@
-var minPlayers = 3;
+﻿var minPlayers = 3;
 
 function init() {
 em.setProperty("state", "0");

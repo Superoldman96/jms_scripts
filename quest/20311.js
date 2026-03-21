@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Cygnus 3rd Job advancement - Soul Warrior
  */
 

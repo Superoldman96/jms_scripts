@@ -1,4 +1,4 @@
-/*
+﻿/*
 Stage 4: Mark of Evil Door - Guild Quest
 
 @Author Lerk

@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     if (pi.getQuestStatus(21010) == 2) {
 	pi.playPortalSE();
 	pi.warp(140090200, 1);

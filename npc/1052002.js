@@ -1,4 +1,4 @@
-/* JM from tha Streetz
+﻿/* JM from tha Streetz
 	Victoria Road: Kerning City (103000000)
 	
 	Refining NPC: 

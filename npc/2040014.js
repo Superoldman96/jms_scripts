@@ -1,4 +1,4 @@
-// �`�R
+﻿// チコ
 var npc_talk_status = -1;
 
 function action(mode, type, selection) {
@@ -10,9 +10,9 @@ function action(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 0:
 			{
-				var text = "����ɂ��́I���͂��̎��ӂ̃~�j�Q�[���𓝊����Ă���#b#p2040014##k����B�N�A�~�j�Q�[���Ɋ֐S������悤���ȁB �����Ă����悤���B����A��肽�����Ƃ́H\r\n";
-				text += "#L" + 0 + "##b�~�j�Q�[���̃A�C�e���쐬#k#l\r\n";
-				text += "#L" + 1 + "##b�~�j�Q�[���ɑ΂�������𕷂�#k#l\r\n";
+				var text = "こんにちは！俺はこの周辺のミニゲームを統括している#b#p2040014##kだよ。君、ミニゲームに関心があるようだな。 助けてあげようか。じゃ、やりたいことは？\r\n";
+				text += "#L" + 0 + "##bミニゲームのアイテム作成#k#l\r\n";
+				text += "#L" + 1 + "##bミニゲームに対する説明を聞く#k#l\r\n";
 				return cm.sendSimple(text);
 			}
 		case 1:

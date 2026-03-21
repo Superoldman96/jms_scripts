@@ -1,4 +1,4 @@
-var minPlayers = 6;
+ï»¿var minPlayers = 6;
 var stg2_combo0 = Array("5", "4", "3", "3", "2");
 var stg2_combo1 = Array("0", "0", "1", "0", "1"); //unique combos only
 var stg2_combo2 = Array("0", "1", "1", "2", "2");
@@ -169,7 +169,7 @@ function monsterValue(eim, mobId) {
     } else if (mobId == 9300040) {
 	var st = parseInt(em.getProperty("stage2"));
 	if (st < 14) {
-	     eim.broadcastPlayerMsg(6, "»·¥jºëÆF¥X²{¤F¡C");
+	     eim.broadcastPlayerMsg(6, "ï½»ï½·ï½¥jï½ºãƒ»Fï½¥Xï½²{ï½¤Fï½¡C");
 	     var mob = em.getMonster(9300040);
 	     em.setProperty("stage2", st+1);
 	     eim.registerMonster(mob);

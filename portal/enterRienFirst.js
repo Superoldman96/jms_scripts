@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     pi.playPortalSE();
     
     if (pi.getQuestStatus(21014) != 2) {

@@ -1,4 +1,4 @@
-/* J.J.
+﻿/* J.J.
 	NLC VIP Eye Color Change.
 */
 var status = -1;

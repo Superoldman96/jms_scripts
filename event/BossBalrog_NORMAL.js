@@ -1,4 +1,4 @@
-var fullhp = 2000000000;
+﻿var fullhp = 2000000000;
 
 function init() {
 em.setProperty("state", "0");

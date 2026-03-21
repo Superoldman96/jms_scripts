@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
 	var test_mode = true;
 	if (test_mode || pi.getQuestStatus(6241) == 1 || pi.getQuestStatus(6243) == 1) {
 		if (pi.getJob() == 312) {

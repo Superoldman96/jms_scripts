@@ -1,4 +1,4 @@
-/*
+﻿/*
 	Blue Balloon - LudiPQ 8th stage NPC
 */
 

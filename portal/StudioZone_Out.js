@@ -1,5 +1,5 @@
-// ƒƒCƒvƒ‹ƒtƒ@ƒ~ƒŠ[ƒXƒ^ƒWƒIŽB‰eƒ`ƒPƒbƒg
-// “üêƒ}ƒbƒv‚É–ß‚·•K—v‚ ‚è
+ï»¿// ãƒ¡ã‚¤ãƒ—ãƒ«ãƒ•ã‚¡ãƒŸãƒªãƒ¼ã‚¹ã‚¿ã‚¸ã‚ªæ’®å½±ãƒã‚±ãƒƒãƒˆ
+// å…¥å ´ãƒžãƒƒãƒ—ã«æˆ»ã™å¿…è¦ã‚ã‚Š
 function enter(pi) {
 	pi.playPortalSE();
 	var return_mapid = pi.getSavedLocation("MULUNG_TC");

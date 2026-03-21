@@ -1,4 +1,4 @@
-/* Author: aaroncsn (MapleSea Like)(INcomplete- HairStyle)
+﻿/* Author: aaroncsn (MapleSea Like)(INcomplete- HairStyle)
 	NPC Name: 		Wi
 	Map(s): 		Thailand:Floating Market(500000000)
 	Description: 		Thailand Hair Salon

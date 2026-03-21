@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
 	var map = pi.getPlayer().getMap();
 	var reactor = map.getReactorByName("gate00");
 	var state = reactor.getState();

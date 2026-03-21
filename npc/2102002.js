@@ -1,4 +1,4 @@
-/*
+﻿/*
 	Syras - Ariant Station Platform(260000100)
 */
 

@@ -1,4 +1,4 @@
-// ƒhƒNƒ^[ƒrƒ“
+ï»¿// ãƒ‰ã‚¯ã‚¿ãƒ¼ãƒ“ãƒ³
 
 var status = -1;
 function action(mode, type, selection) {
@@ -11,7 +11,7 @@ function action(mode, type, selection) {
 	switch (status) {
 		case 0:
 			{
-				cm.sendYesNo("ŠO‚Öo‚Ü‚·‚©HiƒeƒXƒgj");
+				cm.sendYesNo("å¤–ã¸å‡ºã¾ã™ã‹ï¼Ÿï¼ˆãƒ†ã‚¹ãƒˆï¼‰");
 				return;
 			}
 		case 1:

@@ -1,4 +1,4 @@
-// �p�`���R4
+﻿// パチンコ4
 
 var npc_talk_status = -1;
 function action(mode, type, selection) {
@@ -11,18 +11,18 @@ function action(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 0:
 			{
-				// �p�`���R�ʂ��������Ă���ꍇ
+				// パチンコ玉を所持している場合
 				if (cm.getPlayer().getTama() > 0) {
-					cm.sendYesNo("�p�`���R���n�߂܂��傤���B");
+					cm.sendYesNo("パチンコを始めましょうか。");
 					return;
 				}
 
-				cm.sendOk("�p�`���R�ʂ�����Ȃ����߁A�p�`���R�����邱�Ƃ��ł��܂���B�����A�|�C���g�V���b�v��ETC�̌o�ϊ������Ńp�`���R�ʂ�̔����ł��̂ŁA�����p���������B");
+				cm.sendOk("パチンコ玉が足りないため、パチンコをすることができません。只今、ポイントショップのETCの経済活動欄でパチンコ玉を販売中ですので、ご利用ください。");
 				break;
 			}
 		case -1:
 			{
-				cm.sendOk("�c�O�ł��ˁc�B��Ŏ��Ԃ��ł��܂�����A�����p���������B");
+				cm.sendOk("残念ですね…。後で時間ができましたら、ご利用ください。");
 				break;
 			}
 		case 1:

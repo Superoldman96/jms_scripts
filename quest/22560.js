@@ -1,4 +1,4 @@
-var status = -1;
+﻿var status = -1;
 //this quest is JOINING ORGANIZATION
 function start(mode, type, selection) {
 	qm.sendNext("Please kill 150 Curse Eye.");

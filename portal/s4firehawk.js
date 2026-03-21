@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     if (pi.getQuestStatus(6240) == 1 || pi.getQuestStatus(6241) == 1) {
 	if (!pi.haveItem(4001113)) {
 	    if (pi.getPlayerCount(921100200) == 0) {

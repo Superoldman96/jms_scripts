@@ -1,4 +1,4 @@
-// ‘¢Œ`•¨@ ƒrƒVƒƒƒX
+ï»¿// é€ å½¢ç‰©@ ãƒ“ã‚·ãƒ£ã‚¹
 
 function action(mode, type, selection) {
 	cm.gainItem(4031179, 1);

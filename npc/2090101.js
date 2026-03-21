@@ -1,4 +1,4 @@
-/* Lilishu
+﻿/* Lilishu
 	Mu Lung Random Hair/Hair Color Change.
 */
 var status = 0;

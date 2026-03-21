@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Ellinia
  * Enter Magician magic library
  * TODO : mapid 910110000 for cygnus quest

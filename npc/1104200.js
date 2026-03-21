@@ -1,4 +1,4 @@
-function action(mode, type, selection) {
+﻿function action(mode, type, selection) {
 	if (cm.getPlayerCount(913030000) == 0) {
 		cm.removeNpc(913030000, 1104002);
 		var map = cm.getMap(913030000);

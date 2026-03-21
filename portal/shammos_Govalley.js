@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
 
     if (!pi.haveItem(4032649)) {
 	pi.playerMessage("Please get the Bottle for Ancient Glacial Water first.");

@@ -1,4 +1,4 @@
-/* Author: aaroncsn(MapleSea Like)
+﻿/* Author: aaroncsn(MapleSea Like)
 	NPC Name: 		Assistant Cheng
 	Map(s): 		Ludibrium: Toy Factory Zone 1(220020000)
 	Description: 		Unknown

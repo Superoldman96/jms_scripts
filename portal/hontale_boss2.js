@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
    var em = pi.getEventManager("HorntailBattle");
 
     if (em != null) {

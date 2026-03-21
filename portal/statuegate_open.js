@@ -1,4 +1,4 @@
-/*
+﻿/*
 Stage 1: Gatekeeper door - Guild Quest
 
 @Author Lerk

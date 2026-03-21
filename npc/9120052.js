@@ -1,4 +1,4 @@
-/*
+﻿/*
 	NPC Name: 		Dida
 	Map(s): 		Neo Tokyo 2102 : Shibuya (802000710)
 	Description: 		Dunas2 Battle starter

@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     if (pi.getQuestStatus(6134) == 1) {
 	var em = pi.getEventManager("s4resurrection2");
 	if (em == null) {

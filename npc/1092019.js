@@ -1,4 +1,4 @@
-// ƒWƒ‡ƒiƒTƒ“
+ï»¿// ã‚¸ãƒ§ãƒŠã‚µãƒ³
 
 function start() {
 	if (cm.getJob() == 522 && cm.getPlayerStat("LVL") >= 120) {
@@ -6,8 +6,8 @@ function start() {
 			cm.teachSkill(5221003, 0, 10);
 		}
 	}
-	// BBŒã
-	cm.sendOk("ƒGƒwƒ“I‚Ç‚¤‚©‚µ‚½‚Ì‚©H");
+	// BBå¾Œ
+	cm.sendOk("ã‚¨ãƒ˜ãƒ³ï¼ã©ã†ã‹ã—ãŸã®ã‹ï¼Ÿ");
 }
 
 function action(mode, type, selection) {

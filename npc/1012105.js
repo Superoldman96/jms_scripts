@@ -1,4 +1,4 @@
-/* Ms. Tan 
+﻿/* Ms. Tan 
 	Henesys Skin Change.
 */
 var status = 0;

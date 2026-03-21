@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     if (pi.haveItem(4031346)) {
 	if (pi.getMapId() == 240010100) {
 	    pi.playPortalSE();

@@ -1,4 +1,4 @@
-/* Mani
+﻿/* Mani
 	NLC VIP Hair/Hair Color Change.
 */
 var status = -1;

@@ -1,4 +1,4 @@
-// ‰ß‹ƒ}ƒbƒv‚©‚ç‘Şo
+ï»¿// éå»ãƒãƒƒãƒ—ã‹ã‚‰é€€å‡º
 
 function enter(pi) {
 	pi.playPortalSE();

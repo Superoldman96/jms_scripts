@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     var em = pi.getEventManager("Juliet");
     if (em != null && em.getProperty("stage6_2").equals("0")) {
 	pi.warp(926110303,0);

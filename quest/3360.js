@@ -1,4 +1,4 @@
-/*
+﻿/*
 	NPC Name: 		Parwen
 	Description: 		Quest - Verifying the password
 */

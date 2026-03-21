@@ -1,4 +1,4 @@
-/*
+﻿/*
 Zakum Party Quest Chest - drops an item (power elixir)
 */
 

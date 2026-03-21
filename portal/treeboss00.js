@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     if (pi.getPlayerCount(541020800) <= 0) { // krex. Map
 	var krexMap = pi.getMap(541020800);
 

@@ -1,4 +1,4 @@
-/* Mr. Smith
+﻿/* Mr. Smith
 	Victoria Road: Perion (102000000)
 	
 	Refining NPC: 

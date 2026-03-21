@@ -1,4 +1,4 @@
-/*
+﻿/*
  * 4th Job Berserk Quest.
  * Based on Kerning City PQ script by Stereo
  * And on 4th job Rush quest script by Angel-SL

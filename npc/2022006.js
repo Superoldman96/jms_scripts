@@ -1,4 +1,4 @@
-function action(mode, type, selection) {
+﻿function action(mode, type, selection) {
     cm.sendNext("Haha! FOOLS! I have betrayed you and have unsealed Rex, the Hoblin King!");
 	if (cm.isLeader()) {
 	    if (cm.getPlayer().getMap().getReactorByName("bossLex") != null) {

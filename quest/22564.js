@@ -1,4 +1,4 @@
-var status = -1;
+﻿var status = -1;
 //this quest is DRAGON KNOWLEDGE
 function start(mode, type, selection) {
 	qm.sendNext("Go talk to Chief Tatamo of Leafre.");

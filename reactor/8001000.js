@@ -1,6 +1,6 @@
-// ƒ{ƒfƒB[ƒK[ƒh
+ï»¿// ãƒœãƒ‡ã‚£ãƒ¼ã‚¬ãƒ¼ãƒ‰
 function act() {
 	rm.changeMusic("Bgm06/FinalFight");
 	rm.spawnMonster(9400112, 830, 160);
-	rm.mapMessage("ƒ{ƒfƒBƒK[ƒhA‚ª¢Š«‚³‚ê‚Ü‚·B");
+	rm.mapMessage("ãƒœãƒ‡ã‚£ã‚¬ãƒ¼ãƒ‰AãŒå¬å–šã•ã‚Œã¾ã™ã€‚");
 }

@@ -1,7 +1,7 @@
-function action(mode, type, selection) {
+ï»¿function action(mode, type, selection) {
 	var id = cm.getNpc();
 	var mapid = cm.getMapId();
-	var text = "ƒfƒoƒbƒOî•ñ\r\n";
+	var text = "ãƒ‡ãƒãƒƒã‚°æƒ…å ±\r\n";
 	text += "#p" + id + "#\r\n";
 	text += "NPC ID = #b" + id + "#k\r\n";
 	text += "#m" + mapid + "#\r\n";

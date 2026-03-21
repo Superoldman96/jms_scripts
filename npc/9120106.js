@@ -1,4 +1,4 @@
-// ƒpƒ`ƒ“ƒR‹ÊŒğŠ·‹@
+ï»¿// ãƒ‘ãƒãƒ³ã‚³ç‰äº¤æ›æ©Ÿ
 var status = -1;
 function action(mode, type, selection) {
 	if (mode == 1) {
@@ -10,12 +10,12 @@ function action(mode, type, selection) {
 	switch (status) {
 		case 0:
 			{
-				cm.sendYesNo("ƒpƒ`ƒ“ƒR‹Ê‚ğw“ü‚·‚é‚½‚ß‚Éƒ|ƒCƒ“ƒgƒVƒ‡ƒbƒv‚Ös‚«‚Ü‚·‚©H");
+				cm.sendYesNo("ãƒ‘ãƒãƒ³ã‚³ç‰ã‚’è³¼å…¥ã™ã‚‹ãŸã‚ã«ãƒã‚¤ãƒ³ãƒˆã‚·ãƒ§ãƒƒãƒ—ã¸è¡Œãã¾ã™ã‹ï¼Ÿ");
 				return;
 			}
 		case -1:
 			{
-				cm.sendOk("‚Ü‚½‚Ì‚²—˜—p‚ğ‚¨‘Ò‚¿‚µ‚Ä‚¨‚è‚Ü‚·B");
+				cm.sendOk("ã¾ãŸã®ã”åˆ©ç”¨ã‚’ãŠå¾…ã¡ã—ã¦ãŠã‚Šã¾ã™ã€‚");
 				break;
 			}
 		case 1:

@@ -1,4 +1,4 @@
-/*
+﻿/*
 	NPC Name: 		Cygnus
 	Description: 		Quest - Encounter with the Young Queen
 */

@@ -1,4 +1,4 @@
-var status = -1;
+﻿var status = -1;
 function end(mode, type, selection) {
 	if (qm.getJob() == 430) {
 	    qm.changeJob(431);

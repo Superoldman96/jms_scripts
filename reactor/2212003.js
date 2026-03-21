@@ -1,4 +1,4 @@
-/* @Author Lerk
+﻿/* @Author Lerk
  * 
  * 2212003.js: Dogon's HQ reactor - Dogon's Report, Meso
  * 

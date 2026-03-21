@@ -1,4 +1,4 @@
-/* Lira
+﻿/* Lira
  * 
  * Adobis's Mission I : Breath of Lava <Level 2> (280020001)
  * Zakum Quest NPC 

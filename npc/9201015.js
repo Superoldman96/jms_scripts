@@ -1,4 +1,4 @@
-/* Julius Styleman
+﻿/* Julius Styleman
 	Amoria VIP Hair/Hair Color Change.
 */
 var status = -1;

@@ -1,4 +1,4 @@
-/* Amon
+﻿/* Amon
  * Last Mission : Zakum's Altar (280030000)
  */
 

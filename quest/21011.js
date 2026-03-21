@@ -1,4 +1,4 @@
-function start(mode, type, selection) {
+﻿function start(mode, type, selection) {
     qm.dispose();
 }
 

@@ -1,5 +1,5 @@
-// ƒuƒ‰ƒbƒNƒz[ƒ‹¶¬Ší @502040000
-// ‘O’ñƒNƒGƒXƒg‚ ‚èAƒNƒGƒXƒgƒAƒCƒeƒ€•K{
+ï»¿// ãƒ–ãƒ©ãƒƒã‚¯ãƒ›ãƒ¼ãƒ«ç”Ÿæˆå™¨ @502040000
+// å‰æã‚¯ã‚¨ã‚¹ãƒˆã‚ã‚Šã€ã‚¯ã‚¨ã‚¹ãƒˆã‚¢ã‚¤ãƒ†ãƒ å¿…é ˆ
 
 var status = -1;
 function action(mode, type, selection) {
@@ -12,8 +12,8 @@ function action(mode, type, selection) {
 	switch (status) {
 		case 0:
 			{
-				// ƒeƒLƒXƒg•s–¾
-				var text = "‚Ç‚±‚Öo”­‚µ‚Ü‚·‚©H (ƒeƒXƒg)\r\n";
+				// ãƒ†ã‚­ã‚¹ãƒˆä¸æ˜
+				var text = "ã©ã“ã¸å‡ºç™ºã—ã¾ã™ã‹ï¼Ÿ (ãƒ†ã‚¹ãƒˆ)\r\n";
 				text += "#L" + 502021010 + "##b#m502021010##k#l\r\n";
 				cm.sendSimple(text);
 				return;

@@ -1,4 +1,4 @@
-/*
+﻿/*
 	Ludibirum Maze PQ
 */
 

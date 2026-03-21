@@ -1,4 +1,4 @@
-var status = -1;
+﻿var status = -1;
 //this quest is POWER B FORE
 function start(mode, type, selection) {	
 	qm.sendNext("Please eliminate 100 Spores.");

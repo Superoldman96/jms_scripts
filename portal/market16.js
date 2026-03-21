@@ -1,4 +1,4 @@
-// ‘ŞêˆÊ’u‚ª‚¨‚©‚µ‚¢
+ï»¿// é€€å ´ä½ç½®ãŒãŠã‹ã—ã„
 function enter(pi) {
 	pi.playPortalSE();
 	pi.saveLocation("FREE_MARKET");

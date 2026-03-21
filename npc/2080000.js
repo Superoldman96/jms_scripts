@@ -1,4 +1,4 @@
-/* Mos
+﻿/* Mos
 	Leafre : Leafre (240000000)
 	
 	Refining NPC: 
@@ -187,7 +187,8 @@ function action(mode, type, selection) {
 	    prompt += "\r\n#i4031138# " + cost + " meso";
 		
 	cm.sendYesNo(prompt);
-    } else if (status == 3 && mode == 1) {
+    }
+ else if (status == 3 && mode == 1) {
 	var complete = true;
 		
 	if (cm.getMeso() < cost) {

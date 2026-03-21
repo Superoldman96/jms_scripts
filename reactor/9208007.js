@@ -1,4 +1,4 @@
-/*
+﻿/*
 Stage 2: Spear destinations - Guild Quest
 
 @Author Lerk

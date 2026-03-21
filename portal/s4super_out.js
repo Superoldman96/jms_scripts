@@ -1,4 +1,4 @@
-// Viper Transformation quest
+﻿// Viper Transformation quest
 
 function enter(pi) {
     var pt = pi.getEventManager("KyrinTrainingGroundV");

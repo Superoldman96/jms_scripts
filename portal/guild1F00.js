@@ -1,4 +1,4 @@
-/*
+﻿/*
 Return from Sharen III's Grave - Guild Quest
 
 @Author Lerk

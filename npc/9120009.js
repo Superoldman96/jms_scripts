@@ -1,4 +1,4 @@
-/*
+﻿/*
 	Yuse - Zipangu : Showa Town (801000000)
 */
 

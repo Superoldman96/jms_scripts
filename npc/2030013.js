@@ -1,4 +1,4 @@
-/*
+﻿/*
 	NPC Name: 		Adobis
 	Map(s): 		El Nath : Entrance to Zakum Altar
 	Description: 		Zakum battle starter

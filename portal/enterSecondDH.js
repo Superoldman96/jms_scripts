@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     if (pi.getQuestStatus(20201) == 1 || 
 	pi.getQuestStatus(20202) == 1 ||
 	pi.getQuestStatus(20203) == 1 ||

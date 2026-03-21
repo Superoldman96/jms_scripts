@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
 		if(pi.isQuestFinished(2318)){
 			if(!pi.haveItem(2430014)){
 				pi.warp(106020400);

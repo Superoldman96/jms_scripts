@@ -1,4 +1,4 @@
-var setupTask;
+﻿var setupTask;
 
 function init() {
     scheduleNew();

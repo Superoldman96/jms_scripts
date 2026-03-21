@@ -1,4 +1,4 @@
-var Message = new Array(
+﻿var Message = new Array(
     "You can earn A Cash by killing monsters, achievements and Mu Lung Dojo",
     "Use @help command for the list of player command you can use.",
     "MapleLeafs can be used to make Maple Items (lv35,43,64,77) or traded for Experience at Vavaan NPC in FreeMarket.",

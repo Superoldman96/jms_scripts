@@ -1,4 +1,4 @@
-/* @Author Lerk
+﻿/* @Author Lerk
  *
  * Guardian Statue - Sharenian: Fountain of the Wiseman (990000500)
  * 

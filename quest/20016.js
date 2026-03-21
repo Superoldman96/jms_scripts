@@ -1,4 +1,4 @@
-/*
+﻿/*
 	NPC Name: 		Nineheart
 	Description: 		Quest - Do you know the black Magician?
 */

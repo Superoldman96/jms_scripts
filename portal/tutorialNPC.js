@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
 	if (pi.getPlayer().getLevel() <= 10 && pi.getPlayer().getJob() == 0) {
 		var m = pi.getPlayer().getMapId();
 		var npcid = 0;

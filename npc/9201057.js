@@ -1,4 +1,4 @@
-/*
+﻿/*
 	Bell - KC/NLC Subway Station(103000100/600010001), Waiting Room(600010002/600010004)
 */
 

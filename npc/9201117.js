@@ -1,4 +1,4 @@
-var status = 0;
+﻿var status = 0;
 var beauty = 0;
 var facenew;
 var colors;

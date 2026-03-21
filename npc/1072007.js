@@ -1,4 +1,4 @@
-/*
+﻿/*
 	Thief Job Instructor - Thief's Construction Site (108000400)
 */
 

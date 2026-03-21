@@ -1,4 +1,4 @@
-/*
+﻿/*
 	NPC Name: 		Mr. Kim
 	Map(s): 		Victoria Road : Lith Harbor (104000000)
 	Description: 		Storage

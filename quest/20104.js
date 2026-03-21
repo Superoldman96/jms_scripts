@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Cygnus 1st Job advancement - Night Walker
  */
 

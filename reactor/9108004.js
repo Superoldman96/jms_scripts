@@ -1,4 +1,4 @@
-
+﻿
 function act() {
 	rm.mapMessage(6, "One of the seeds has been placed.");
 	var em = rm.getEventManager("HenesysPQ");

@@ -1,4 +1,4 @@
-/* @Author Lerk
+﻿/* @Author Lerk
  * 
  * 2110000.js: Zakum Party Quest Chest - action go280010000
 */

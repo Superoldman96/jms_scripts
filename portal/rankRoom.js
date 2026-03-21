@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     pi.playPortalSE();
     
     switch (pi.getMapId()) {

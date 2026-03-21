@@ -1,4 +1,4 @@
-/* Salon Seamus
+﻿/* Salon Seamus
 	Amoria Random Hair/Hair Color Change.
 */
 var status = -1;

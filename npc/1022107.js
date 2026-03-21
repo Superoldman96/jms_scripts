@@ -1,4 +1,4 @@
-function action(mode, type, selection) {
+﻿function action(mode, type, selection) {
 	if (cm.isQuestActive(22530)) {
 		if (!cm.canHold(1952000,1)) {
 			cm.sendOk("You need inventory space..");

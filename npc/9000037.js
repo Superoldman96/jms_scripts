@@ -1,4 +1,4 @@
-/*
+﻿/*
 	NPC Name: 		Agent Kitty
 	Map(s): 		Special Training Camp for Agent (970030000)
 	Description: 		Agent event Starter

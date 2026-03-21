@@ -1,17 +1,17 @@
-// ˆÄ“à‚¤‚³‚¬
-// —p“r•s–¾ 3ŒÂ‚Ìƒ}ƒbƒv‚Öƒ‰ƒ“ƒ_ƒ€“üê‚ç‚µ‚¢?
+ï»¿// æ¡ˆå†…ã†ã•ã
+// ç”¨é€”ä¸æ˜ 3å€‹ã®ãƒãƒƒãƒ—ã¸ãƒ©ãƒ³ãƒ€ãƒ å…¥å ´ã‚‰ã—ã„?
 
 var status = -1;
 function EnterRabbit() {
 	switch (status) {
 		case 0:
 			{
-				cm.sendYesNo("“üê‚µ‚Ü‚·‚©HiƒeƒXƒgj");
+				cm.sendYesNo("å…¥å ´ã—ã¾ã™ã‹ï¼Ÿï¼ˆãƒ†ã‚¹ãƒˆï¼‰");
 				return;
 			}
 		case 1:
 			{
-				// “¯ˆêƒ}ƒbƒv‚ª7ŒÂ‚ ‚é‚Ì‚Åƒ~ƒjƒ_ƒ“ƒWƒ‡ƒ“ƒ^ƒCƒv?
+				// åŒä¸€ãƒãƒƒãƒ—ãŒ7å€‹ã‚ã‚‹ã®ã§ãƒŸãƒ‹ãƒ€ãƒ³ã‚¸ãƒ§ãƒ³ã‚¿ã‚¤ãƒ—?
 				var r = Math.floor(Math.random() * 3);
 				switch (r) {
 					case 0:
@@ -36,7 +36,7 @@ function LeaveRabbit() {
 	switch (status) {
 		case 0:
 			{
-				cm.sendYesNo("‘Şo‚µ‚Ü‚·‚©H");
+				cm.sendYesNo("é€€å‡ºã—ã¾ã™ã‹ï¼Ÿ");
 				return;
 			}
 		case 1:

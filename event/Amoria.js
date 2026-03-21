@@ -1,4 +1,4 @@
-var minPlayers = 6;
+﻿var minPlayers = 6;
 var stg2_combo0 = Array("5", "4", "3", "3", "2");
 var stg2_combo1 = Array("0", "0", "1", "0", "1"); //unique combos only
 var stg2_combo2 = Array("0", "1", "1", "2", "2");

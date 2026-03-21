@@ -1,4 +1,4 @@
-/* Author: aaroncsn (MapleSea Like)
+﻿/* Author: aaroncsn (MapleSea Like)
 	NPC Name: 		Yang the Pilot
 	Map(s): 		China Shanghai- Temporary Airport(701000100)
 	Description: 	Pilot

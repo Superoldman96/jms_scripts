@@ -1,6 +1,6 @@
-// ƒrƒ‡ƒ‹
-// 7ü”N
-// ƒeƒXƒg—p“r
+ï»¿// ãƒ“ãƒ§ãƒ«
+// 7å‘¨å¹´
+// ãƒ†ã‚¹ãƒˆç”¨é€”
 
 var npc_talk_status = -1;
 
@@ -13,21 +13,21 @@ function action(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 0:
 			{
-				var text = "ƒeƒXƒg\r\n";
+				var text = "ãƒ†ã‚¹ãƒˆ\r\n";
 				//text += "#L" + 0 + "##b#k#l\r\n";
 				//text += "#L" + 1 + "##b#k#l\r\n";
-				text += "#rÔ#bÂ#d‡#g—Î#k#e‘¾š#n#k•\r\n";
+				text += "#rèµ¤#bé’#dç´«#gç·‘#k#eå¤ªå­—#n#ké»’\r\n";
 
-				text += "#rƒAƒCƒeƒ€Š” = #k#z2000005# #c2000005#\r\n";
-				text += "#rƒ}ƒbƒv–¼ = #k#m910000000#\r\n";
-				text += "#rNPC–¼ = #k#p9000083#\r\n";
-				text += "#rMob–¼ = #k#o9400439#\r\n";
-				text += "#rƒAƒCƒeƒ€–¼ = #k#t2070016#\r\n";
-				text += "#rƒAƒCƒeƒ€î•ñ = #k#z2070016#\r\n";
-				text += "#rƒAƒCƒeƒ€ƒAƒCƒRƒ“1 = #k#v2070016#\r\n";
-				text += "#rƒAƒCƒeƒ€ƒAƒCƒRƒ“2 = #k#i2070016#\r\n";
-				text += "#rƒXƒLƒ‹ƒAƒCƒRƒ“ = #k#s4121007#\r\n"
-				text += "#rƒXƒLƒ‹–¼ = #k#q4121007#\r\n"
+				text += "#rã‚¢ã‚¤ãƒ†ãƒ æ‰€æŒæ•° = #k#z2000005# #c2000005#\r\n";
+				text += "#rãƒãƒƒãƒ—å = #k#m910000000#\r\n";
+				text += "#rNPCå = #k#p9000083#\r\n";
+				text += "#rMobå = #k#o9400439#\r\n";
+				text += "#rã‚¢ã‚¤ãƒ†ãƒ å = #k#t2070016#\r\n";
+				text += "#rã‚¢ã‚¤ãƒ†ãƒ æƒ…å ± = #k#z2070016#\r\n";
+				text += "#rã‚¢ã‚¤ãƒ†ãƒ ã‚¢ã‚¤ã‚³ãƒ³1 = #k#v2070016#\r\n";
+				text += "#rã‚¢ã‚¤ãƒ†ãƒ ã‚¢ã‚¤ã‚³ãƒ³2 = #k#i2070016#\r\n";
+				text += "#rã‚¹ã‚­ãƒ«ã‚¢ã‚¤ã‚³ãƒ³ = #k#s4121007#\r\n"
+				text += "#rã‚¹ã‚­ãƒ«å = #k#q4121007#\r\n"
 				return cm.sendSimple(text);
 			}
 		case 1:

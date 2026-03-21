@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     var num = pi.getMap(910500200).getSpawnedMonstersOnMap();
 
     if (num <= 0) {

@@ -1,4 +1,4 @@
-// ƒz[ƒ“ƒeƒCƒ‹
+ï»¿// ãƒ›ãƒ¼ãƒ³ãƒ†ã‚¤ãƒ«
 // !npc 2083004
 function EnterBossMap(mapid) {
 	var reset = cm.getPlayerCount(mapid) ? false : true;
@@ -26,7 +26,7 @@ function action(mode, type, selection) {
 	switch (status) {
 		case 0:
 			{
-				cm.sendNext("ƒz[ƒ“ƒeƒCƒ‹ƒeƒXƒg");
+				cm.sendNext("ãƒ›ãƒ¼ãƒ³ãƒ†ã‚¤ãƒ«ãƒ†ã‚¹ãƒˆ");
 				return;
 			}
 		case 1:

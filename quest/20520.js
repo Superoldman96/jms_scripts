@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Cygnus mount
  */
 

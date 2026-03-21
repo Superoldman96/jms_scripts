@@ -1,4 +1,4 @@
-/*
+﻿/*
 	Fairy Tale Fairy Crackers - Every Town()
 */
 

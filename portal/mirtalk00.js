@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
 	if (pi.getEvanIntroState("dt00=o;mo00=o")) {
 		return false;
 	}

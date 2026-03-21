@@ -1,4 +1,4 @@
-var status = 0;
+﻿var status = 0;
 var section = 0;
 importPackage(java.lang);
 //questid 29932, infoquest 7760

@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     if (pi.getMap().getAllMonstersThreadsafe().size() == 0) {
 	pi.warp(925100100,0); //next
     } else {

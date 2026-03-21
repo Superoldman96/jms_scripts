@@ -1,4 +1,4 @@
-/* 	Jimmy
+﻿/* 	Jimmy
 	Singa Random Hair/Color Changer
 */
 var status = -1;

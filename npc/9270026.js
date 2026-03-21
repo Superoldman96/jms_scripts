@@ -1,4 +1,4 @@
-/* 	Sixx
+﻿/* 	Sixx
 	Singa REG/VIP Eye Color Changer
 */
 var status = -1;

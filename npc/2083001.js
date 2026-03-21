@@ -1,4 +1,4 @@
-/*
+﻿/*
 	Encrypted Slate of the Squad - Leafre Cave of life
 */
 

@@ -1,4 +1,4 @@
-/* 
+﻿/* 
  *  Dallier - King Medal
  *  Lith Habor = 104000000
  *  Sleepywood = 105040300

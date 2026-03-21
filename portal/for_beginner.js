@@ -1,4 +1,4 @@
-// ƒTƒEƒXƒyƒŠ JMS
+ï»¿// ã‚µã‚¦ã‚¹ãƒšãƒª JMS
 
 function enter(pi) {
 	pi.playPortalSE();

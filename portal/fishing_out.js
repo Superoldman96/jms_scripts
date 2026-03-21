@@ -1,4 +1,4 @@
-// ’Ş‚èê
+ï»¿// é‡£ã‚Šå ´
 function enter(pi) {
 	pi.playPortalSE();
 	pi.warp(pi.getSavedLocation("FISHING"), 0);

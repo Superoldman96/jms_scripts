@@ -1,4 +1,4 @@
-/* 
+﻿/* 
  * NPC   : Aldol
  * Map   : Malaysia - Spooky world
  */

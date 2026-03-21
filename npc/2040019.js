@@ -1,4 +1,4 @@
-/* Everton
+﻿/* Everton
 	Ludibrium Random Eye Change.
 */
 var status = -1;

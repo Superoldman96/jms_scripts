@@ -1,4 +1,4 @@
-/* Thomas Swift
+﻿/* Thomas Swift
 	Amoria warper.
 */
 

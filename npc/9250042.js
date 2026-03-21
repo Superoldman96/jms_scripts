@@ -1,4 +1,4 @@
-// ƒwƒlƒVƒX“dŒõ”Å
+ï»¿// ãƒ˜ãƒã‚·ã‚¹é›»å…‰ç‰ˆ
 
 var npc_talk_status = -1;
 
@@ -11,7 +11,7 @@ function action(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 0:
 			{
-				// ‰½‚à‚µ‚È‚¢
+				// ä½•ã‚‚ã—ãªã„
 				return cm.dispose();
 			}
 		default:

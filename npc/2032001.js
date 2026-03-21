@@ -1,4 +1,4 @@
-/* Spiruna
+﻿/* Spiruna
 	Orbis : Old Man's House (200050001)
 	
 	Refining NPC: 

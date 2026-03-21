@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     if (pi.getPlayer().getLevel() < 15 || pi.isQuestFinished(29004)) {
 	return false;
     }

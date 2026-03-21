@@ -1,4 +1,4 @@
-/* Honorable Rock */
+﻿/* Honorable Rock */
 
 function start() {
     cm.displayGuildRanks();

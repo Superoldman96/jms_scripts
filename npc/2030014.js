@@ -1,4 +1,4 @@
-/* 
+﻿/* 
  * Ancient Icy Stone - Ice Demon
  */
 

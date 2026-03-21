@@ -1,4 +1,4 @@
-/* 	Kelvin
+﻿/* 	Kelvin
 	SingaPore VIP Face changer
 */
 var status = -1;

@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
 	if (pi.canHold(4001198,1) && (pi.getMap().getAllMonstersThreadsafe().size() == 0 || pi.getMap().getMonsterById(9300183) != null) && (pi.getMap().getReactorByName("") == null || pi.getMap().getReactorByName("").getState() == 1)) {
 		pi.warp(930000800,0);
 		pi.gainExpR(52000);

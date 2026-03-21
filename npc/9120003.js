@@ -1,5 +1,5 @@
-// ƒqƒJƒŠ
-// ‘K“’
+ï»¿// ãƒ’ã‚«ãƒª
+// éŠ­æ¹¯
 
 var cost = 300;
 var status = -1;
@@ -13,12 +13,12 @@ function action(mode, type, selection) {
 	switch (status) {
 		case 0:
 			{
-				cm.sendYesNo("‘K“’‚É“ü‚è‚½‚¢‚Å‚·‚©H‚Å‚ÍA" + cost + "ƒƒ‹‚ğ•¥‚¢‚È‚³‚¢B");
+				cm.sendYesNo("éŠ­æ¹¯ã«å…¥ã‚ŠãŸã„ã§ã™ã‹ï¼Ÿã§ã¯ã€" + cost + "ãƒ¡ãƒ«ã‚’æ‰•ã„ãªã•ã„ã€‚");
 				return;
 			}
 		case -1:
 			{
-				cm.sendOk("¡“x—˜—p‚µ‚Ä‚­‚¾‚³‚¢B");
+				cm.sendOk("ä»Šåº¦åˆ©ç”¨ã—ã¦ãã ã•ã„ã€‚");
 				break;
 			}
 		case 1:
@@ -33,7 +33,7 @@ function action(mode, type, selection) {
 						cm.warp(801000200);
 					}
 				} else {
-					cm.sendOk("“üê—¿" + cost + "ƒƒ‹‚ğ‚Á‚Ä‚¢‚é‚©Šm”F‚µ‚Ä‚­‚¾‚³‚¢B");
+					cm.sendOk("å…¥å ´æ–™" + cost + "ãƒ¡ãƒ«ã‚’æŒã£ã¦ã„ã‚‹ã‹ç¢ºèªã—ã¦ãã ã•ã„ã€‚");
 				}
 				break;
 			}

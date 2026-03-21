@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
 	switch(pi.getMapId()) {
 		case 930000000:
 			pi.warp(930000100,0);

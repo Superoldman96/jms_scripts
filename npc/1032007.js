@@ -1,4 +1,4 @@
-/* Author: Xterminator
+﻿/* Author: Xterminator
 	NPC Name: 		Joel
 	Map(s): 		Victoria Road : Ellinia Station (101000300)
 	Description: 		Ellinia Ticketing Usher

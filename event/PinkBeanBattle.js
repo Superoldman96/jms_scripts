@@ -1,4 +1,4 @@
-function init() {
+﻿function init() {
 	em.setProperty("leader", "true");
     em.setProperty("state", "0");
 }

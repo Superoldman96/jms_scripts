@@ -1,4 +1,4 @@
-/* Tepei
+﻿/* Tepei
 	Showa VIP Hair/Hair Color Change.
 */
 var status = -1;

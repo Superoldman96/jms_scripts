@@ -1,4 +1,4 @@
-// ƒvƒŒƒhƒŠƒbƒN
+ï»¿// ãƒ—ãƒ¬ãƒ‰ãƒªãƒƒã‚¯
 
 function action(mode, type, selection) {
 	var jobid = cm.getJob();

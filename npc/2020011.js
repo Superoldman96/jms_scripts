@@ -1,5 +1,5 @@
-// �A���N
-// ����3��
+﻿// アレク
+// 盗賊3次
 
 var status = -1;
 var job;
@@ -18,7 +18,7 @@ function action(mode, type, selection) {
 
 	if (status == 0) {
 		if (!(cm.getJob() == 410 || cm.getJob() == 420 || cm.getJob() == 432)) {
-			cm.sendOk("�W���N���_���W������T�����悤�Ƃ��Ă邩�H�����ł��Ȃ������ɐ���������ȁB�N�̐E�Ƃ̒��V��K�˂Ă���B");
+			cm.sendOk("ジャクムダンジョンを探索しようとしてるか？盗賊でもないくせに声をかけるな。君の職業の長老を訪ねてくれ。");
 			cm.safeDispose();
 			return;
 		}

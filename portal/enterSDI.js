@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     if (pi.isQuestActive(22588)) {
 	pi.forceCompleteQuest(22588);
 	pi.forceCompleteQuest(22589);

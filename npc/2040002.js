@@ -1,4 +1,4 @@
-// ƒŒƒtƒg‚­‚ñ
+ï»¿// ãƒ¬ãƒ•ãƒˆãã‚“
 
 var dh;
 var entry = true;
@@ -51,7 +51,7 @@ function action(mode, type, selection) {
 		cm.sendNext("Thanks to #h #, we got the #b#t4031094##k back and destroyed the monster from the other dimension. Thankfully we haven't found one like that since. I can't thank you enough for helping us out. Hope you enjoy your stay here at #m220000000#!");
 		cm.dispose();
 	} else {
-		cm.sendOk("–l’B‚Í‚±‚Ì•”‰®‚É’N‚Å‚à“ü‚ç‚È‚¢‚æ‚¤‚ÉŒx”õ‚ğ‚µ‚Ä‚¢‚Ü‚·B‚È‚º’†‚É‚Í‚¢‚ê‚È‚¢‚©A’†‚É‰½‚ª‚ ‚é‚©‚Í‚Ü‚¾Œ¾‚¦‚Ü‚¹‚ñB–l‚É—p‚ª‚È‚¢‚ñ‚Å‚µ‚½‚çA‚à‚¤d–‚É–ß‚è‚Ü‚·‚ñ‚ÅA‚Å‚ÍA‚³‚æ‚È‚çB");
+		cm.sendOk("åƒ•é”ã¯ã“ã®éƒ¨å±‹ã«èª°ã§ã‚‚å…¥ã‚‰ãªã„ã‚ˆã†ã«è­¦å‚™ã‚’ã—ã¦ã„ã¾ã™ã€‚ãªãœä¸­ã«ã¯ã„ã‚Œãªã„ã‹ã€ä¸­ã«ä½•ãŒã‚ã‚‹ã‹ã¯ã¾ã è¨€ãˆã¾ã›ã‚“ã€‚åƒ•ã«ç”¨ãŒãªã„ã‚“ã§ã—ãŸã‚‰ã€ã‚‚ã†ä»•äº‹ã«æˆ»ã‚Šã¾ã™ã‚“ã§ã€ã§ã¯ã€ã•ã‚ˆãªã‚‰ã€‚");
 		cm.dispose();
 	}
 }

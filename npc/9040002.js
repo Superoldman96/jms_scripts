@@ -1,4 +1,4 @@
-/* 
+﻿/* 
  * Shawn, Victoria Road: Excavation Site<Camp> (101030104)
  * Guild Quest Info
  */

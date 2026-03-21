@@ -1,4 +1,4 @@
-// ƒIƒ‹ƒrƒX–‚–@Î
+ï»¿// ã‚ªãƒ«ãƒ“ã‚¹é­”æ³•çŸ³
 var npc_talk_status = -1;
 
 function action(mode, type, selection) {
@@ -10,11 +10,11 @@ function action(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 0:
 			{
-				// ƒfƒoƒbƒOƒ‚[ƒh
+				// ãƒ‡ãƒãƒƒã‚°ãƒ¢ãƒ¼ãƒ‰
 				if (!cm.haveItem(4001019)) {
 					cm.gainItem(4001019, 1);
 				}
-				var text = "#b–‚–@Î‚Ì‘#k‚ğg‚Á‚Ä#bƒIƒ‹ƒrƒX–‚–@Î#k‚ğŠˆ«‰»‚Å‚«‚Ü‚·B#bƒGƒ‹ƒiƒX–‚–@Î#k‚ª‚ ‚é‚Æ‚±‚ë‚ÖˆÚ“®‚µ‚Ü‚·‚©H";
+				var text = "#bé­”æ³•çŸ³ã®æ›¸#kã‚’ä½¿ã£ã¦#bã‚ªãƒ«ãƒ“ã‚¹é­”æ³•çŸ³#kã‚’æ´»æ€§åŒ–ã§ãã¾ã™ã€‚#bã‚¨ãƒ«ãƒŠã‚¹é­”æ³•çŸ³#kãŒã‚ã‚‹ã¨ã“ã‚ã¸ç§»å‹•ã—ã¾ã™ã‹ï¼Ÿ";
 				return cm.sendYesNo(text);
 			}
 		case 1:

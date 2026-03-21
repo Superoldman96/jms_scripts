@@ -1,8 +1,8 @@
-// �s���N�r�[�������� �ޏ�
-// �Y���ꂽ�_�a�Ǘ��l
+﻿// ピンクビーン遠征隊 退場
+// 忘れられた神殿管理人
 
 function start() {
-	cm.sendYesNo("����������߂đޏꂵ�܂����H");
+	cm.sendYesNo("遠征隊をやめて退場しますか？");
 }
 
 function action(mode, type, selection) {

@@ -1,62 +1,62 @@
-// Packet Debugging Script
+﻿// Packet Debugging Script
 
 function test(c) {
 	var p = c.getOutPacket();
 	p.writeShort(0x00AD);
-	p.writeInt(0x00007DBC); // �����~�g
-	p.writeInt(-1); // �_���[�W
+	p.writeInt(0x00007DBC); // リレミト
+	p.writeInt(-1); // ダメージ
 	p.writeZeroBytes(100);
 	// ProcessPacket
 	c.DebugPacket(p.getPacket());
 }
 
-// �l���X�̃��b�Z�[�W
+// 個人商店のメッセージ
 function ShopClose(c) {
 	var p = c.getOutPacket();
-	// �����n����
+	// 交換系処理
 	p.writeShort(0x015F);
-	// ���鏈��
+	// 閉じる処理
 	p.write(0x0A);
-	// ����
+	// 自分
 	p.write(0);
-	// ���b�Z�[�W
+	// メッセージ
 	p.write(20);
 	/*
-		0	=	�Ȃ�
-		2	=	�Ȃ�
-		4	=	�Ȃ�
-		7-13=	�Ȃ�
-		15	=	���Ԍo�߂Ŏ����ޏꂳ��܂����B�ē��ꂪ�s�\�ł��B(�t���}�����֎����I�ɔ�΂����@�\)
-		16-36	�Ȃ�
+		0	=	なし
+		2	=	なし
+		4	=	なし
+		7-13=	なし
+		15	=	時間経過で自動退場されました。再入場が不可能です。(フリマ入口へ自動的に飛ばされる機能)
+		16-36	なし
 
-		�c�Ƌ���
-		1	=	�����ł̓I�[�v���o���܂���B(�o�X���̏ꏊ)
-		3	=	���X�����Ă��܂�(�X)
-		5	=	�����ޏꂳ��܂����B(�Ǖ�)
-		6	=	�������Ԃ��o�߂��A���X���J�����Ƃ��ł��܂��񂵂�(�ꏊ���h�~�̋@�\)
-		14	=	�i���͔���؂�ł��B(����؂ꂽ�ꍇ�̋����X)
+		営業許可証
+		1	=	ここではオープン出来ません。(出店時の場所)
+		3	=	商店が閉じています(閉店)
+		5	=	強制退場されました。(追放)
+		6	=	制限時間が経過し、商店を開くことができませんした(場所取り防止の機能)
+		14	=	品物は売れ切れです。(売り切れた場合の強制閉店)
 
-		�ٗp���l
-		17	=	�C�x���g���ɋ󂫂��Ȃ��ƃA�C�e���̓X�g�A�[�o���NNPC�̃v���h���b�N�̂Ƃ���ŒT���ׂ��ł��B�X���܂����H
-		18	=	�c�Ǝ��Ԃ��߂��ĕX���܂��B
-		20	=	(���b�Z�[�W�_�C�A���O�Ȃ��ŕ���)
+		雇用商人
+		17	=	イベントリに空きがないとアイテムはストアーバンクNPCのプレドリックのところで探すべきです。閉店しますか？
+		18	=	営業時間が過ぎて閉店します。
+		20	=	(メッセージダイアログなしで閉じる)
 
-		�ٗp���l���u�Ǘ��@
-		19	=	�}�b�v���ړ�����A���u�Ǘ��@�g�p���ؒf����܂����B���΂炭�A��ɂ܂����p���������B
+		雇用商人遠隔管理機
+		19	=	マップが移動され、遠隔管理機使用が切断されました。しばらく、後にまた利用ください。
 	*/
 	c.DebugPacket(p.getPacket());
 }
 
-// �l���X�̃��b�Z�[�W (���v���C���[���_)
+// 個人商店のメッセージ (他プレイヤー視点)
 function ShoppingClose(c) {
 	var p = c.getOutPacket();
-	// �����n����
+	// 交換系処理
 	p.writeShort(0x015F);
-	// ���鏈��
+	// 閉じる処理
 	p.write(0x0A);
-	// ����
+	// 自分
 	p.write(1);
-	// ���b�Z�[�W
+	// メッセージ
 	p.write(10);
 	/*
 		0	=	???
@@ -66,56 +66,56 @@ function ShoppingClose(c) {
 		16
 		21
 
-		�c�Ƌ���
-		1	=	�����ł̓I�[�v���o���܂���B
-		3	=	���X�����Ă��܂��B
-		5	=	�����ޏꂳ��܂����B
-		6	=	�������Ԃ��o�߂��A���X���J�������ł��܂��񂵂��B
-		14	=	�i���͔���؂�ł��B
-		15	=	���Ԓ��߂Ŏ����ޏꂳ��܂����B�ē��ꂪ�s�\�ł��B
-		~27		�Ȃ�
+		営業許可証
+		1	=	ここではオープン出来ません。
+		3	=	商店が閉じています。
+		5	=	強制退場されました。
+		6	=	制限時間が経過し、商店を開く事ができませんした。
+		14	=	品物は売れ切れです。
+		15	=	時間超過で自動退場されました。再入場が不可能です。
+		~27		なし
 
-		�ٗp���l
-		6	=	�������Ԃ��o�߂��A���X���J�������ł��܂��񂵂��B
-		17	=	���X�̎�l�����i�������ł������܂��B�������΂炭��ł����p���������B
-		18	=	�c�Ǝ��Ԃ��߂��ĕX���܂��B
-		19	=	�}�b�v���ړ�����A���u�Ǘ��@�g�p���ؒf����܂����B���΂炭�A��ɂ܂����p���������B
-		20	=	(���b�Z�[�W�_�C�A���O�Ȃ��ŕ���)
-		~29		�Ȃ�
+		雇用商人
+		6	=	制限時間が経過し、商店を開く事ができませんした。
+		17	=	商店の主人が物品整理中でございます。もうしばらく後でご利用ください。
+		18	=	営業時間が過ぎて閉店します。
+		19	=	マップが移動され、遠隔管理機使用が切断されました。しばらく、後にまた利用ください。
+		20	=	(メッセージダイアログなしで閉じる)
+		~29		なし
 
-		����
-		2	=	���肪�������������܂����B
-		7	=	�������I���܂����B���ʂ��m�F���Ă��������B
-		8	=	�����Ɏ��s���܂����B
-		9	=	�P�̂ݏ����\�ȃA�C�e���������Č����Ɏ��s���܂����B
-		12	=	���肪�ʂ̃}�b�v�ɂ���׌����ł��܂���B
-		13	=	�Q�[���t�@�C������������A�C�e��������ł��܂���B�Q�[���Đݒu�������x�����Ă��������B
+		交換
+		2	=	相手が交換を取り消しました。
+		7	=	交換が終わりました。結果を確認してください。
+		8	=	交換に失敗しました。
+		9	=	１個のみ所持可能なアイテムがあって交換に失敗しました。
+		12	=	相手が別のマップにいる為交換できません。
+		13	=	ゲームファイルが損傷されアイテム取引ができません。ゲーム再設置後もう一度試してください。
 
-		�Q�[��(�_�o����)
-		0	=	��������ޏꂵ�܂����B
-		2	=	�g�[�i�����g���I���܂����B10�b��Ɏ����I�Ƀ��[����������܂��B(�`���b�g)
-		3	=	�����������܂���
-		4	=	��������ޏꂵ�܂����B
-		5	=	�����ޏꂳ��܂����B
+		ゲーム(神経衰弱)
+		0	=	部屋から退場しました。
+		2	=	トーナメントが終わりました。10秒後に自動的にルームが閉ざされます。(チャット)
+		3	=	部屋が閉じられました
+		4	=	部屋から退場しました。
+		5	=	強制退場されました。
 	*/
 	c.DebugPacket(p.getPacket());
 }
 
-// �Q�[��
+// ゲーム
 function Gaming(c) {
 	var p = c.getOutPacket();
-	// �����n����
+	// 交換系処理
 	p.writeShort(0x015F);
-	// �Ȃ�炩?
+	// なんらか?
 	p.write(0x3D);
 	p.writeInt(1);
 	p.writeInt(1);
 	p.writeInt(2);
 	/*
-		0x37	���v���C���[��READY!!���
-		0x38	���v���C���[��READY!!��Ԃ��L�����Z��
+		0x37	他プレイヤーがREADY!!状態
+		0x38	他プレイヤーがREADY!!状態をキャンセル
 		0x39
-		0x3A	�v���C���[�̃^�[��(�Ԙg)
+		0x3A	プレイヤーのターン(赤枠)
 		0x3B	YOU WIN(0), DRAW(1)
 
 	*/
@@ -123,17 +123,17 @@ function Gaming(c) {
 	c.DebugPacket(p.getPacket());
 }
 
-// �Q�[��
+// ゲーム
 function AvaTrade(c) {
 	var p = c.getOutPacket();
 	p.writeShort(0x015F);
 	p.write(2);
 	p.write(6);
 	/*
-		3	=	����
-		6	=	�|�C���g����
+		3	=	交換
+		6	=	ポイント交換
 	*/
-	p.writeMapleAsciiString("�����~�gX");
+	p.writeMapleAsciiString("リレミトX");
 	p.writeInt(1);
 	p.writeZeroBytes(100);
 	c.DebugPacket(p.getPacket());
@@ -147,13 +147,13 @@ function UpdateTama(c) {
 	c.DebugPacket(p.getPacket());
 }
 
-// �C�ӂ̃e�L�X�g�̕\��
+// 任意のテキストの表示
 function ChatMessage(c) {
 	for (var i = 0; i <= 0x1A; i++) {
 		var p = c.getOutPacket();
 		p.writeShort(0x00FB);
 		p.writeShort(i);
-		p.writeMapleAsciiString("�����~�g : ���b�Z�[�W");
+		p.writeMapleAsciiString("リレミト : メッセージ");
 		p.writeZeroBytes(100);
 		c.DebugPacket(p.getPacket());
 	}
@@ -166,8 +166,8 @@ function AttackDamageMotion(c) {
 	p.writeInt(0);
 	p.writeInt(0);
 	p.writeInt(0);
-	p.writeInt(1); // ������є���
-	p.writeInt(9999); // ��_���[�W
+	p.writeInt(1); // 吹っ飛び判定
+	p.writeInt(9999); // 被ダメージ
 	p.writeZeroBytes(100);
 	c.DebugPacket(p.getPacket());
 }
@@ -177,36 +177,36 @@ function ClosedPortal(c) {
 	p.writeShort(0x0135);
 
 	/*
-		0	�|�[�^�����J���܂���ł����B
-		1	����ɂ�[]���K�v�ł��B
-		2	�����s���̗��R�œ���ł��܂���B
+		0	ポータルが開けませんでした。
+		1	入場には[]が必要です。
+		2	原因不明の理由で入場できません。
 	*/
 	p.write(1);
-	p.writeInt(2000005); // 1 �̏ꍇ�ɃA�C�e�������\�������
+	p.writeInt(2000005); // 1 の場合にアイテム名が表示される
 	p.writeZeroBytes(100);
 	c.DebugPacket(p.getPacket());
 }
 
-// �}�b�v�ޏꃁ�b�Z�[�W
+// マップ退場メッセージ
 function BossAfter(c) {
 	var p = c.getOutPacket();
 	p.writeShort(0x014F);
 	/*
-		0	�}�b�v�������܂����B or X���ȓ��ɏo�����̃����X�^�[��|���Ȃ��ƃ}�b�v����ޏꂵ�܂��B
-		1	�{�X�����X�^�[�ގ���A�}�b�v�ޏ�܂Ŏc��X���ł��B
+		0	マップが閉じられました。 or X分以内に出現中のモンスターを倒さないとマップから退場します。
+		1	ボスモンスター退治後、マップ退場まで残りX分です。
 	*/
 	p.write(0);
-	p.writeInt(33); // �c�莞��
+	p.writeInt(33); // 残り時間
 	p.writeZeroBytes(100);
 	c.DebugPacket(p.getPacket());
 }
 
-// /MapleTV GM�R�}���h��exploit���p�����ꍇ�ɃT�[�o�[����Ԃ��Ă���p�P�b�g�Ɠ���
+// /MapleTV GMコマンドのexploit利用した場合にサーバーから返ってくるパケットと同等
 function MapleTVErrorMessage(c) {
 	var p = c.getOutPacket();
 	p.writeShort(0x018F);
 	/*
-		0�ȊO	�G���[���b�Z�[�W����
+		0以外	エラーメッセージ処理
 	*/
 	p.write(1);
 	/*
@@ -218,47 +218,47 @@ function MapleTVErrorMessage(c) {
 	c.DebugPacket(p.getPacket());
 }
 
-// �����I��UI���J��
+// 強制的にUIを開く
 function OpenUI(c) {
 	var p = c.getOutPacket();
 	p.writeShort(0x00EC);
 	/*
-		0x01	����
-		0x02	�X�e�[�^�X
-		0x03	�X�L��
-		0x05	�L�[�ݒ�
-		0x06	�N�G�X�g
-		0x09	�����X�^�[�u�b�N
-		0x0A	�L�����N�^�[���
-		0x11	�N���b�V��
-		0x15	�O���[�v�T��
-		0x16	���[�J�[
-		0x19	�}�C�����L���O Web�u���E�U
-		0x1A	�t�@�~���[�X�L��
-		0x1A	�t�@�~���[�ƌn�}
-		0x1C	GM Story Board Web�u���E�U
-		0x1D	�^�p�҂���莆���͂��܂����B(�E�[�ɃA�C�R���o��)
-		0x1E	�M��
-		0x1F	���C�v���C�x���g @010D 00�����M�����
-		0x20	�G���@���̃X�L��
-		0x22	�`���b�g
-		0x23	�N���b�V��
+		0x01	装備
+		0x02	ステータス
+		0x03	スキル
+		0x05	キー設定
+		0x06	クエスト
+		0x09	モンスターブック
+		0x0A	キャラクター情報
+		0x11	クラッシュ
+		0x15	グループ探し
+		0x16	メーカー
+		0x19	マイランキング Webブラウザ
+		0x1A	ファミリースキル
+		0x1A	ファミリー家系図
+		0x1C	GM Story Board Webブラウザ
+		0x1D	運用者から手紙が届きました。(右端にアイコン出現)
+		0x1E	勲章
+		0x1F	メイプルイベント @010D 00が送信される
+		0x20	エヴァンのスキル
+		0x22	チャット
+		0x23	クラッシュ
 	*/
 	p.write(0x29);
 	p.writeZeroBytes(100);
 	c.DebugPacket(p.getPacket());
 }
 
-// �}�b�v�ړ��֘A�̃G���[���b�Z�[�W
+// マップ移動関連のエラーメッセージ
 function MapMoveMessage(c) {
 	/*
-		0x01	�����A�|�[�^���������Ă��܂��B
-		0x02	���̑嗤�ւ̏u�Ԉړ��͕s�\�ł��B
-		0x03	�n�̋C�^�ɎՂ��ċ߂Â��邱�Ƃ��ł��܂���B
-		0x04	�e���|�[�g�ł��Ȃ��ꏊ�ł��B(�_�C�A���O)
-		0x05	�n�̋C�^�ɎՂ��ċ߂Â��邱�Ƃ��ł��܂���B
-		0x06	�O���[�v�����o�[�̂ݓ��ꂷ�邱�Ƃ��ł���}�b�v�ł��B
-		0x07	�����������o�[�̂ݓ���ł���}�b�v�ł��B
+		0x01	只今、ポータルが閉じられています。
+		0x02	他の大陸への瞬間移動は不可能です。
+		0x03	地の気運に遮られて近づけることができません。
+		0x04	テレポートできない場所です。(ダイアログ)
+		0x05	地の気運に遮られて近づけることができません。
+		0x06	グループメンバーのみ入場することができるマップです。
+		0x07	遠征隊メンバーのみ入場できるマップです。
 	*/
 	for (var i = 1; i <= 7; i++) {
 		var p = c.getOutPacket();
@@ -268,36 +268,36 @@ function MapMoveMessage(c) {
 	}
 }
 
-// �D�F�̕�����
+// 灰色の文字列
 function GrayMessage(c) {
 	var p = c.getOutPacket();
 	p.writeShort(0x007B);
-	p.writeInt(0); // �s��
-	p.writeMapleAsciiString("Maple"); // ������
+	p.writeInt(0); // 不明
+	p.writeMapleAsciiString("Maple"); // 文字列
 	c.DebugPacket(p.getPacket());
 }
 
-// �v���[���g
+// プレゼント
 function GiftTest(c) {
 	var p = c.getOutPacket();
 	p.writeShort(0x004F);
 
 	/*
-		0x01	�v���[���g�����܂����B(�ʒm)
-		0x03	�A�C�e���C���x���g���̏���ɋ󂫂��Ȃ����߃v���[���g���n���܂���B
+		0x01	プレゼントが来ました。(通知)
+		0x03	アイテムインベントリの消費欄に空きがないためプレゼントが渡せません。
 	*/
 	p.write(0x01);
 	p.writeZeroBytes(100);
 	c.DebugPacket(p.getPacket());
 }
 
-// �p�`���R��� (UI�̋ʂ��X�V�����)
+// パチンコ情報 (UIの玉も更新される)
 function PachiUpdate(c) {
 	var p = c.getOutPacket();
 	p.writeShort(0x004C);
 	p.writeInt(0);
-	p.writeInt(8787); // ��
-	// buffer��decode���Ă���̂Ńt�H�[�}�b�g�s��
+	p.writeInt(8787); // 玉
+	// bufferをdecodeしているのでフォーマット不明
 	p.writeZeroBytes(100);
 	c.DebugPacket(p.getPacket());
 }
@@ -305,22 +305,22 @@ function PachiUpdate(c) {
 function Reported(c) {
 	var p = c.InPacket(0x002A);
 	/*
-		0x02	��t����
-		0x03	�\������܂����B
+		0x02	受付成功
+		0x03	申告されました。
 
-		0x41	���΂炭�������x�s���Ă��������B
-		0x42	�L�����N�^�[�����m�F���Ă��������x�s���Ă��������B
-		0x43	�\���ɕK�v�Ȏ萔���̃���������܂���B
-		0x44	�T�[�o�ɐڑ��ł��܂���B
-		0x45	�\���\�񐔂𒴉߂��܂����B
-		0x46	X������ X���܂Ő\���\�ł��B
-		0x47	���U�\���Ő��ق���\���ł��܂���B
+		0x41	しばらく後もう一度行ってください。
+		0x42	キャラクター名を確認してからもう一度行ってください。
+		0x43	申告に必要な手数料のメルが足りません。
+		0x44	サーバに接続できません。
+		0x45	申告可能回数を超過しました。
+		0x46	X時から X時まで申告可能です。
+		0x47	虚偽申告で制裁され申告できません。
 	*/
 	p.Encode1(0x40);
 	p.Encode4(0);
 	p.Encode4(0);
 
-	// 0����
+	// 0埋め
 	p.Encode4(0);
 	p.Encode4(0);
 	p.Encode4(0);
@@ -329,18 +329,18 @@ function Reported(c) {
 	p.Encode4(0);
 	p.Encode4(0);
 	p.Encode4(0);
-	// ���M
+	// 送信
 	c.ProcessPacket(p.Get());
 }
 
 // test
-// �x�K Encode1 (0x40, 0x41, 0x43)
+// ベガ Encode1 (0x40, 0x41, 0x43)
 function ViciousHammer(c) {
 	var pp = c.InPacket(0x0192);
 	pp.Encode1(0x3A);
-	// ���g�p?
+	// 未使用?
 	pp.Encode4(0);
-	// 2-X�Ŏc���
+	// 2-Xで残り回数
 	pp.Encode4(2);
 	c.ProcessPacket(pp.Get());
 
@@ -356,7 +356,7 @@ function VegaScroll(c) {
 	pp.Encode1(0x3E);
 	c.ProcessPacket(pp.Get());
 	var p = c.InPacket(0x0196);
-	// 3B = ����? ,40 = ���s?
+	// 3B = 成功? ,40 = 失敗?
 	p.Encode1(0x3B);
 	c.ProcessPacket(p.Get());
 }
@@ -367,7 +367,7 @@ function TestPacket(c) {
 	pp.Encode1(0x3E);
 	c.ProcessPacket(pp.Get());
 	var p = c.InPacket(0x0196);
-	// 3B = ����? ,40 = ���s?
+	// 3B = 成功? ,40 = 失敗?
 	p.Encode1(0x3B);
 	c.ProcessPacket(p.Get());
 
@@ -380,9 +380,9 @@ function TestPacket(c) {
 }
 */
 
-// �L����ID 0x00007DBC
+// キャラID 0x00007DBC
 
-// Java����Ă΂��
+// Javaから呼ばれる
 function debug(c) {
 	TestPacket(c);
 }

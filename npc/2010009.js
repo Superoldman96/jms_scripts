@@ -1,5 +1,5 @@
-// ���i���E
-// �M���h�A��
+﻿// レナリウ
+// ギルド連合
 
 var status;
 var choice;
@@ -22,28 +22,28 @@ function action(mode, type, selection) {
 		return;
 	}
 	if (status == 0) {
-		// BB��
-		var text = "����ɂ��́I#b���i���E#k�Ƃ����܂��B\r\n";
-		text += "#b#L0#�M���h�A�������������Ă��������B#l\r\n";
-		text += "#L1#�M���h�A�����������悤�Ƃ�����ǂ������炢���ł��傤���H#l\r\n";
-		text += "#L2#�M���h�A���������������ł��B#l\r\n";
-		text += "#L3#�M���h�A���̃M���h���𑝂₵�����ł��B#l\r\n";
-		text += "#L4#�M���h�A������̂������ł��B#l\r\n";
+		// BB後
+		var text = "こんにちは！#bレナリウ#kといいます。\r\n";
+		text += "#b#L0#ギルド連合が何か教えてください。#l\r\n";
+		text += "#L1#ギルド連合を結成しようとしたらどうしたらいいでしょうか？#l\r\n";
+		text += "#L2#ギルド連合を結成したいです。#l\r\n";
+		text += "#L3#ギルド連合のギルド数を増やしたいです。#l\r\n";
+		text += "#L4#ギルド連合を解体したいです。#l\r\n";
 		cm.sendSimple(text);
 	} else if (status == 1) {
 		choice = selection;
 		if (selection == 0) {
-			cm.sendSimple("�������̃M���h���m���W�܂��Đ��ݏo�����W�܂���M���h�A���Ƃ����܂��B���͂����������ꂽ�M���h�A�����Ǘ�����d����S�����Ă��܂��B");
+			cm.sendSimple("いくつかのギルド同士が集まって生み出した集まりをギルド連合といいます。私はこう結成されたギルド連合を管理する仕事を担当しています。");
 			cm.dispose();
 		} else if (selection == 1) {
-			cm.sendSimple("�M���h�A�������ɂ̓M���h�}�X�^�[2�����O���[�v��g�܂Ȃ���΂Ȃ�܂���B�����ŃO���[�v���[�_�[���M���h�A�����[�_�[�ɂȂ�܂��B");
-			// 2���̃M���h�}�X�^�[���W�܂�����500���������K�v�ł��B����̓M���h�A���ɓo�^����̂ɕK�v�Ȏ萔���ł��B
-			// �����Ă�����I���R�A���̃M���h�A���ɉ�������Ă���ꍇ�͐V���ɃM���h�A�����������邱�Ƃ��ł��܂����I
+			cm.sendSimple("ギルド連合を作るにはギルドマスター2名がグループを組まなければなりません。ここでグループリーダーがギルド連合リーダーになります。");
+			// 2名のギルドマスターが集まったら500万メルが必要です。これはギルド連合に登録するのに必要な手数料です。
+			// そしてもう一つ！当然、他のギルド連合に加入されている場合は新たにギルド連合を結成することができませんよ！
 			cm.dispose();
 		} else if (selection == 2) {
 			if (cm.getPlayer().getParty() == null || partymembers == null || partymembers.size() != 2 || !cm.isLeader()) {
-				// �O���[�v����2���̏ꍇ�̂݁A�M���h�A����o�^���邱�Ƃ��ł��܂��B
-				cm.sendSimple("�O���[�v�}�X�^�[�̂݃M���h�A����o�^���邱�Ƃ��ł��܂��B"); //Not real text
+				// グループ員が2名の場合のみ、ギルド連合を登録することができます。
+				cm.sendSimple("グループマスターのみギルド連合を登録することができます。"); //Not real text
 				cm.dispose();
 			} else if (partymembers.get(0).getGuildId() <= 0 || partymembers.get(0).getGuildRank() > 1) {
 				cm.sendOk("You cannot form a Guild Union until you own a guild");
@@ -70,14 +70,14 @@ function action(mode, type, selection) {
 			if (cm.getPlayer().getGuildRank() == 1 && cm.getPlayer().getAllianceRank() == 1) {
 				cm.sendYesNo("To increase the capacity, you will need to pay 10,000,000 mesos. Are you sure you wish to proceed?"); //ExpandGuild Text
 			} else {
-				cm.sendSimple("�M���h�A�����̂݃M���h���𑝂₷���Ƃ��ł��܂��B");
+				cm.sendSimple("ギルド連合長のみギルド数を増やすことができます。");
 				cm.dispose();
 			}
 		} else if (selection == 4) {
 			if (cm.getPlayer().getGuildRank() == 1 && cm.getPlayer().getAllianceRank() == 1) {
 				cm.sendYesNo("Are you sure you want to disband your Guild Union?");
 			} else {
-				cm.sendSimple("�M���h�A�����̂݃M���h�A������̂��邱�Ƃ��ł��܂��B");
+				cm.sendSimple("ギルド連合長のみギルド連合を解体することができます。");
 				cm.dispose();
 			}
 		}

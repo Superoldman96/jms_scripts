@@ -1,4 +1,4 @@
-// �J�C�W
+﻿// カイジ
 var npc_talk_status = -1;
 
 function action(mode, type, selection) {
@@ -10,15 +10,15 @@ function action(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 0:
 			{
-				// BB��
-				var text = "���ɂ͂킩��B�N�͎�ɔ��ʂĂĂ���ȁH�l���A�y���݂Ȃ��琶���Ă����̂����̍��E�̖��łȁA����Ӗ��c�������A�ǂ����H�������̃A�C�e����������΃~�j�Q�[�����o����A�C�e���ƌ������Ă�낤�B���Q�[���p�[�N�͒N�ł��E�F���J�����B�����c������`���Ă�낤���H\r\n";
-				text += "#L" + 0 + "##b�~�j�Q�[���A�C�e���쐬#k#l\r\n";
-				text += "#L" + 1 + "##b�~�j�Q�[���ɑ΂�������𕷂�#k#l\r\n";
+				// BB後
+				var text = "俺にはわかる。君は狩に疲れ果てているな？人生、楽しみながら生きていくのが俺の座右の銘でな、ある意味…桃源郷、どうだ？いくつかのアイテムさえあればミニゲームが出来るアイテムと交換してやろう。当ゲームパークは誰でもウェルカムだ。さあ…何を手伝ってやろうか？\r\n";
+				text += "#L" + 0 + "##bミニゲームアイテム作成#k#l\r\n";
+				text += "#L" + 1 + "##bミニゲームに対する説明を聞く#k#l\r\n";
 				return cm.sendSimple(text);
 			}
 		case 1:
 			{
-				// �����Ƃ��L�ڂ���
+				// 説明とか記載する
 				return cm.dispose();
 			}
 		default:

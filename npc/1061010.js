@@ -1,4 +1,4 @@
-function start() {
+﻿function start() {
     cm.sendYesNo("You can use the Sparkling Crystal to go back to the real world. Are you sure you want to go back?");
 }
 

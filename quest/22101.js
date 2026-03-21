@@ -1,4 +1,4 @@
-var status = -1;
+﻿var status = -1;
 //TEMPORARY QUEST NOW SKIPPING
 //this quest is SECOND JOB ADV
 function start(mode, type, selection) {

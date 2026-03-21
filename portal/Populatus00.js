@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
 	var papuMap = pi.getMap(220080001);
 	if (pi.getPlayerCount(220080001) <= 0) { // Papu Map
 		papuMap.resetFully();

@@ -1,4 +1,4 @@
-// OS4ƒVƒƒƒgƒ‹ (–¼‘Oƒ~ƒX?) ‘Şo? @OSSS”é–§Šî’nŠi”[ŒÉ 502010000
+ï»¿// OS4ã‚·ãƒ£ãƒˆãƒ« (åå‰ãƒŸã‚¹?) é€€å‡º? @OSSSç§˜å¯†åŸºåœ°æ ¼ç´åº« 502010000
 
 var status = -1;
 function action(mode, type, selection) {
@@ -11,12 +11,12 @@ function action(mode, type, selection) {
 	switch (status) {
 		case 0:
 			{
-				cm.sendYesNo("‘Şo‚µ‚Ü‚·‚©H");
+				cm.sendYesNo("é€€å‡ºã—ã¾ã™ã‹ï¼Ÿ");
 				return;
 			}
 		case 1:
 			{
-				// ’n‰º“¹“üŒû
+				// åœ°ä¸‹é“å…¥å£
 				cm.warp(502010010, "sp");
 				break;
 			}

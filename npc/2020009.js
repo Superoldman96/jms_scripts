@@ -1,5 +1,5 @@
-// ���x�C��
-// ���@�g��3��
+﻿// ロベイラ
+// 魔法使い3次
 
 var status = -1;
 var job;
@@ -21,7 +21,7 @@ function action(mode, type, selection) {
 
 	if (status == 0) {
 		if (!(cm.getJob() == 210 || cm.getJob() == 220 || cm.getJob() == 230)) { // CLERIC
-			cm.sendOk("�W���N���_���W������T�����悤�Ƃ��Ă�̂��H���@�g������Ȃ��҂̔\�͂𖂖@�g�������f����킯�ɂ͂����Ȃ��B�N�̐E�Ƃ̒��V��K�˂Ă���B");
+			cm.sendOk("ジャクムダンジョンを探索しようとしてるのか？魔法使いじゃない者の能力を魔法使いが判断するわけにはいかない。君の職業の長老を訪ねてくれ。");
 			cm.dispose();
 			return;
 		}

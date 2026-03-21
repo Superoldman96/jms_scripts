@@ -1,4 +1,4 @@
-
+﻿
 function action(mode, type, selection) {
     if (cm.getQuestStatus(6230) == 1) {
 	if (!cm.haveItem(4031456)) {

@@ -1,5 +1,5 @@
-// ‘fŒöƒpƒ“ƒ_ “¹ê“üŒû
-// ƒxƒ‹ƒgæ“¾ˆ—‚ª‚¨‚©‚µ‚¢
+ï»¿// ç´ å…¬ãƒ‘ãƒ³ãƒ€ é“å ´å…¥å£
+// ãƒ™ãƒ«ãƒˆå–å¾—å‡¦ç†ãŒãŠã‹ã—ã„
 
 var status = -1;
 var sel;
@@ -9,20 +9,20 @@ function start() {
 	mapid = cm.getMapId();
 
 	if (mapid == 925020001) {
-		var text = "‰´‚Ìt ‚Í•—Ë‚Åˆê”Ô‹­‚¢‚ñ‚¾I@‚»‚ñ‚È‚¨•û‚É‚¨‘O‚ª’§‚Ş‚¾‚ŸH@Œã‚ÅŒã‰÷‚·‚ñ‚È‚æ\r\n";
-		text += "#L" + 0 + "##bˆêl‚Å’§í‚µ‚Ä‚İ‚é#k#l\r\n"
-		text += "#L" + 1 + "##bˆê‚É’§í‚µ‚Ä‚İ‚é#k#l\r\n\r\n"
-		text += "#L" + 2 + "##bƒxƒ‹ƒg‚ª—~‚µ‚¢#k#l\r\n"
-		text += "#L" + 3 + "##bC—û“_”‚ğƒŠƒZƒbƒg‚µ‚½‚¢#k#l\r\n"
-		// JMS ƒIƒŠƒWƒiƒ‹?
-		text += "#L" + 4 + "##bŒMÍ‚ª—~‚µ‚¢#k#l\r\n"
-		text += "#L" + 5 + "##b•—Ë“¹ê‚Á‚Ä‚È‚ÉH#k#l\r\n"
+		var text = "ä¿ºã®å¸«åŒ ã¯æ­¦é™µã§ä¸€ç•ªå¼·ã„ã‚“ã ï¼ã€€ãã‚“ãªãŠæ–¹ã«ãŠå‰ãŒæŒ‘ã‚€ã ãï¼Ÿã€€å¾Œã§å¾Œæ‚”ã™ã‚“ãªã‚ˆ\r\n";
+		text += "#L" + 0 + "##bä¸€äººã§æŒ‘æˆ¦ã—ã¦ã¿ã‚‹#k#l\r\n"
+		text += "#L" + 1 + "##bä¸€ç·’ã«æŒ‘æˆ¦ã—ã¦ã¿ã‚‹#k#l\r\n\r\n"
+		text += "#L" + 2 + "##bãƒ™ãƒ«ãƒˆãŒæ¬²ã—ã„#k#l\r\n"
+		text += "#L" + 3 + "##bä¿®ç·´ç‚¹æ•°ã‚’ãƒªã‚»ãƒƒãƒˆã—ãŸã„#k#l\r\n"
+		// JMS ã‚ªãƒªã‚¸ãƒŠãƒ«?
+		text += "#L" + 4 + "##bå‹²ç« ãŒæ¬²ã—ã„#k#l\r\n"
+		text += "#L" + 5 + "##bæ­¦é™µé“å ´ã£ã¦ãªã«ï¼Ÿ#k#l\r\n"
 		cm.sendSimple(text);
 	} else if (isRestingSpot(mapid)) {
-		var text = "‚±‚±‚Ü‚Å–³–‚É—ˆ‚½‚È‚ñ‚Ä‚ÈcB‚Å‚àA‚±‚±‚©‚çæ‚ÍŠÈ’P‚¶‚á‚Ë[‚¼B‚Ç‚¤‚¾H@‘±‚¯‚Ä’§í‚·‚ñ‚Ì‚©H\r\n";
-		text += "#L" + 0 + "##bˆø‚«‘±‚«’§í‚·‚é#k#l\r\n"
-		text += "#L" + 1 + "##bŠO‚Öo‚é#k#l\r\n"
-		text += "#L" + 2 + "##b‚±‚±‚Ü‚Å‚Ì¬Ñ‚ğ‹L˜^‚·‚é#k#l\r\n"
+		var text = "ã“ã“ã¾ã§ç„¡äº‹ã«æ¥ãŸãªã‚“ã¦ãªâ€¦ã€‚ã§ã‚‚ã€ã“ã“ã‹ã‚‰å…ˆã¯ç°¡å˜ã˜ã‚ƒã­ãƒ¼ãã€‚ã©ã†ã ï¼Ÿã€€ç¶šã‘ã¦æŒ‘æˆ¦ã™ã‚“ã®ã‹ï¼Ÿ\r\n";
+		text += "#L" + 0 + "##bå¼•ãç¶šãæŒ‘æˆ¦ã™ã‚‹#k#l\r\n"
+		text += "#L" + 1 + "##bå¤–ã¸å‡ºã‚‹#k#l\r\n"
+		text += "#L" + 2 + "##bã“ã“ã¾ã§ã®æˆç¸¾ã‚’è¨˜éŒ²ã™ã‚‹#k#l\r\n"
 		cm.sendSimple(text);
 	} else {
 		cm.sendYesNo("What? You're ready to quit already? You just need to move on to the next level. Are you sure you want to quit?");
@@ -46,7 +46,7 @@ function action(mode, type, selection) {
 			} else if (sel == 3) {
 				cm.sendYesNo("You know if you reset your training points, then it'll return to 0, right? I can honestly say that it's not necessarily a bad thing. Once you reset your training points and start over again, then you'll be able to receive the belts once more. Do you want to reset your training points?");
 			} else if (sel == 2) {
-				cm.sendSimple("‚¨‘O‚ÌC—û“_”‚Í #b" + cm.getDojoPoints() + "#k “_‚¾‚ÈB t ‚ÍË”\‚Ì‚ ‚éƒ„ƒc‚ªD‚«‚È‚ñ‚¾BC—û“_”‚ªˆê’èƒŒƒxƒ‹ˆÈã—­‚Ü‚ê‚ÎA“_”‚É‚æ‚Á‚Äƒxƒ‹ƒg‚ª‚à‚ç‚¦‚é‚¼B\r\n\r\n#L0##i1132000:# #t1132000##l \n\r #L1##i1132001:# #t1132001##l \n\r #L2##i1132002:# #t1132002##l \n\r #L3##i1132003:# #t1132003##l \n\r #L4##i1132004:# #t1132004##l");
+				cm.sendSimple("ãŠå‰ã®ä¿®ç·´ç‚¹æ•°ã¯ #b" + cm.getDojoPoints() + "#k ç‚¹ã ãªã€‚ å¸«åŒ ã¯æ‰èƒ½ã®ã‚ã‚‹ãƒ¤ãƒ„ãŒå¥½ããªã‚“ã ã€‚ä¿®ç·´ç‚¹æ•°ãŒä¸€å®šãƒ¬ãƒ™ãƒ«ä»¥ä¸Šæºœã¾ã‚Œã°ã€ç‚¹æ•°ã«ã‚ˆã£ã¦ãƒ™ãƒ«ãƒˆãŒã‚‚ã‚‰ãˆã‚‹ãã€‚\r\n\r\n#L0##i1132000:# #t1132000##l \n\r #L1##i1132001:# #t1132001##l \n\r #L2##i1132002:# #t1132002##l \n\r #L3##i1132003:# #t1132003##l \n\r #L4##i1132004:# #t1132004##l");
 			} else if (sel == 1) {
 				if (cm.getParty() != null) {
 					if (cm.isLeader()) {
@@ -107,8 +107,8 @@ function action(mode, type, selection) {
 						cm.sendOk("Please check if you have any available slot in your inventory.");
 					}
 				} else {
-					var text = "#i1132001:# #t1132001#‚ğ‚à‚ç‚¤‚½‚ß‚É‚Í #b35ƒŒƒxƒ‹ˆÈã#k‚¶‚á‚È‚«‚á‚¢‚¯‚È‚­‚ÄA—İÏC—û“_” #b1800“_#k‚ª•K—v‚¾B\r\n\r\n";
-					text += "‚¨‘O‚ª‚±‚Ìƒxƒ‹ƒg‚ğ‚à‚ç‚¤‚É‚ÍAC—û“_”‚ğ #r" + (1800 - cm.getDojoPoints()) + "#k“_—­‚ß‚Ë[‚Æƒ_ƒ‚¾‚ÈB";
+					var text = "#i1132001:# #t1132001#ã‚’ã‚‚ã‚‰ã†ãŸã‚ã«ã¯ #b35ãƒ¬ãƒ™ãƒ«ä»¥ä¸Š#kã˜ã‚ƒãªãã‚ƒã„ã‘ãªãã¦ã€ç´¯ç©ä¿®ç·´ç‚¹æ•° #b1800ç‚¹#kãŒå¿…è¦ã ã€‚\r\n\r\n";
+					text += "ãŠå‰ãŒã“ã®ãƒ™ãƒ«ãƒˆã‚’ã‚‚ã‚‰ã†ã«ã¯ã€ä¿®ç·´ç‚¹æ•°ã‚’ #r" + (1800 - cm.getDojoPoints()) + "#kç‚¹æºœã‚ã­ãƒ¼ã¨ãƒ€ãƒ¡ã ãªã€‚";
 					cm.sendOk(text);
 				}
 				cm.dispose();

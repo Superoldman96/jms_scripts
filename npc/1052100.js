@@ -1,4 +1,4 @@
-/* Don Giovanni
+﻿/* Don Giovanni
 	Kerning VIP Hair/Hair Color Change.
 */
 var status = -1;

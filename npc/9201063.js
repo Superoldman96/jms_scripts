@@ -1,4 +1,4 @@
-/* Ari
+﻿/* Ari
 	NLC Random Hair/Hair Color Change.
 */
 var status = -1;

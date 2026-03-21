@@ -1,5 +1,5 @@
-// �t�@�C�g
-// �Ⴂ���킩��j
+﻿// ファイト
+// 違いがわかる男
 
 var status = -1;
 var eQuestChoices = new Array(4000064, 4000065, 4000066, 4000075, 4000077, 4000089, 4000090, 4000091, 4000092, 4000093, 4000094);
@@ -135,7 +135,7 @@ function action(mode, type, selection) {
 		status++;
 	} else {
 		if (status == 0) {
-			cm.sendOk("�������A�C���ς�����牴�ɘb�������ȁB");
+			cm.sendOk("そうか、気が変わったら俺に話しかけな。");
 			cm.safeDispose();
 			return;
 		}
@@ -143,7 +143,7 @@ function action(mode, type, selection) {
 	}
 
 	if (status == 0) {
-		cm.sendYesNo("�����镨�̈Ⴂ���킩��j�Ƃ͉��̂��Ƃ��B���T���Ă�����̂�����񂾂��A���̘b�𕷂��Ă݂邩���B");
+		cm.sendYesNo("あらゆる物の違いがわかる男とは俺のことだ。今探しているものがあるんだが、俺の話を聞いてみるかい。");
 	} else if (status == 1) {
 		var eQuestChoice = makeChoices(eQuestChoices);
 		cm.sendSimple(eQuestChoice);
@@ -160,14 +160,14 @@ function action(mode, type, selection) {
 			cm.gainItem(prizeItem, prizeQuantity);
 			cm.sendOk("Hmmm ... if not for this minor scratch ... sigh. I'm afaird I can only deem this a standard-quality item. Well, here's \r\n#t" + prizeItem + "# for you.");
 		} else {
-			cm.sendNext("���������A�ӂ������Ⴂ���ˁ[�ȁB�Ⴂ�̂킩��j�ɉR�͒ʗp���Ȃ����B");
+			cm.sendNext("おいおい、ふざけちゃいけねーな。違いのわかる男に嘘は通用しないぜ。");
 		}
 		cm.safeDispose();
 	}
 }
 
 function makeChoices(a) {
-	var result = "�����T���Ă���A�C�e����1,2,3�c�������񂠂��Đ������˂��ȁB�Ƃɂ����������̂�100�W�߂Ă���΁A���̒��̃��A�x�ɉ������A�C�e���ƌ������邺�B�����ƌN�B�ɂ͂킩��Ȃ����낤���ǁA���͌����ĉR�������悤�Ȓj����˂�������S���ȁB�����A�������邩���B\r\n";
+	var result = "俺が探しているアイテムは1,2,3…たくさんあって数えられねぇな。とにかく同じものを100個集めてくれば、その中のレア度に応じたアイテムと交換するぜ。おっと君達にはわからないだろうけど、俺は決して嘘を言うような男じゃねえから安心しな。さあ、交換するかい。\r\n";
 	for (var x = 0; x < a.length; x++) {
 		result += " #L" + x + "##v" + a[x] + "##t" + a[x] + "##l\r\n";
 	}

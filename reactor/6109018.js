@@ -1,4 +1,4 @@
-function act() {
+﻿function act() {
 	var em = rm.getEventManager("CWKPQ");
 	if (em != null) {
 		rm.mapMessage(6, "The Mage Sigil has been activated!");

@@ -1,4 +1,4 @@
-/*
+﻿/*
 Stage 5: Door before Ergoth - Guild Quest
 
 @Author Lerk

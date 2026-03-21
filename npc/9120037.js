@@ -1,4 +1,4 @@
-/*
+﻿/*
 	NPC Name: 		Commander Garuda
 	Map(s): 		Neo Tokyo 2102 : Akihabara
 	Description: 		Dunas Battle starter

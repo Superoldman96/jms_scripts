@@ -1,4 +1,4 @@
-// –¶‚ÌŠC‚ÌƒCƒ‹ƒJ
+ï»¿// éœ§ã®æµ·ã®ã‚¤ãƒ«ã‚«
 function action(mode, type, selection) {
 	var returnMap = cm.getSavedLocation("MULUNG_TC");
 	if (returnMap < 0) {

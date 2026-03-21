@@ -1,4 +1,4 @@
-/*
+﻿/*
  * 4th Job Rush Quest.
  */
 

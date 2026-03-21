@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     var em = pi.getEventManager("Juliet");
     if (em != null && em.getProperty("stage5").equals("0")) {
 	pi.spawnMonster(9300142, 10);

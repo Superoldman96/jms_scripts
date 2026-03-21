@@ -1,8 +1,8 @@
-function enter(pi) {
+ï»¿function enter(pi) {
 	if (pi.getPlayer().getParty() != null && pi.isLeader() || pi.getLeaderMapId() == 920010100) {
 		pi.warp(920010100);
 		pi.playPortalSE();
 	} else {
-		pi.playerMessage(5, "¶¤ªø¥X¥h¤~¯à¥X¥h");
+		pi.playerMessage(5, "ï½¶ï½¤ï½ªî™„Xï½¥hï½¤~ï½¯çˆ­Xï½¥h");
 	}
 }

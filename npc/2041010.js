@@ -1,4 +1,4 @@
-/* Ellie
+﻿/* Ellie
 	Ludibrium VIP Eye Change.
 */
 var status = -1;

@@ -1,4 +1,4 @@
-/* Dr. Bosch
+﻿/* Dr. Bosch
 	Ludibrium Random/VIP Eye Color Change.
 */
 var status = -1;

@@ -1,4 +1,4 @@
-/* @Author SharpAceX
+﻿/* @Author SharpAceX
 */
 
 function action(mode,type,selection) {

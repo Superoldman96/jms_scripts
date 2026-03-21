@@ -1,4 +1,4 @@
-/* ===========================================================
+﻿/* ===========================================================
 			Resonance
 	NPC Name: 		Killer Mushroom Spore
 	Map(s): 		Mushroom Castle: Deep inside Mushroom Forest(106020300)

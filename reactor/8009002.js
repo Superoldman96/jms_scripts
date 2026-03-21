@@ -1,4 +1,4 @@
-/*
+﻿/*
  * MAP  : Encounter of buddha
  * FUNC : Bamboo warrior Reactor
  */

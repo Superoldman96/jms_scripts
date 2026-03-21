@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     if (!pi.haveItem(4031448)) {
 	pi.gainItem(4031448, 1);
     }

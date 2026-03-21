@@ -1,4 +1,4 @@
-var status = -1;
+﻿var status = -1;
 
 function start() {
     if (cm.getQuestStatus(3360) == 2) {

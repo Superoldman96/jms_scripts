@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
 	if (pi.getPlayer().getParty() != null && pi.getMap().getAllMonstersThreadsafe().size() == 0 && pi.isLeader()) {
 		var chars = pi.getMap().getCharactersThreadsafe();
 		for (var i = 0; i < chars.size(); i++) {

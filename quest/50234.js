@@ -1,5 +1,5 @@
-
-// ƒIƒ`ƒƒƒ}ƒ‹‚Æe‚µ‚­‚È‚ë‚¤I
+ï»¿
+// ã‚ªãƒãƒ£ãƒãƒ«ã¨è¦ªã—ããªã‚ã†ï¼
 var status = -1;
 
 function start(mode, type, selection) {

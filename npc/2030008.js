@@ -1,5 +1,5 @@
-// �W���N���O��N�G�X�g
-// �A�h�r�X
+﻿// ジャクム前提クエスト
+// アドビス
 
 var npc_talk_status = -1;
 function action(mode, type, selection) {
@@ -12,12 +12,12 @@ function action(mode, type, selection) {
 		case 0:
 			{
 				var mapid = cm.getMapId();
-				var text = "�悵�A�N�����͏\���ɂł��������ȁB�ǂ̒i�K�ɒ��킵�Ă݂�񂾁H\r\n";
-				text += "#L" + 0 + "##b�z���A�̒����ɍs���B(1�i�K)#k#l\r\n";
-				text += "#L" + 1 + "##b�W���N���_���W������T������B(2�i�K)#k#l\r\n";
-				text += "#L" + 2 + "##b���B��v������B(3�i�K)#k#l\r\n";
-				text += "#L" + 3 + "##b�N�G�X�g�ɑ΂�������𕷂��B#k#l\r\n";
-				text += "#L" + 4 + "##b�f�o�b�O���[�h�B#k#l\r\n";
+				var text = "よし、君たちは十分にできそうだな。どの段階に挑戦してみるんだ？\r\n";
+				text += "#L" + 0 + "##b閉鉱洞窟の調査に行く。(1段階)#k#l\r\n";
+				text += "#L" + 1 + "##bジャクムダンジョンを探査する。(2段階)#k#l\r\n";
+				text += "#L" + 2 + "##b製錬を要請する。(3段階)#k#l\r\n";
+				text += "#L" + 3 + "##bクエストに対する説明を聞く。#k#l\r\n";
+				text += "#L" + 4 + "##bデバッグモード。#k#l\r\n";
 				return cm.sendSimple(text);
 			}
 		case 1:

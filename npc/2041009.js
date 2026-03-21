@@ -1,4 +1,4 @@
-/* Mini
+﻿/* Mini
 	Ludibrium Random Hair/Hair Color Change.
 */
 var status = -1;

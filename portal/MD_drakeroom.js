@@ -1,4 +1,4 @@
-//var baseid = 541020610;
+﻿//var baseid = 541020610;
 //var dungeonid = 541020620;
 //var dungeons = 19;
 

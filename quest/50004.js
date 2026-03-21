@@ -1,4 +1,4 @@
-/*
+﻿/*
 	NPC Name: 		Asia
 	Description: 		Quest - Activating Core Blaze
 */

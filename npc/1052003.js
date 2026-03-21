@@ -1,4 +1,4 @@
-/* Chris
+﻿/* Chris
 	Victoria Road : Kerning City Repair Shop (103000006)
 	
 	Refining NPC: 

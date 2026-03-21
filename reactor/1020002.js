@@ -1,4 +1,4 @@
-/*
+﻿/*
 Relic - 4th job Assassinate
 */
 

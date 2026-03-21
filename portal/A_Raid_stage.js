@@ -1,4 +1,4 @@
-// ŠCŠOƒ{ƒXƒ‚ƒ“ƒXƒ^[ƒŒƒCƒh v180
+ï»¿// æµ·å¤–ãƒœã‚¹ãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼ãƒ¬ã‚¤ãƒ‰ v180
 // 889200000, 889210100
 // 889212400
 // NG 4,11,18,21,22,23 fix
@@ -18,7 +18,7 @@ function enter(pi) {
 	var mapid = pi.getMapId() + 100;
 	var stage = GetStage(mapid);
 
-	// ƒXƒe[ƒWƒXƒLƒbƒvˆ—
+	// ã‚¹ãƒ†ãƒ¼ã‚¸ã‚¹ã‚­ãƒƒãƒ—å‡¦ç†
 	switch (stage) {
 		/*
 		case 4:
@@ -40,7 +40,7 @@ function enter(pi) {
 			mapid += 100;
 			break;
 		*/
-		// Å[•”‚Ö“’B
+		// æœ€æ·±éƒ¨ã¸åˆ°é”
 		case 26:
 			mapid = 889200020;
 			break;

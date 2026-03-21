@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
 	if (pi.getPlayer().getClient().getChannel() != 1 && pi.getPlayer().getClient().getChannel() != 2) {
 		pi.playerMessage(5, "This boss may only be attempted on channel 1 and 2");
 		return false;

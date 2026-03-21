@@ -1,11 +1,11 @@
-function enter(pi) {
+ï»¿function enter(pi) {
 	if (pi.getPlayer().getParty() != null && pi.isLeader() || pi.getPlayerCount(920010600) != 0) {
                 if (pi.isLeader()) {
-		    pi.mapMessage("¶¤ªø¶i¤J<¤jÆU>");
+		    pi.mapMessage("ï½¶ï½¤ï½ªî™•iï½¤J<ï½¤jï¾†U>");
                 }
 		pi.warp(920010600, 0);
 		pi.playPortalSE();
 	} else {
-		pi.playerMessage("¶¤ªø¶i¤J¤§«á¤~¯à¶i¤J");
+		pi.playerMessage("ï½¶ï½¤ï½ªî™•iï½¤Jï½¤ï½§ï½«çšƒ~ï½¯çŠ–iï½¤J");
 	}
 }

@@ -1,47 +1,47 @@
-// ƒXƒNƒ‹ƒW
+ï»¿// ã‚¹ã‚¯ãƒ«ã‚¸
 var status = -1;
 
 function selectJob(jobid, level) {
-	text = "E‹Æ‘I‘ğ\r\n";
-	text += "#L" + 0 + "##b" + "ƒŒƒxƒ‹ƒAƒbƒv" + "#l#k\r\n";
+	text = "è·æ¥­é¸æŠ\r\n";
+	text += "#L" + 0 + "##b" + "ãƒ¬ãƒ™ãƒ«ã‚¢ãƒƒãƒ—" + "#l#k\r\n";
 
 	switch (jobid) {
-		// ‰SÒ
+		// åˆå¿ƒè€…
 		case 0:
 			{
 				if (level >= 8) {
-					text += "#L" + 200 + "##b" + "–‚–@g‚¢" + "#l#k\r\n";
+					text += "#L" + 200 + "##b" + "é­”æ³•ä½¿ã„" + "#l#k\r\n";
 
 					if (level >= 10) {
-						text += "#L" + 100 + "##b" + "ím" + "#l#k\r\n";
-						text += "#L" + 300 + "##b" + "‹|g‚¢" + "#l#k\r\n";
-						text += "#L" + 400 + "##b" + "“‘¯" + "#l#k\r\n";
-						text += "#L" + 500 + "##b" + "ŠC‘¯" + "#l#k\r\n";
+						text += "#L" + 100 + "##b" + "æˆ¦å£«" + "#l#k\r\n";
+						text += "#L" + 300 + "##b" + "å¼“ä½¿ã„" + "#l#k\r\n";
+						text += "#L" + 400 + "##b" + "ç›—è³Š" + "#l#k\r\n";
+						text += "#L" + 500 + "##b" + "æµ·è³Š" + "#l#k\r\n";
 					}
 					cm.sendSimple(text);
 					return true;
 				}
 				break;
 			}
-		// ƒVƒOƒiƒX
+		// ã‚·ã‚°ãƒŠã‚¹
 		case 1000:
 			{
 				if (level >= 10) {
-					text += "#L" + 1100 + "##b" + "ƒ\ƒEƒ‹ƒ}ƒXƒ^[" + "#l#k\r\n";
-					text += "#L" + 1200 + "##b" + "ƒtƒŒƒCƒ€ƒEƒBƒU[ƒh" + "#l#k\r\n";
-					text += "#L" + 1300 + "##b" + "ƒEƒBƒ“ƒhƒVƒ…[ƒ^[" + "#l#k\r\n";
-					text += "#L" + 1400 + "##b" + "ƒiƒCƒgƒEƒH[ƒJ[" + "#l#k\r\n";
-					text += "#L" + 1500 + "##b" + "ƒXƒgƒ‰ƒCƒJ[" + "#l#k\r\n";
+					text += "#L" + 1100 + "##b" + "ã‚½ã‚¦ãƒ«ãƒã‚¹ã‚¿ãƒ¼" + "#l#k\r\n";
+					text += "#L" + 1200 + "##b" + "ãƒ•ãƒ¬ã‚¤ãƒ ã‚¦ã‚£ã‚¶ãƒ¼ãƒ‰" + "#l#k\r\n";
+					text += "#L" + 1300 + "##b" + "ã‚¦ã‚£ãƒ³ãƒ‰ã‚·ãƒ¥ãƒ¼ã‚¿ãƒ¼" + "#l#k\r\n";
+					text += "#L" + 1400 + "##b" + "ãƒŠã‚¤ãƒˆã‚¦ã‚©ãƒ¼ã‚«ãƒ¼" + "#l#k\r\n";
+					text += "#L" + 1500 + "##b" + "ã‚¹ãƒˆãƒ©ã‚¤ã‚«ãƒ¼" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return true;
 				}
 				break;
 			}
-		// ƒAƒ‰ƒ“
+		// ã‚¢ãƒ©ãƒ³
 		case 2000:
 			{
 				if (level >= 10) {
-					text += "#L" + 2100 + "##b" + "ƒAƒ‰ƒ“" + "#l#k\r\n";
+					text += "#L" + 2100 + "##b" + "ã‚¢ãƒ©ãƒ³" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return true;
 				}
@@ -50,7 +50,7 @@ function selectJob(jobid, level) {
 		case 2100:
 			{
 				if (level >= 30) {
-					text += "#L" + 2110 + "##b" + "ƒAƒ‰ƒ“2Ÿ" + "#l#k\r\n";
+					text += "#L" + 2110 + "##b" + "ã‚¢ãƒ©ãƒ³2æ¬¡" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return true;
 				}
@@ -59,7 +59,7 @@ function selectJob(jobid, level) {
 		case 2110:
 			{
 				if (level >= 70) {
-					text += "#L" + 2111 + "##b" + "ƒAƒ‰ƒ“3Ÿ" + "#l#k\r\n";
+					text += "#L" + 2111 + "##b" + "ã‚¢ãƒ©ãƒ³3æ¬¡" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return true;
 				}
@@ -68,17 +68,17 @@ function selectJob(jobid, level) {
 		case 2111:
 			{
 				if (level >= 120) {
-					text += "#L" + 2112 + "##b" + "ƒAƒ‰ƒ“4Ÿ" + "#l#k\r\n";
+					text += "#L" + 2112 + "##b" + "ã‚¢ãƒ©ãƒ³4æ¬¡" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return true;
 				}
 				break;
 			}
-		// ƒGƒ”ƒ@ƒ“
+		// ã‚¨ãƒ´ã‚¡ãƒ³
 		case 2001:
 			{
 				if (level >= 10) {
-					text += "#L" + 2200 + "##b" + "ƒGƒ”ƒ@ƒ“" + "#l#k\r\n";
+					text += "#L" + 2200 + "##b" + "ã‚¨ãƒ´ã‚¡ãƒ³" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return true;
 				}
@@ -87,7 +87,7 @@ function selectJob(jobid, level) {
 		case 2200:
 			{
 				if (level >= 20) {
-					text += "#L" + (jobid + 10) + "##b" + "ƒGƒ”ƒ@ƒ“2Ÿ" + "#l#k\r\n";
+					text += "#L" + (jobid + 10) + "##b" + "ã‚¨ãƒ´ã‚¡ãƒ³2æ¬¡" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return true;
 				}
@@ -96,7 +96,7 @@ function selectJob(jobid, level) {
 		case 2210:
 			{
 				if (level >= 30) {
-					text += "#L" + (jobid + 1) + "##b" + "ƒGƒ”ƒ@ƒ“3Ÿ" + "#l#k\r\n";
+					text += "#L" + (jobid + 1) + "##b" + "ã‚¨ãƒ´ã‚¡ãƒ³3æ¬¡" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return true;
 				}
@@ -105,7 +105,7 @@ function selectJob(jobid, level) {
 		case 2211:
 			{
 				if (level >= 40) {
-					text += "#L" + (jobid + 1) + "##b" + "ƒGƒ”ƒ@ƒ“4Ÿ" + "#l#k\r\n";
+					text += "#L" + (jobid + 1) + "##b" + "ã‚¨ãƒ´ã‚¡ãƒ³4æ¬¡" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return true;
 				}
@@ -114,7 +114,7 @@ function selectJob(jobid, level) {
 		case 2212:
 			{
 				if (level >= 60) {
-					text += "#L" + (jobid + 1) + "##b" + "ƒGƒ”ƒ@ƒ“5Ÿ" + "#l#k\r\n";
+					text += "#L" + (jobid + 1) + "##b" + "ã‚¨ãƒ´ã‚¡ãƒ³5æ¬¡" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return true;
 				}
@@ -123,7 +123,7 @@ function selectJob(jobid, level) {
 		case 2213:
 			{
 				if (level >= 70) {
-					text += "#L" + (jobid + 1) + "##b" + "ƒGƒ”ƒ@ƒ“6Ÿ" + "#l#k\r\n";
+					text += "#L" + (jobid + 1) + "##b" + "ã‚¨ãƒ´ã‚¡ãƒ³6æ¬¡" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return true;
 				}
@@ -132,7 +132,7 @@ function selectJob(jobid, level) {
 		case 2214:
 			{
 				if (level >= 80) {
-					text += "#L" + (jobid + 1) + "##b" + "ƒGƒ”ƒ@ƒ“7Ÿ" + "#l#k\r\n";
+					text += "#L" + (jobid + 1) + "##b" + "ã‚¨ãƒ´ã‚¡ãƒ³7æ¬¡" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return true;
 				}
@@ -141,7 +141,7 @@ function selectJob(jobid, level) {
 		case 2215:
 			{
 				if (level >= 100) {
-					text += "#L" + (jobid + 1) + "##b" + "ƒGƒ”ƒ@ƒ“8Ÿ" + "#l#k\r\n";
+					text += "#L" + (jobid + 1) + "##b" + "ã‚¨ãƒ´ã‚¡ãƒ³8æ¬¡" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return true;
 				}
@@ -150,7 +150,7 @@ function selectJob(jobid, level) {
 		case 2216:
 			{
 				if (level >= 120) {
-					text += "#L" + (jobid + 1) + "##b" + "ƒGƒ”ƒ@ƒ“9Ÿ" + "#l#k\r\n";
+					text += "#L" + (jobid + 1) + "##b" + "ã‚¨ãƒ´ã‚¡ãƒ³9æ¬¡" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return true;
 				}
@@ -159,17 +159,17 @@ function selectJob(jobid, level) {
 		case 2217:
 			{
 				if (level >= 160) {
-					text += "#L" + (jobid + 1) + "##b" + "ƒGƒ”ƒ@ƒ“10Ÿ" + "#l#k\r\n";
+					text += "#L" + (jobid + 1) + "##b" + "ã‚¨ãƒ´ã‚¡ãƒ³10æ¬¡" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return true;
 				}
 				break;
 			}
-		// ƒfƒ…ƒAƒ‹ƒuƒŒƒCƒh
+		// ãƒ‡ãƒ¥ã‚¢ãƒ«ãƒ–ãƒ¬ã‚¤ãƒ‰
 		case 430:
 			{
 				if (level >= 30) {
-					text += "#L" + (jobid + 1) + "##b" + "ƒfƒ…ƒAƒ‹ƒuƒŒƒCƒh2Ÿ" + "#l#k\r\n";
+					text += "#L" + (jobid + 1) + "##b" + "ãƒ‡ãƒ¥ã‚¢ãƒ«ãƒ–ãƒ¬ã‚¤ãƒ‰2æ¬¡" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return true;
 				}
@@ -178,7 +178,7 @@ function selectJob(jobid, level) {
 		case 431:
 			{
 				if (level >= 55) {
-					text += "#L" + (jobid + 1) + "##b" + "ƒfƒ…ƒAƒ‹ƒuƒŒƒCƒh2.5Ÿ" + "#l#k\r\n";
+					text += "#L" + (jobid + 1) + "##b" + "ãƒ‡ãƒ¥ã‚¢ãƒ«ãƒ–ãƒ¬ã‚¤ãƒ‰2.5æ¬¡" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return true;
 				}
@@ -187,7 +187,7 @@ function selectJob(jobid, level) {
 		case 432:
 			{
 				if (level >= 70) {
-					text += "#L" + (jobid + 1) + "##b" + "ƒfƒ…ƒAƒ‹ƒuƒŒƒCƒh3Ÿ" + "#l#k\r\n";
+					text += "#L" + (jobid + 1) + "##b" + "ãƒ‡ãƒ¥ã‚¢ãƒ«ãƒ–ãƒ¬ã‚¤ãƒ‰3æ¬¡" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return true;
 				}
@@ -196,13 +196,13 @@ function selectJob(jobid, level) {
 		case 433:
 			{
 				if (level >= 120) {
-					text += "#L" + (jobid + 1) + "##b" + "ƒfƒ…ƒAƒ‹ƒuƒŒƒCƒh4Ÿ" + "#l#k\r\n";
+					text += "#L" + (jobid + 1) + "##b" + "ãƒ‡ãƒ¥ã‚¢ãƒ«ãƒ–ãƒ¬ã‚¤ãƒ‰4æ¬¡" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return true;
 				}
 				break;
 			}
-		// ƒVƒOƒiƒX2Ÿ
+		// ã‚·ã‚°ãƒŠã‚¹2æ¬¡
 		case 1100:
 		case 1200:
 		case 1300:
@@ -210,7 +210,7 @@ function selectJob(jobid, level) {
 		case 1500:
 			{
 				if (level >= 30) {
-					text += "#L" + (jobid + 10) + "##b" + "“]E" + "#l#k\r\n";
+					text += "#L" + (jobid + 10) + "##b" + "è»¢è·" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return true;
 				}
@@ -226,7 +226,7 @@ function selectJob(jobid, level) {
 		case 1111:
 			{
 				if (level >= 120) {
-					text += "#L" + (jobid + 1) + "##b" + "“]E" + "#l#k\r\n";
+					text += "#L" + (jobid + 1) + "##b" + "è»¢è·" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return true;
 				}
@@ -235,15 +235,15 @@ function selectJob(jobid, level) {
 		case 100:
 			{
 				if (level >= 30) {
-					text += "#L" + 110 + "##b" + "ƒ\[ƒhƒ}ƒ“" + "#l#k\r\n";
-					text += "#L" + 120 + "##b" + "ƒy[ƒW" + "#l#k\r\n";
-					text += "#L" + 130 + "##b" + "ƒXƒsƒAƒ}ƒ“" + "#l#k\r\n";
+					text += "#L" + 110 + "##b" + "ã‚½ãƒ¼ãƒ‰ãƒãƒ³" + "#l#k\r\n";
+					text += "#L" + 120 + "##b" + "ãƒšãƒ¼ã‚¸" + "#l#k\r\n";
+					text += "#L" + 130 + "##b" + "ã‚¹ãƒ”ã‚¢ãƒãƒ³" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return true;
 				}
 				break;
 			}
-		// 3Ÿ“]E
+		// 3æ¬¡è»¢è·
 		case 110:
 		case 120:
 		case 130:
@@ -263,13 +263,13 @@ function selectJob(jobid, level) {
 		case 1510:
 			{
 				if (level >= 70) {
-					text += "#L" + (jobid + 1) + "##b" + "3Ÿ“]E" + "#l#k\r\n";
+					text += "#L" + (jobid + 1) + "##b" + "3æ¬¡è»¢è·" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return true;
 				}
 				break;
 			}
-		// 4Ÿ“]E
+		// 4æ¬¡è»¢è·
 		case 111:
 		case 121:
 		case 131:
@@ -284,19 +284,19 @@ function selectJob(jobid, level) {
 		case 521:
 			{
 				if (level >= 120) {
-					text += "#L" + (jobid + 1) + "##b" + "4Ÿ“]E" + "#l#k\r\n";
+					text += "#L" + (jobid + 1) + "##b" + "4æ¬¡è»¢è·" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return true;
 				}
 				break;
 			}
-		// 2Ÿ“]E
+		// 2æ¬¡è»¢è·
 		case 200:
 			{
 				if (level >= 30) {
-					text += "#L" + 210 + "##b" + "ƒEƒBƒU[ƒh(‰ÎA“Å)" + "#l#k\r\n";
-					text += "#L" + 220 + "##b" + "ƒEƒBƒU[ƒh(—‹A•X)" + "#l#k\r\n";
-					text += "#L" + 230 + "##b" + "ƒNƒŒƒŠƒbƒN" + "#l#k\r\n";
+					text += "#L" + 210 + "##b" + "ã‚¦ã‚£ã‚¶ãƒ¼ãƒ‰(ç«ã€æ¯’)" + "#l#k\r\n";
+					text += "#L" + 220 + "##b" + "ã‚¦ã‚£ã‚¶ãƒ¼ãƒ‰(é›·ã€æ°·)" + "#l#k\r\n";
+					text += "#L" + 230 + "##b" + "ã‚¯ãƒ¬ãƒªãƒƒã‚¯" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return true;
 				}
@@ -306,8 +306,8 @@ function selectJob(jobid, level) {
 		case 300:
 			{
 				if (level >= 30) {
-					text += "#L" + 310 + "##b" + "ƒnƒ“ƒ^[" + "#l#k\r\n";
-					text += "#L" + 320 + "##b" + "ƒŒƒ“ƒWƒƒ[" + "#l#k\r\n";
+					text += "#L" + 310 + "##b" + "ãƒãƒ³ã‚¿ãƒ¼" + "#l#k\r\n";
+					text += "#L" + 320 + "##b" + "ãƒ¬ãƒ³ã‚¸ãƒ£ãƒ¼" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return true;
 				}
@@ -316,11 +316,11 @@ function selectJob(jobid, level) {
 		case 400:
 			{
 				if (level >= 20) {
-					text += "#L" + 430 + "##b" + "ƒZƒ~ƒfƒ…ƒAƒ‹" + "#l#k\r\n";
+					text += "#L" + 430 + "##b" + "ã‚»ãƒŸãƒ‡ãƒ¥ã‚¢ãƒ«" + "#l#k\r\n";
 
 					if (level >= 30) {
-						text += "#L" + 410 + "##b" + "ƒAƒTƒVƒ“" + "#l#k\r\n";
-						text += "#L" + 420 + "##b" + "ƒV[ƒt" + "#l#k\r\n";
+						text += "#L" + 410 + "##b" + "ã‚¢ã‚µã‚·ãƒ³" + "#l#k\r\n";
+						text += "#L" + 420 + "##b" + "ã‚·ãƒ¼ãƒ•" + "#l#k\r\n";
 					}
 					cm.sendSimple(text);
 					return true;
@@ -330,8 +330,8 @@ function selectJob(jobid, level) {
 		case 500:
 			{
 				if (level >= 30) {
-					text += "#L" + 510 + "##b" + "ƒCƒ“ƒtƒ@ƒCƒ^[" + "#l#k\r\n";
-					text += "#L" + 520 + "##b" + "ƒKƒ“ƒXƒŠƒ“ƒK[" + "#l#k\r\n";
+					text += "#L" + 510 + "##b" + "ã‚¤ãƒ³ãƒ•ã‚¡ã‚¤ã‚¿ãƒ¼" + "#l#k\r\n";
+					text += "#L" + 520 + "##b" + "ã‚¬ãƒ³ã‚¹ãƒªãƒ³ã‚¬ãƒ¼" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return true;
 				}
@@ -377,7 +377,7 @@ function LearnSkills(jobid) {
 function action(mode, type, selection) {
 	var id = cm.getNpc();
 	var mapid = cm.getMapId();
-	var text = "ƒfƒoƒbƒOî•ñ\r\n";
+	var text = "ãƒ‡ãƒãƒƒã‚°æƒ…å ±\r\n";
 	text += "#p" + id + "#\r\n";
 	text += "NPC ID = #b" + id + "#k\r\n";
 	text += "#m" + mapid + "#\r\n";

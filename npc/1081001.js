@@ -1,5 +1,5 @@
-// ƒpƒCƒ\ƒ“
-// ƒtƒƒŠƒiƒr[ƒ`
+ï»¿// ãƒ‘ã‚¤ã‚½ãƒ³
+// ãƒ•ãƒ­ãƒªãƒŠãƒ“ãƒ¼ãƒ
 
 var npc_talk_status = -1;
 
@@ -13,8 +13,8 @@ function action(mode, type, selection) {
 		case 0:
 			{
 				var mapid = cm.getSavedLocation("FLORINA");
-				// ƒeƒLƒXƒg“K“–
-				var text = "#b#m" + mapid + "##k‚É–ß‚è‚Ü‚·‚©B#k\r\n";
+				// ãƒ†ã‚­ã‚¹ãƒˆé©å½“
+				var text = "#b#m" + mapid + "##kã«æˆ»ã‚Šã¾ã™ã‹ã€‚#k\r\n";
 				return cm.sendSimple(text);
 			}
 		case 1:

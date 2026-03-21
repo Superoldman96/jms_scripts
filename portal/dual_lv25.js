@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
 	if (pi.getPlayer().getLevel() >= 25) {
 		pi.warp(103050340, "out00");
 		pi.playPortalSE();

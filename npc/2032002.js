@@ -1,4 +1,4 @@
-/* Aura
+﻿/* Aura
  * 
  * Adobis's Mission I: Unknown Dead Mine (280010000)
  * 

@@ -1,4 +1,4 @@
-/* Miyu
+﻿/* Miyu
 	Ludibrium VIP Hair/Hair Color Change.
 */
 var status = -1;

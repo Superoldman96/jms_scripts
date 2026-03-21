@@ -1,4 +1,4 @@
-/* Konpei
+﻿/* Konpei
 	Showa - Nightmarish Last Days
 */
 

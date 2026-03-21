@@ -1,4 +1,4 @@
-/* Pata
+﻿/* Pata
 	Mu Lung Random/VIP Eye Color Change.
 */
 var status = -1;

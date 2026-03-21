@@ -1,4 +1,4 @@
-/*
+﻿/*
 	NPC Name: 		Palakeen
 	Map(s): 		Zipangu - Mushroom Shrine
 	Description: 		Kaede Castle teleporter

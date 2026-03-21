@@ -1,4 +1,4 @@
-/* 	Xan
+﻿/* 	Xan
 	Lian Hua Hua Skin Care
 */
 var status = -1;

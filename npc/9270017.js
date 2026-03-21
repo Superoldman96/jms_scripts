@@ -1,4 +1,4 @@
-// Xinga - Pilot
+﻿// Xinga - Pilot
 function start() {
     if (cm.getMapId() == 540010101) {
 	cm.dispose();

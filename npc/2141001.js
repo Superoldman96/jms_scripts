@@ -1,4 +1,4 @@
-// ƒsƒ“ƒNƒr[ƒ“
+ï»¿// ãƒ”ãƒ³ã‚¯ãƒ“ãƒ¼ãƒ³
 // !npc 2141001
 function action(mode, type, selection) {
 	cm.warp(270050100, 0);

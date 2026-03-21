@@ -1,4 +1,4 @@
-var status = -1;
+﻿var status = -1;
 
 function start(mode, type, selection) {
 	qm.sendNext("Please go find Jane in El Nath for more information.");

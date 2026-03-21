@@ -1,4 +1,4 @@
-function action(mode, type, selection) {
+﻿function action(mode, type, selection) {
     var em = cm.getEventManager("Romeo");
     if (em == null) {
 	cm.sendOk("Please try again later.");

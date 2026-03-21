@@ -1,4 +1,4 @@
-/* Bomack
+﻿/* Bomack
 	NLC Random Eye Color Change.
 */
 var status = -1;

@@ -1,4 +1,4 @@
-var status; 
+﻿var status; 
 
 function start() { 
     status = -1; 

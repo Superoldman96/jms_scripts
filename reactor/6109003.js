@@ -1,4 +1,4 @@
-function act() {
+﻿function act() {
 	var em = rm.getEventManager("CWKPQ");
 	if (em != null) {
 		if (rm.getMap().getId() == 610030200) {

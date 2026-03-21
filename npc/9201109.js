@@ -1,4 +1,4 @@
-/* @Author SharpAceX
+﻿/* @Author SharpAceX
 */
 
 function start() {

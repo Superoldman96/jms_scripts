@@ -1,4 +1,4 @@
-/* Rydole
+﻿/* Rydole
 	Ludibrium : Toy Factory <Aparatus Room> (220020600)
 	
 	Refining NPC: 

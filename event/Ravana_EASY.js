@@ -1,4 +1,4 @@
-function init() {
+﻿function init() {
 em.setProperty("state", "0");
 }
 

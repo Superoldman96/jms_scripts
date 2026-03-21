@@ -1,4 +1,4 @@
-// ��t
+﻿// 寄付
 
 var npc_talk_status = -1;
 
@@ -11,10 +11,10 @@ function action(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 0:
 			{
-				// BB��
-				var text = "�X�̔��W�̂��߂Ɏg�����t�������Ă��������I�P�s���{�����Ȃ��ɑ傫�ȏj��������͂��ł��I�c�Ə����Ȏ��ŏ�����Ă���B";
+				// BB後
+				var text = "街の発展のために使われる寄付金を入れてください！善行を施すあなたに大きな祝福があるはずです！…と小さな字で書かれている。";
 				return cm.sendOk(text);
-				// ��t�����풆�̏ꍇ�̓��b�Z�[�W��؂�ւ���K�v������
+				// 寄付王挑戦中の場合はメッセージを切り替える必要がある
 			}
 		case 1:
 			{

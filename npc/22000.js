@@ -1,40 +1,40 @@
-// �V�����N�X
-// �`�����烁�C�v���A�C�����h��
+﻿// シャンクス
+// 港口からメイプルアイランドへ
 
 function ToVictoria(npc_talk_status, selection) {
 	switch (npc_talk_status) {
 		case 0:
 			{
-				// �f�o�b�O���[�h
+				// デバッグモード
 				if (!cm.haveItem(4031801)) {
 					cm.gainItem(4031801, 1);
 				}
-				// �����}�}
-				var text = "���̑D�ɏ��΁A�L��ȃt�B�[���h���L����#b�r�N�g���A�A�C�����h#k�ɍs�����Ƃ��ł���B#e150 ����#n�K�v�����ǂˁB�����A��x�r�N�g���A�A�C�����h�ɓn���Ă��܂��ƁA�C�s����ň�l�O�ɂȂ�Ȃ���΁A���̃��C�v���A�C�����h�ɂ͖߂��Ă���Ȃ��Ȃ�񂾁B�����ɔ�ׂĊ댯�̑������ł����邩��A���x����5���炢�ɂ����Ă��痷���Ƃ悢���낤�ˁB";
+				// 原文ママ
+				var text = "この船に乗れば、広大なフィールドが広がる#bビクトリアアイランド#kに行くことができる。#e150 メル#n必要だけどね。ただ、一度ビクトリアアイランドに渡ってしまうと、修行をつんで一人前にならなければ、このメイプルアイランドには戻ってこれなくなるんだ。ここに比べて危険の多い島でもあるから、レベルを5ぐらいにあげてから旅立つとよいだろうね。";
 				return cm.sendYesNo(text);
 
 			}
 		case 1:
 			{
 				if (cm.haveItem(4031801)) {
-					// �����}�}
-					var text = "����̓A���z�X�g�̒��V���[�J�X�l�̐��E������Ȃ���!���ꂪ����Ȃ瑁���s���Ă���A���͂���񂼁B";
+					// 原文ママ
+					var text = "それはアムホストの長老ルーカス様の推薦書じゃないか!これがあるなら早く行ってくれ、金はいらんぞ。";
 					return cm.sendSimple(text);
 				}
 				if (cm.getMeso() < 150) {
-					// �K��
-					cm.sendOk("�������s�����Ă��܂��B");
+					// 適当
+					cm.sendOk("メルが不足しています。");
 					return cm.dispose();
 				}
-				// �K��
-				return cm.sendSimple("150�����󂯎��܂����B");
+				// 適当
+				return cm.sendSimple("150メル受け取りました。");
 			}
 		case 2:
 			{
 				if (cm.haveItem(4031801)) {
-					// �����}�}
-					var text = "���E���������Ă��邩��A���ʂɗ����͖Ə����悤�B�����I�r�N�g���A�A�C�����h�ɏo�����邼�I�h��邩������Ȃ����牽���ɕ߂܂��Ă���I";
-					// sendNextPrev������ɓ��삵�Ȃ�
+					// 原文ママ
+					var text = "推薦書を持っているから、特別に料金は免除しよう。さあ！ビクトリアアイランドに出発するぞ！揺れるかもしれないから何かに捕まってくれ！";
+					// sendNextPrevが正常に動作しない
 					return cm.sendSimple(text);
 				}
 				cm.gainMeso(-150);
@@ -58,14 +58,14 @@ function FromVictoria(npc_talk_status, selection) {
 	switch (npc_talk_status) {
 		case 0:
 			{
-				// �l�C�x����
+				// 人気度制限
 				if (fame < 300) {
-					// �����}�}
-					var text = "�l�C�x��300�ȏ�Ȃ��ƃ��C�v���A�C�����h�ɍs�����Ƃ͂ł��Ȃ��B";
+					// 原文ママ
+					var text = "人気度が300以上ないとメイプルアイランドに行くことはできない。";
 					return cm.sendSimple(text);
 				}
-				// �����}�}
-				var text = "���ʂɃT�E�X�y���Ɉړ������Ă����悤�B�ǂ����� #b���C�v���A�C�����h�̃T�E�X�y��#k�ɍs�����������H";
+				// 原文ママ
+				var text = "特別にサウスペリに移動させてあげよう。どうだい #bメイプルアイランドのサウスペリ#kに行きたいかい？";
 				return cm.sendYesNo(text);
 
 			}

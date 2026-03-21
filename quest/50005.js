@@ -1,4 +1,4 @@
-/*
+﻿/*
 	NPC Name: 		Asia
 	Description: 		Quest - A rush of Core Blaze
 */

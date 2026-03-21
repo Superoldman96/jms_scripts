@@ -1,4 +1,4 @@
-/* Nerbit
+﻿/* Nerbit
 	NLC Random Eye Change.
 */
 var status = -1;

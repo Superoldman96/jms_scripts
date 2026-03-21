@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     if (pi.getPlayerStat("GENDER") == 0) {
 	pi.warpS(670010200, "male01");
     } else {

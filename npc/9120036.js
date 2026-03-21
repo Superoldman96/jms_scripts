@@ -1,4 +1,4 @@
-/*
+﻿/*
 	NPC Name: 		Asia
 	Map(s): 		Kamuna
  */

@@ -1,4 +1,4 @@
-var baseid = 261020300;
+﻿var baseid = 261020300;
 var dungeonid = 261020301;
 var dungeons = 39;
 

@@ -1,4 +1,4 @@
-/* 
+﻿/* 
  * NPC   : Dev Doll
  * Map   : GMMAP
  */

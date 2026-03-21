@@ -1,4 +1,4 @@
-var points;
+﻿var points;
 
 function start() {
     var record = cm.getQuestRecord(150001);

@@ -1,7 +1,7 @@
-// �t�H�b�N�X�E�B�b�g
+﻿// フォックスウィット
 // iTCG
 
-// ��������������
+// 交換処理未実装
 
 var npc_talk_status = -1;
 
@@ -14,15 +14,15 @@ function action(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 0:
 			{
-				// �����}�}
-				var text = "�ǂ������񂶂�H\r\n";
-				text += "#L" + 0 + "##b����Ȃ��̂����������炿����ƌ��Ăق����āA���Ȃ����K�C�҂��Ǝv�����́B#k#l\r\n";
-				text += "#L" + 1 + "##b�������A�Ȃ�ł��Ȃ��ł��B#k#l\r\n";
+				// 原文ママ
+				var text = "どうしたんじゃ？\r\n";
+				text += "#L" + 0 + "##bこんなものを見つけたからちょっと見てほしくて、あなたが適任者だと思ったの。#k#l\r\n";
+				text += "#L" + 1 + "##bいいえ、なんでもないです。#k#l\r\n";
 				return cm.sendSimple(text);
 			}
 		case 1:
 			{
-				// iTCG�n�̏���
+				// iTCG系の処理
 				return cm.dispose();
 			}
 		default:

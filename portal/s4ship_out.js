@@ -1,4 +1,4 @@
-// Captain Battleship quest
+﻿// Captain Battleship quest
 
 function enter(pi) {
     var pt = pi.getEventManager("KyrinTrainingGroundC");

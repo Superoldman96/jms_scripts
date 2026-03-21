@@ -1,4 +1,4 @@
-function act() {
+﻿function act() {
 	var em = rm.getEventManager("CWKPQ");
 	if (em != null) {
 		rm.mapMessage(6, "A weapon has been restored to the Relic of Mastery!");

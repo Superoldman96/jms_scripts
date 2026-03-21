@@ -1,4 +1,4 @@
-/* 	Mr. Hwang - Singapore
+﻿/* 	Mr. Hwang - Singapore
 	Storage
 */
 function start() {

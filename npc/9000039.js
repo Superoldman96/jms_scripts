@@ -1,4 +1,4 @@
-var status = -1;
+﻿var status = -1;
 var items = Array(5360017, 1102041, 1082149, 5220000);
 var itemsp = Array(20, 20, 20, 5);
 var itemsu = Array(0, 2, 2, 0); // extra slots, not set.

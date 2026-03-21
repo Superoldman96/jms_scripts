@@ -1,4 +1,4 @@
-/*
+﻿/*
 Stage 2: Exit Door - Guild Quest
 
 @Author Lerk

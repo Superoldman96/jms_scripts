@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     var mapid = pi.getMapId();
     var questid;
     var state = 2;

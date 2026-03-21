@@ -1,4 +1,4 @@
-/* 
+﻿/* 
  *  NPC   : Kiriko
  *  Maps  : Training Hall 2
  *  FUNC  : Second job Advancement

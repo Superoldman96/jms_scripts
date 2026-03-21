@@ -1,5 +1,5 @@
-// ƒGƒ”ƒ@ƒ““Áêƒ}ƒbƒv
-// —Õ`
+ï»¿// ã‚¨ãƒ´ã‚¡ãƒ³ç‰¹æ®Šãƒãƒƒãƒ—
+// è‡¨æ™‚æ¸¯
 
 var status = -1;
 
@@ -13,8 +13,8 @@ function action(mode, type, selection) {
 		status--;
 	}
 	if (status == 0) {
-		// “K“–
-		cm.sendYesNo("`Œû‚É–ß‚è‚Ü‚·‚©H");
+		// é©å½“
+		cm.sendYesNo("æ¸¯å£ã«æˆ»ã‚Šã¾ã™ã‹ï¼Ÿ");
 	} else if (status == 1) {
 		cm.warp(104000000);
 		cm.dispose();

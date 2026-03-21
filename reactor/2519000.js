@@ -1,4 +1,4 @@
-function act() {
+﻿function act() {
 	var em = rm.getEventManager("Pirate");
 	if (em != null) {
 		rm.mapMessage(6, "One of the doors have been activated.");

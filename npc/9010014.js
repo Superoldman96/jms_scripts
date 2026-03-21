@@ -1,4 +1,4 @@
-/* 	Aramia
+﻿/* 	Aramia
  * 	Henesys fireworks NPC
  */
 

@@ -1,4 +1,4 @@
-/*
+﻿/*
 	NPC Name: 		Entrance Lock
 	Map(s): 		Zipangu : 2012 Roppongi Mall
 	Description: 		Core Blaze battle

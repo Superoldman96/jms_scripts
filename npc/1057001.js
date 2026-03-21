@@ -1,4 +1,4 @@
-function action(mode, type, selection) {
+﻿function action(mode, type, selection) {
 	if (cm.getPlayer().getLevel() < 20) {	
 		if (cm.getPlayer().getSubcategory() != 1) {
 			cm.sendOk("You must have selected Dual Blader in character selection to talk to me.");

@@ -1,4 +1,4 @@
-/* 	Noel
+﻿/* 	Noel
 	Singapore Random Face Changer
 	Credits to aaron and cody
 	Side note by aaron [If there is something wrong PM me on fMS]

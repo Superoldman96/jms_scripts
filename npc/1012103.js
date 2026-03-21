@@ -1,4 +1,4 @@
-/* Natalie
+﻿/* Natalie
 	Henesys VIP Hair/Hair Color Change.
 */
 var status = -1;

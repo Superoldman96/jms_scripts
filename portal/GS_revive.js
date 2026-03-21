@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     var eim = pi.getPlayer().getEventInstance();
     if (eim != null && pi.getPlayer().getCarnivalParty() != null) {
 	if (pi.getPlayer().getCarnivalParty().getTeam() == 0) {

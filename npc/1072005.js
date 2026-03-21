@@ -1,4 +1,4 @@
-/**
+﻿/**
 	Magician Job Instructor - Magician's Tree Dungeon (108000200)
 **/
 

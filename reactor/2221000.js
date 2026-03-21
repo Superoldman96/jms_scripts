@@ -1,4 +1,4 @@
-/*
+﻿/*
 KFT Reactor - Yellow King Goblin
 */
 

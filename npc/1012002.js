@@ -1,4 +1,4 @@
-/* Vicious
+﻿/* Vicious
 	Victoria Road : Henesys Market (100000100)
 	
 	Refining NPC: 

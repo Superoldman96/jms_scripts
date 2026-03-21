@@ -1,4 +1,4 @@
-/*
+﻿/*
 	Mu Lung Training Center entrance
 */
 var status = -1;

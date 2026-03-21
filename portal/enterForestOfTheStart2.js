@@ -1,4 +1,4 @@
-/* ===========================================================
+﻿/* ===========================================================
 			Resonance
 	Map(s): 		Queen's Path : Forest of the Start 1(130030000)
 	Description: 	Warp to Queen's Path : Forest of the Start 2

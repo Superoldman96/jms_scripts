@@ -1,4 +1,4 @@
-/*
+﻿/*
  * The return of the Hero
  * Rien Cold Forest 1
  */

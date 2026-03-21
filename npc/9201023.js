@@ -1,4 +1,4 @@
-/*
+﻿/*
 	NPC Name: 		Hera
 	Map(s): 		Towns
 	Description: 		Wedding Village Entrance

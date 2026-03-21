@@ -1,4 +1,4 @@
-/* V. Isage
+﻿/* V. Isage
 	NLC VIP Eye Change.
 */
 var status = -1;

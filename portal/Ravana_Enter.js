@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
 	var to_spawn = 9500390;
 	if (pi.getPlayer().getLevel() > 120) {
 		to_spawn = 9500392;

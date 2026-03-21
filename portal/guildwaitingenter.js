@@ -1,4 +1,4 @@
-/* @Author Lerk
+﻿/* @Author Lerk
  * 
  * Guild Quest Waiting Room - Entry Portal (map 990000000)
  */

@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Ruin of Krexel II
  *  - Reactor to summon Krexel
  */

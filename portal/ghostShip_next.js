@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     if (!pi.isLeader()) {
 	pi.playerMessage(5, "The leader must be here");
     } else {

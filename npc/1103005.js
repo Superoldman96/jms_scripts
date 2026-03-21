@@ -1,4 +1,4 @@
-/*
+﻿/*
 	NPC Name: 		Nineheart
 	Map(s): 		-Erev Cygnus Intro-
 	Description: 		warpout, accept cygnus help request

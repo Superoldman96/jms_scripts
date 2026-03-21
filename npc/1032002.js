@@ -1,4 +1,4 @@
-/* Francois
+﻿/* Francois
 	Victoria Island: Ellinia (101000000)
 	
 	Refining NPC: (magicians)

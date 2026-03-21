@@ -1,4 +1,4 @@
-/* Riza the Assistant
+﻿/* Riza the Assistant
 	Orbis Random Eye Change.
 */
 var status = -1;

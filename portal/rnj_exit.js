@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
 	    pi.removeAll(4001130);
 	    pi.removeAll(4001131);
 	    pi.removeAll(4001132);

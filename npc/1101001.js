@@ -1,9 +1,9 @@
-// �_�b
+﻿// 神獣
 
 function start() {
 	cm.useItem(2022458);
-	// BB��
-	cm.sendOk("���C�v�����[���h�̕��a����邽�߁A��苭���Ȃ�̂��c�B");
+	// BB後
+	cm.sendOk("メイプルワールドの平和を守るため、より強くなるのだ…。");
 }
 
 function action(mode, type, selection) {

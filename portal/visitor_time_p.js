@@ -1,4 +1,4 @@
-// –¢—ˆ‚ÌƒwƒlƒVƒXŠOŠs
+ï»¿// æœªæ¥ã®ãƒ˜ãƒã‚·ã‚¹å¤–éƒ­
 function enter(pi) {
 	pi.playPortalSE();
 	pi.warp(502010030);

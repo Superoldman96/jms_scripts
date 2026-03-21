@@ -1,4 +1,4 @@
-/* @Author Lerk
+﻿/* @Author Lerk
  * 
  * 9208000.js: Guild Quest - Gatekeeper Puzzle Reactor
  * 

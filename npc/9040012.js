@@ -1,4 +1,4 @@
-/* @Author Lerk
+﻿/* @Author Lerk
  *
  * Armor Statue - Sharenian: Hall of the Knight (990000400)
  * 

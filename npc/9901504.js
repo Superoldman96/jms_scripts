@@ -1,4 +1,4 @@
-var status = -1;
+﻿var status = -1;
 var gp = Array(6000, 5000, 5000, 5000, 2000, 2000);
 var names = Array("2x EXP for Guild (2 hours)", "2x DROP for Guild (2 hours)", "2x MESO for Guild (2 hours)", "2x A-CASH for Guild (2 hours)", "Eye of Fire x 10", "Piece of Cracked Dimension x 10");
 var buffs = Array(2022332, 2022463, 2022461, 2022333, 4001017, 4031179);

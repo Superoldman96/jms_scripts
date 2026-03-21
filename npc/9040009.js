@@ -1,4 +1,4 @@
-/* 
+﻿/* 
  * @Author Lerk
  * 
  * Gatekeeper, Sharenian: Door to the Sharenian Castle (990000300)

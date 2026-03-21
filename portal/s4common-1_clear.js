@@ -1,4 +1,4 @@
-// EL Nath PQ
+﻿// EL Nath PQ
 
 function enter(pi) {
     if (pi.haveMonster(9300093)) { // Tylus

@@ -1,4 +1,4 @@
-var i = 5;
+﻿var i = 5;
 var mapId = 270050100;
 var returnMap;
 var setupTask;

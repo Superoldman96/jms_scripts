@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
 	if (!pi.canHold(4001261,1)) {
 		pi.playerMessage(5, "Please make 1 ETC room.");
 		return false;

@@ -1,5 +1,5 @@
-// Œx@Š¯ƒn[ƒN
-// ”²‚¯“¹ “r’†‘Şo
+ï»¿// è­¦å¯Ÿå®˜ãƒãƒ¼ã‚¯
+// æŠœã‘é“ é€”ä¸­é€€å‡º
 
 var status = -1;
 function action(mode, type, selection) {
@@ -14,8 +14,8 @@ function action(mode, type, selection) {
 	switch (status) {
 		case 0:
 			{
-				var text = "‚±‚ñ‚É‚¿‚ÍB–l‚Íƒn[ƒN‚Æ\‚µ‚Ü‚·B‰½‚Ì—p‚Å‚µ‚å‚¤‚©B\r\n";
-				text += "#L" + 0 + "##b‚±‚±‚©‚ço‚½‚¢‚Å‚·B#k#l";
+				var text = "ã“ã‚“ã«ã¡ã¯ã€‚åƒ•ã¯ãƒãƒ¼ã‚¯ã¨ç”³ã—ã¾ã™ã€‚ä½•ã®ç”¨ã§ã—ã‚‡ã†ã‹ã€‚\r\n";
+				text += "#L" + 0 + "##bã“ã“ã‹ã‚‰å‡ºãŸã„ã§ã™ã€‚#k#l";
 				cm.sendSimple(text);
 				return;
 			}

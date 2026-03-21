@@ -1,4 +1,4 @@
-/* @Author Lerk
+﻿/* @Author Lerk
  * 
  * 2221003.js: KFT Reactor - Hongbu Gourd
  * Note that Gourd (should) drop both Hongbu and Nolbu's quest items; in Global you would only see the quest item that you need, 

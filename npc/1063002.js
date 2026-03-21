@@ -1,4 +1,4 @@
-// ƒXƒŠ[ƒs[ƒEƒbƒh”E‘Ï 3‰ñ–Ú
+ï»¿// ã‚¹ãƒªãƒ¼ãƒ”ãƒ¼ã‚¦ãƒƒãƒ‰å¿è€ 3å›ç›®
 
 var npc_talk_status = -1;
 
@@ -14,7 +14,7 @@ function action(mode, type, selection) {
 				// cm.getQuestStatus(2052) == 1 && !cm.haveItem(4031025)
 				cm.gainItem(4031025, 10);
 				cm.warp(105040300, 0);
-				// ƒNƒGƒXƒgˆÈŠO‚Í•ñV“K“–‚Éİ’è‚·‚é‚Æ—Ç‚³‚»‚¤
+				// ã‚¯ã‚¨ã‚¹ãƒˆæ™‚ä»¥å¤–ã¯å ±é…¬é©å½“ã«è¨­å®šã™ã‚‹ã¨è‰¯ã•ãã†
 				return cm.dispose();
 			}
 		default:

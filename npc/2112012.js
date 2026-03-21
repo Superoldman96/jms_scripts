@@ -1,4 +1,4 @@
-var status = -1;
+﻿var status = -1;
 function action(mode, type, selection) {
     if (cm.getMapId() == 926110600) {
 	    cm.removeAll(4001130);

@@ -1,4 +1,4 @@
-/* @Author Lerk
+﻿/* @Author Lerk
  *
  * Sharen III's Will - Sharenian: Waterway (990000600)
  * 

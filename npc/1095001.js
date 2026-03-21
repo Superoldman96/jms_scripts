@@ -1,4 +1,4 @@
-var status = -1;
+﻿var status = -1;
 var map = 912030000;
 var num = 5;
 var maxp = 5;

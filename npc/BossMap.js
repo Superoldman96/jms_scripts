@@ -1,4 +1,4 @@
-export function GetSpawnItem(itemid) {
+﻿export function GetSpawnItem(itemid) {
 	if (cm.haveItem(itemid)) {
 		return false;
 	}

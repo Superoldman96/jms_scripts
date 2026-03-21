@@ -1,5 +1,5 @@
-// �y�b�g�̕���
-// �d���}��
+﻿// ペットの復活
+// 妖精マル
 
 var npc_talk_status = -1;
 function action(mode, type, selection) {
@@ -11,7 +11,7 @@ function action(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 0:
 			{
-				var text = "#b�����̐�#k��#b�����̎�����#k��������΂��̐l�`�����Ƃ��ȑO�̂悤�ɓ��������ɂ��邱�Ƃ��ł��邩������܂���A�ǂ��ł��傤�c�A�C�e�����W�߂Ă��܂����H�A�C�e�����������ė��Ă�������������ł��̐l�`�����ǂ���ɂ��Ă����܂���c\r\n";
+				var text = "#b生命の水#kと#b生命の呪文書#kさえあればその人形を何とか以前のように動く動物にすることができるかもしれません、どうでしょう…アイテムを集めてきますか？アイテムさえ持って来てくださったら喜んでその人形を元どおりにしてあげますよ…\r\n";
 				return cm.sendYesNo(text);
 			}
 		case 1:

@@ -1,7 +1,7 @@
-// �W�����E�o���P�[�h
+﻿// ジョン・バリケード
 // iTCG
 
-// ��������������
+// 交換処理未実装
 
 var npc_talk_status = -1;
 
@@ -14,15 +14,15 @@ function action(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 0:
 			{
-				// �����}�}
-				var text = "����A���������Ă���񂾁H�����I����͂ƂĂ����A�ȕ�����B�ǂ��Ŏ�ɓ��ꂽ�̂��ȁH\r\n";
-				text += "#L" + 0 + "##b���ꂪ���Ȃ̂������ĉ������B#k#l\r\n";
-				text += "#L" + 1 + "##b���̌Â������H�����������񂾌C�����͉��l���邾�낤���ǂˁI#k#l\r\n";
+				// 原文ママ
+				var text = "おや、何を持っているんだ？おお！それはとてもレアな物だよ。どこで手に入れたのかな？\r\n";
+				text += "#L" + 0 + "##bこれが何なのか教えて下さい。#k#l\r\n";
+				text += "#L" + 1 + "##bこの古い物が？私が履きこんだ靴下よりは価値あるだろうけどね！#k#l\r\n";
 				return cm.sendSimple(text);
 			}
 		case 1:
 			{
-				// iTCG�n�̏���
+				// iTCG系の処理
 				return cm.dispose();
 			}
 		default:

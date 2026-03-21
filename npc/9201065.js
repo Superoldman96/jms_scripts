@@ -1,4 +1,4 @@
-/* Miranda
+﻿/* Miranda
 	NLC Skin Change.
 */
 var status = -1;

@@ -1,4 +1,4 @@
-/* guild emblem npc */
+﻿/* guild emblem npc */
 var status = 0;
 var sel;
 

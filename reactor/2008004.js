@@ -1,4 +1,4 @@
-
+﻿
 function act() {
 	rm.mapMessage(6, "One of the pieces has been placed.");
 	var em = rm.getEventManager("OrbisPQ");

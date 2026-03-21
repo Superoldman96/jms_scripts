@@ -1,4 +1,4 @@
-/* Denma the Owner
+﻿/* Denma the Owner
 	Henesys VIP Eye Change.
 */
 var status = -1;

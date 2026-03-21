@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
 try {
     var reactorName = "";
     var gateBase = "";

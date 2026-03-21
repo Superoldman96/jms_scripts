@@ -1,4 +1,4 @@
-function action(mode, type, selection) {
+ï»¿function action(mode, type, selection) {
     if (cm.getPlayer().getMapId() == 920011200) { //exit
 	for (var i = 4001044; i < 4001064; i++) {
 		cm.removeAll(i); //holy
@@ -9,17 +9,17 @@ function action(mode, type, selection) {
     }
     var em = cm.getEventManager("OrbisPQ");
     if (em == null) {
-	cm.sendOk("½Ğµy«á¦A¸Õ¡C");
+	cm.sendOk("ï½½ï¾ï½µyï½«çš‹Aï½¸ï¾•ï½¡C");
 	cm.dispose();
 	return;
     }
     if (!cm.isLeader()) {
-	cm.sendOk("½Ğ¥s§Aªº¶¤ªø¨Ó¸ò§Ú»¡¸Ü¡I");
+	cm.sendOk("ï½½ï¾ï½¥sï½§Aï½ªï½ºï½¶ï½¤ï½ªî™‡ï¾“ï½¸î‡ï¾šï½»ï½¡ï½¸ï¾œï½¡I");
 	cm.dispose();
 	return;
     }
     if (em.getProperty("pre").equals("0")) {
-	cm.sendNext("¶ğÄ¬K½º");
+	cm.sendNext("ï½¶î‚ƒï½¬Kï½½ï½º");
 	cm.dispose();
 	return;
     }
@@ -45,7 +45,7 @@ function action(mode, type, selection) {
 	        }
 //		    cm.warpParty(920010800); //GARDEN.	
 		} else {
-		    cm.sendOk("ÁÂÁÂ§A¬@±Ï¤F¶®¨å®R¤k¯«¡I½Ğ¸ò¦o»¡¸Ü¡I");
+		    cm.sendOk("ï¾ï¾‚ï¾ï¾‚ï½§Aï½¬@ï½±ï¾ï½¤Fï½¶ï½®ï½¨è³Rï½¤kï½¯ï½«ï½¡Iï½½ï¾ï½¸î‡oï½»ï½¡ï½¸ï¾œï½¡I");
 		}
 	    } else {
 		cm.sendOk("Please, save Minerva! Gather the six pieces of her statue and talk to me to retrieve the final piece!");
@@ -99,7 +99,7 @@ function action(mode, type, selection) {
 		    total += z;
 		}
 		if (total < 5) {
-		    cm.sendOk("³o¸Ì»İ­n¤­­Ó¤Hªº­«¶q¤~¯à¯}Ãö");
+		    cm.sendOk("ï½³oï½¸ï¾Œï½»ï¾ï½­nï½¤ï½­ï½­ï¾“ï½¤Hï½ªï½ºï½­ï½«ï½¶qï½¤~ï½¯ç‰˜}ï¾ƒãƒ»);
 		} else {
 		    var num_correct = 0;
 		    for (var i = 0; i < 3; i++) {
@@ -122,9 +122,9 @@ function action(mode, type, selection) {
     	    		cm.showEffect(true, "quest/party/wrong_kor");
     	    		cm.playSound(true, "Party1/Failed");
 			if (num_correct > 0) {
-			    cm.sendOk("¦³¤@­Ó¦a¤èªº­«¶q¬O¹ïªº");
+			    cm.sendOk("ï½¦ï½³ï½¤@ï½­ï¾“ï½¦aï½¤éš±ï½ºï½­ï½«ï½¶qï½¬Oï½¹ãƒ»ï½º");
 			} else {
-			    cm.sendOk("¨C¤@­Ó¦a¤èªº­«¶q³£¿ù");
+			    cm.sendOk("ï½¨Cï½¤@ï½­ï¾“ï½¦aï½¤éš±ï½ºï½­ï½«ï½¶qï½³ï½£ï½¿ãƒ»);
 			}
 		    }
 		}
@@ -179,14 +179,14 @@ function action(mode, type, selection) {
     	    		cm.showEffect(true, "quest/party/wrong_kor");
     	    		cm.playSound(true, "Party1/Failed");
 			if (num_correct >= 3) {
-			    cm.sendOk("¤@­Óºb±ì¬O¥¿½Tªº¡C");
+			    cm.sendOk("ï½¤@ï½­ï¾“ï½ºbï½±ãƒ»Oï½¥ï½¿ï½½Tï½ªï½ºï½¡C");
 			} else {
-			    cm.sendOk("¨â­Óºb±ì¬O¿ù»~ªº¡C");
+			    cm.sendOk("ï½¨ç®ï¾“ï½ºbï½±ãƒ»Oï½¿îœ–~ï½ªï½ºï½¡C");
 			}
 		    }
 		}
 	    } else {
-		cm.sendOk("¬å±ş«¢°g¥´¡I¡I");
+		cm.sendOk("ï½¬è»ï£²ï½«ï½¢ï½°gï½¥ï½´ï½¡Iï½¡I");
 	    }
 	    break;
 	case 920010800:
@@ -199,10 +199,10 @@ function action(mode, type, selection) {
 //	    cm.warpParty(920010100);
 	    break;
 	case 920010900:
-	    cm.sendNext("³o¸Ì¬OºÊº»¡C§A¥i¥H¦b³o¸Ì§ä¨ì¤@¨Ç¦nªF¦è¡A¦ı§Ú¤£»{¬°§Ú­Ì¦³¥ô¦ó¸H¤ù¦b³o¸Ì¡C"); 
+	    cm.sendNext("ï½³oï½¸ï¾Œï½¬Oï½ºï¾Šï½ºï½»ï½¡Cï½§Aï½¥iï½¥Hï½¦bï½³oï½¸ï¾Œï½§èŒ¯ãƒ»@ï½¨ï¾‡ï½¦nï½ªFï½¦é™¦Aï½¦ï£±ï½§ï¾šï½¤ï½£ï½»{ï½¬ï½°ï½§ï¾šï½­ï¾Œï½¦ï½³ï½¥î•îŠ«Hï½¤îœbï½³oï½¸ï¾Œï½¡C"); 
 	    break;
 	case 920011000:
-	    cm.sendNext("³o¬O¶ğªºÁô½ªªº©Ğ¶¡¡C§A¥i¥H¦b³o¸Ì§ä¨ì¤@¨Ç¦nªF¦è¡A¦ı§Ú¤£»{¬°§Ú­Ì¦³¥ô¦ó¸H¤ù¦b³o¸Ì¡C"); 
+	    cm.sendNext("ï½³oï½¬Oï½¶î©ï½ºï¾î¬ï½ªï½ªï½ºï½©ï¾ï½¶ï½¡ï½¡Cï½§Aï½¥iï½¥Hï½¦bï½³oï½¸ï¾Œï½§èŒ¯ãƒ»@ï½¨ï¾‡ï½¦nï½ªFï½¦é™¦Aï½¦ï£±ï½§ï¾šï½¤ï½£ï½»{ï½¬ï½°ï½§ï¾šï½­ï¾Œï½¦ï½³ï½¥î•îŠ«Hï½¤îœbï½³oï½¸ï¾Œï½¡C"); 
 	    break;
     }
     cm.dispose();

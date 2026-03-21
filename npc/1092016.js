@@ -1,4 +1,4 @@
-// ‹P‚­Î
+ï»¿// è¼ãçŸ³
 
 var npc_talk_status = -1;
 
@@ -11,8 +11,8 @@ function action(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 0:
 			{
-				// BBŒã
-				var text = "”ü‚µ‚­‹P‚­Î‚¾B‰½‚Æ‚È‚­_”é“I‚È—Í‚ªŠ´‚¶‚ç‚ê‚éB";
+				// BBå¾Œ
+				var text = "ç¾ã—ãè¼ãçŸ³ã ã€‚ä½•ã¨ãªãç¥ç§˜çš„ãªåŠ›ãŒæ„Ÿã˜ã‚‰ã‚Œã‚‹ã€‚";
 				return cm.sendSimple(text);
 			}
 		default:

@@ -1,4 +1,4 @@
-/*
+﻿/*
 	NPC Name: 		Asia
 	Description: 		Quest - Magic, Science and space
 */

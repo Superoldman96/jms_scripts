@@ -1,4 +1,4 @@
-/* Dr. Rhomes
+﻿/* Dr. Rhomes
 	Orbis Random/VIP Eye Color Change.
 */
 var status = -1;

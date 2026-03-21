@@ -1,5 +1,5 @@
-// ƒvƒ
-// ƒŠƒGƒ“‚©‚ç`Œû‚Ö
+ï»¿// ãƒ—ãƒ­
+// ãƒªã‚¨ãƒ³ã‹ã‚‰æ¸¯å£ã¸
 
 var npc_talk_status = -1;
 
@@ -12,8 +12,8 @@ function action(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 0:
 			{
-				// ƒeƒLƒXƒg“K“–
-				var text = "`Œû‚É–ß‚è‚Ü‚·‚©H";
+				// ãƒ†ã‚­ã‚¹ãƒˆé©å½“
+				var text = "æ¸¯å£ã«æˆ»ã‚Šã¾ã™ã‹ï¼Ÿ";
 				return cm.sendYesNo(text);
 			}
 		case 1:

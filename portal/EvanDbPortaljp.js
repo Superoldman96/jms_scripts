@@ -1,4 +1,4 @@
-// 103050101
+﻿// 103050101
 function enter(pi) {
 	var mapid = pi.getMapId();
 

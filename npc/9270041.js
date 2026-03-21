@@ -1,4 +1,4 @@
-var cost = 20000;
+﻿var cost = 20000;
 
 function start() {
     status = -1;

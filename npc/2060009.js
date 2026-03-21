@@ -1,4 +1,4 @@
-// �C���J
+﻿// イルカ
 
 var spawn_portal = Array(
 	[230000000, "market00"],
@@ -18,30 +18,30 @@ function action(mode, type, selection) {
 		case 0:
 			{
 				/*
-				var text = "���E�̑S�Ă̊C�͌q�����Ă��܂��B�����Ă͉����Ƃ���ł��C�ł����΋߂��Ȃ��ł��B#b�C���J�^�N�V�[#k�ɏ���Ĉړ����܂����B\r\n";
-				text += "#L" + 0 + "##b�C���J�^�N�V�[�`�P�b�g#k���g�p����#m230030200#�Ɉړ�����#l"
-				text += "#L" + 1 + "#10000 �����𕥂��A#m251000100#�Ɉړ�����B#l"
+				var text = "世界の全ての海は繋がっています。歩いては遠いところでも海でいけば近くなるんです。#bイルカタクシー#kに乗って移動しますか。\r\n";
+				text += "#L" + 0 + "##bイルカタクシーチケット#kを使用して#m230030200#に移動する#l"
+				text += "#L" + 1 + "#10000 メルを払い、#m251000100#に移動する。#l"
 				*/
 				var mapid = cm.getMapId();
-				var text = "���̒��̑S�Ă̊C�͌q�����Ă��܂��B�����Ɖ������ł��C�Ȃ炷���ł���B�ǂ��ł����H#b�C���J�^�N�V�[#k�ɏ���Ĉړ����܂����H\r\n";
+				var text = "世の中の全ての海は繋がっています。歩くと遠い所でも海ならすぐですよ。どうですか？#bイルカタクシー#kに乗って移動しますか？\r\n";
 				if (mapid == 230000000) {
-					text += "#L" + 230030200 + "##b#m230030200#�ɍs���B#k#l\r\n"
+					text += "#L" + 230030200 + "##b#m230030200#に行く。#k#l\r\n"
 					// 251000100
-					text += "#L" + 251000100 + "##b#m251000000#�ɍs���B#k#l\r\n"
-					text += "#L" + 923020000 + "##b���̊C�ɍs���B#k#l\r\n"
+					text += "#L" + 251000100 + "##b#m251000000#に行く。#k#l\r\n"
+					text += "#L" + 923020000 + "##b霧の海に行く。#k#l\r\n"
 					return cm.sendSimple(text);
 				}
 				if (mapid == 251000100) {
-					text += "#L" + 230000000 + "##b#m230000000#�ɍs���B#k#l\r\n"
+					text += "#L" + 230000000 + "##b#m230000000#に行く。#k#l\r\n"
 					// 251000100
-					text += "#L" + 923020000 + "##b���̊C�ɍs���B#k#l\r\n"
+					text += "#L" + 923020000 + "##b霧の海に行く。#k#l\r\n"
 					return cm.sendSimple(text);
 				}
-				// �f�o�b�O���[�h
-				text += "#L" + 230000000 + "##b#m230000000#�ɍs���B#k#l\r\n"
-				text += "#L" + 230030200 + "##b#m230030200#�ɍs���B#k#l\r\n"
-				text += "#L" + 251000100 + "##b#m251000000#�ɍs���B#k#l\r\n"
-				text += "#L" + 923020000 + "##b���̊C�ɍs���B#k#l\r\n"
+				// デバッグモード
+				text += "#L" + 230000000 + "##b#m230000000#に行く。#k#l\r\n"
+				text += "#L" + 230030200 + "##b#m230030200#に行く。#k#l\r\n"
+				text += "#L" + 251000100 + "##b#m251000000#に行く。#k#l\r\n"
+				text += "#L" + 923020000 + "##b霧の海に行く。#k#l\r\n"
 
 				return cm.sendSimple(text);
 			}
@@ -51,7 +51,7 @@ function action(mode, type, selection) {
 				for (var i = 0; i < spawn_portal.length; i++) {
 					if (spawn_portal[i][0] == mapid) {
 						if (mapid == 923020000) {
-							// ���̊C
+							// 霧の海
 							cm.saveLocation("MULUNG_TC");
 						}
 						cm.warp(spawn_portal[i][0], spawn_portal[i][1]);

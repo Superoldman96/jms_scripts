@@ -1,4 +1,4 @@
-/* Dr. Lenu
+﻿/* Dr. Lenu
 	Henesys Random/VIP Eye Color Change.
 */
 var status = -1;

@@ -1,4 +1,4 @@
-/* Mino the Owner
+﻿/* Mino the Owner
 	Orbis VIP Hair/Hair Color Change.
 */
 var status = 0;

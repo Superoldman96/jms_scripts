@@ -1,4 +1,4 @@
-
+﻿
 function act() {
     rm.mapMessage(6, "The music played through the air.");
 	var em = rm.getEventManager("OrbisPQ");

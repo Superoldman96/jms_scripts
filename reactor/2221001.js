@@ -1,4 +1,4 @@
-/*
+﻿/*
 KFT Reactor - Blue King Goblin
 */
 

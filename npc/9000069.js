@@ -1,6 +1,6 @@
-// ƒXƒYƒŠ
-// 7Žü”N
-// ƒeƒXƒg—p“r
+ï»¿// ã‚¹ã‚ºãƒª
+// 7å‘¨å¹´
+// ãƒ†ã‚¹ãƒˆç”¨é€”
 
 var npc_talk_status = -1;
 
@@ -13,7 +13,7 @@ function action(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 0:
 			{
-				var text = "ƒeƒXƒg\r\n";
+				var text = "ãƒ†ã‚¹ãƒˆ\r\n";
 				text += "#L" + 0 + "##b#k#l\r\n";
 				text += "#L" + 1 + "##b#k#l\r\n";
 				return cm.sendSimple(text);

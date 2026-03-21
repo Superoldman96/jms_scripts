@@ -1,4 +1,4 @@
-/* Ria
+﻿/* Ria
 	lolcastle NPC
 */
 

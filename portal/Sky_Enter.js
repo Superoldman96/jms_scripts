@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     if (pi.getPlayer().getSkillLevel(1026) > 0 || pi.getPlayer().getSkillLevel(10001026) > 0 || pi.getPlayer().getSkillLevel(20001026) > 0 || pi.getPlayer().getSkillLevel(20011026) > 0 || pi.getPlayer().getSkillLevel(30001026) > 0) {
 	var eim = pi.getDisconnected("Dragonica");
 	if (eim != null && pi.getPlayer().getParty() != null) { //only skip if not null

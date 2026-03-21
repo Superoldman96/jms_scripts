@@ -1,4 +1,4 @@
-/*
+﻿/*
  * MAP  : Vanished village
  * FUNC : Bamboo warrior Reactor
  */

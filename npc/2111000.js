@@ -1,4 +1,4 @@
-// �J�\��
+﻿// カソン
 var npc_talk_status = -1;
 
 function action(mode, type, selection) {
@@ -10,7 +10,7 @@ function action(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 0:
 			{
-				var text = "�B���p�A�����ĘB���p�t�c�ǂ�����d�v�����A�ł��d�v�Ȃ̂͘B���p�̗��j��S���Ă������̃}�K�e�B�A�Ƃ����̑�ȑ����B�}�K�e�B�A�̗��j�͂��ꂩ�������Ă����Ȃ���΂Ȃ�Ȃ��B�N�ɂ��̗͂����邩�H\r\n";
+				var text = "錬金術、そして錬金術師…どちらも重要だが、最も重要なのは錬金術の歴史を担ってきたこのマガティアという偉大な村だ。マガティアの歴史はこれからも守っていかなければならない。君にその力があるか？\r\n";
 				return cm.sendSimple(text);
 			}
 		case 1:

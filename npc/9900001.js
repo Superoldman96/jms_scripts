@@ -1,4 +1,4 @@
-/** Author: nejevoli
+﻿/** Author: nejevoli
 	NPC Name: 		NimaKin
 	Map(s): 		Victoria Road : Ellinia (180000000)
 	Description: 		Maxes out your stats and able to modify your equipment stats

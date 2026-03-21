@@ -1,4 +1,4 @@
-function start() {
+﻿function start() {
 	if (cm.getPlayer().getMapId() == 950101100) {
 		if (cm.haveItem(4001433, 30)) {
 			cm.gainItem(4001433, -30);

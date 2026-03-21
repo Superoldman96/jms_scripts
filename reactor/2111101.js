@@ -1,4 +1,4 @@
-/*
+﻿/*
 Zakum Altar - Summons Zakum.
 */
 

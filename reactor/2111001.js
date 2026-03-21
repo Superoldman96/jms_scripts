@@ -1,11 +1,11 @@
-/*
-	ƒWƒƒƒNƒ€¢Š«
+ï»¿/*
+	ã‚¸ãƒ£ã‚¯ãƒ å¬å–š
 */
 
 function act() {
 	rm.changeMusic("Bgm06/FinalFight");
 	rm.spawnZakum();
-	rm.mapMessage("‰Î‚Ì–Ú‚Ì—Í‚ÅƒWƒƒƒNƒ€‚ª¢Š«‚³‚ê‚Ü‚·B");
+	rm.mapMessage("ç«ã®ç›®ã®åŠ›ã§ã‚¸ãƒ£ã‚¯ãƒ ãŒå¬å–šã•ã‚Œã¾ã™ã€‚");
 
 	if (!rm.getPlayer().isGM()) {
 		rm.getMap().startSpeedRun();

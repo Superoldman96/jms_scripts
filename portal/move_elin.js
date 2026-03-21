@@ -1,4 +1,4 @@
-// ƒGƒŠƒ“X‚ÌMap.wz‚ªƒoƒO‚Á‚Ä‚é
+ï»¿// ã‚¨ãƒªãƒ³æ£®ã®Map.wzãŒãƒã‚°ã£ã¦ã‚‹
 function enter(pi) {
 	pi.playPortalSE();
 	pi.warp(300000100, "out00");

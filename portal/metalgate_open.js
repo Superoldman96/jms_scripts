@@ -1,4 +1,4 @@
-/*
+﻿/*
 Stage 2: Door guarded by Dark Muscle Golems - Guild Quest
 
 @Author Lerk

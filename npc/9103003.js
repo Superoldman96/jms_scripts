@@ -1,4 +1,4 @@
-/*
+﻿/*
 	Rolly - Ludibirum Maze PQ
 */
 var status = 0;

@@ -1,4 +1,4 @@
-var status = -1;
+﻿var status = -1;
 
 function start() {
     if (cm.getMapId() == 802000820) {

@@ -1,4 +1,4 @@
-var status = -1;
+﻿var status = -1;
 
 function start(mode, type, selection) {
 	qm.sendNext("Haha.. come to #b#m140000000##k. I want to give you something...");

@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
  try {
     var em = pi.getEventManager("OrbisPQ");
 /*    if (em != null && em.getProperty("stage6_" + (pi.getPortal().getName().substring(2, 5)) + "").equals("1")) {

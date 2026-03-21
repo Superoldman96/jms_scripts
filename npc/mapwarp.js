@@ -1,5 +1,5 @@
-// ƒhƒC
-// ‚è‚ê‚³‚Îd—l
+ï»¿// ãƒ‰ã‚¤
+// ã‚Šã‚Œã•ã°ä»•æ§˜
 var towns = Array(
 	1000000, 2000000,
 	100000000, 101000000, 102000000, 103000000, 104000000, 105040300, 120000200, 110000000,
@@ -25,7 +25,7 @@ var towns = Array(
 );
 
 
-// ƒJƒXƒ^ƒ€ƒ}ƒbƒv
+// ã‚«ã‚¹ã‚¿ãƒ ãƒãƒƒãƒ—
 var towns_custom = Array(
 	60000,
 	209000000,
@@ -40,7 +40,7 @@ var event_maps = Array(
 );
 
 function start() {
-	var text = "‘î”zæ‚ğ‘I‘ğ‚µ‚Ä‚­‚¾‚³‚¢\r\n";
+	var text = "å®…é…å…ˆã‚’é¸æŠã—ã¦ãã ã•ã„\r\n";
 
 	for (var i = 0; i < towns_custom.length; i++) {
 		text += "#r#L" + towns_custom[i] + "##m" + towns_custom[i] + "#(" +towns_custom[i] + ")#l#k\r\n";

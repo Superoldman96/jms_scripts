@@ -1,4 +1,4 @@
-var status = -1;
+﻿var status = -1;
 var nitems = Array("2 million mesos", "10k A-Cash", "#v2340000#White Scroll", "#v2049100#Chaos Scroll x 5", "#v5220000#Ga-cha-pon Ticket x 25", "#v5050000#AP Reset x 5", "#v5062000#Miracle Cube x 4", "#v5062000#Miracle Cube x 21");
 var np = Array(1, 1, 5, 2, 1, 1, 1, 5);
 var ditems = Array("#v5211000#2x EXP Card (1 Day)", "#v5360017#2x Drop/Meso Card (1 Day)", "#v4030005#2x A-Cash Card (1 Day)", "#v5650000#Party Bonus Coupon (5 Day)", "#v5000057#Pet Kino (7 Day)", "#v5000015#Pet Rudolph (7 Day)", "#v5451000#Premium Dungeon Card (3-Day)", "#v4030004#Clone (1-Day)");

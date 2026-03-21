@@ -1,5 +1,5 @@
-// �`���[���[�R��
-// �`�F���N�G
+﻿// チャーリー軍曹
+// チェリクエ
 
 var status = 0;
 var eQuestChoices = new Array(4000073, 4000059, 4000060, 4000061, 4000058,
@@ -167,14 +167,14 @@ function start() {
 function action(mode, type, selection) {
 
 	if (mode == 0 && (status == 1 || status == 3)) {
-		cm.sendNext("�������c ���܂舫�������Ƃ͎v��Ȃ����ȁB�^�C�~���O�������Ό@��o�����ƌ����ł��邩���ȁB�Ƃɂ����C���������炢�ł�������B");
+		cm.sendNext("そうか… あまり悪い条件とは思わないがな。タイミングが合えば掘り出し物と交換できるかもな。とにかく気が向いたらいつでも来いよ。");
 		cm.dispose();
 		return;
 	} else if (mode == 0 && status == 3) {
 		cm.dispose();
 	} else if (mode == 0 && status == 4) {
-		// �I��ŃL�����Z�� �����ʂ�Ȃ�?
-		cm.sendNext("�ق��c ���܂舫�������Ƃ͎v��Ȃ����B�^�C�~���O�����悯��΂��������������̂������ł��邩���ȁB�Ƃɂ����C���������炢�ł�������B");
+		// 選んでキャンセル ここ通らない?
+		cm.sendNext("ほう… あまり悪い条件とは思わないが。タイミングさえよければけっこういいものも交換できるかもな。とにかく気が向いたらいつでも来いよ。");
 		cm.dispose();
 		return;
 	}
@@ -183,24 +183,24 @@ function action(mode, type, selection) {
 	else
 		status--;
 	if (status == 0) { // first interaction with NPC
-		// BB��
-		cm.sendNext("���� ������Ƃ������H���͎����͂��̕t�߂��瓾����F�X�Ȃ��̂�ʂ̑��Ŕ����Ă���d�������Ă���̂��B�ŋ߂̓����X�^�[����ɕ����Ȃ����珤�i�̎d����ɍ����Ă���B�ǂ����H�����Ǝ�����Ȃ����H");
+		// BB後
+		cm.sendNext("おい ちょっといいか？実は自分はこの付近から得られる色々なものを別の村で売っている仕事をしているのだ。最近はモンスターが手に負えないから商品の仕入れに困っている。どうだ？自分と取引しないか？");
 	} else if (status == 1) {
-		cm.sendYesNo("����Ƃ����̂͊ȒP���B�������K�v�Ȃ��̂������Ă����΂��̑���Ɏ����������Ă�����̂��N�ɂ�낤�B���������A�吨�̐l�𑊎�ɂ���Ǝ����Ă���̂��̂������������Ƃ͌���Ȃ��B��������x�ɌN�ɂ���������̂��Ⴄ�����m��Ȃ����B�ǂ����H����Ă݂邩�H");
+		cm.sendYesNo("取引というのは簡単だ。自分が必要なものを持ってくれればその代わりに自分が持っているものを君にやろう。しかしだ、大勢の人を相手にすると持っているのものが何時も同じとは限らない。交換する度に君にあげられるものが違うかも知れないぜ。どうだ？やってみるか？");
 	} else if (status == 2) {
 		var eQuestChoice = makeChoices(eQuestChoices);
 		cm.sendSimple(eQuestChoice);
 	} else if (status == 3) {
 		lastSelection = selection;
 		requiredItem = eQuestChoices[selection];
-		cm.sendYesNo("#b#t" + requiredItem + "##k 100�����̂��̂ƌ����������Ƃ������Ƃ��H�܂���������O�ɏ����ETC�̃C���x���g�����󂢂Ă��邩�m�F���Ă���B�ł͖{���Ɍ������邩�H");
+		cm.sendYesNo("#b#t" + requiredItem + "##k 100個を俺のものと交換したいということか？まず交換する前に消費とETCのインベントリが空いているか確認してくれ。では本当に交換するか？");
 	} else if (status == 4) {
 		itemSet = (Math.floor(Math.random() * eQuestPrizes[lastSelection].length));
 		reward = eQuestPrizes[lastSelection];
 		prizeItem = reward[itemSet][0];
 		prizeQuantity = reward[itemSet][1];
 		if (!cm.haveItem(requiredItem, 100)) {
-			cm.sendOk("���ށc �N #b#t" + requiredItem + "##k 100�͂����Ǝ����Ă���̂��H�Ȃ�C���x���g�����󂢂Ă��邩������x�m�F���Ă���B");
+			cm.sendOk("うむ… 君 #b#t" + requiredItem + "##k 100個はちゃんと持っているのか？ならインベントリが空いているかもう一度確認してくれ。");
 		} else if (!cm.canHold(prizeItem)) {
 			cm.sendNext("Your use and etc. inventory seems to be full. You need the free spaces to trade with me! Make room, and then find me.");
 		} else {
@@ -214,7 +214,7 @@ function action(mode, type, selection) {
 }
 
 function makeChoices(a) {
-	var result = "�悵�I�܂������ɂǂ�Ȃ��̂�����邩�I��ł���B�������̂������Ƃ����Ƃ������̂ƌ����ł��邩��ȁB\r\n";
+	var result = "よし！まず自分にどんなものをくれるか選んでくれ。いいものをくれるともっといいものと交換できるからな。\r\n";
 	for (var x = 0; x < a.length; x++) {
 		result += " #L" + x + "##v" + a[x] + "#  #t" + a[x] + "##l\r\n";
 	}

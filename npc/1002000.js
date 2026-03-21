@@ -1,8 +1,8 @@
-// �s��
-// �^�N�V�[
-// �e�L�X�g�s���Ő������e���s���Ȃ̂ňړ�������������
+﻿// ピル
+// タクシー
+// テキスト不足で説明内容が不明なので移動処理だけ実装
 
-// �����ʂ�̕���
+// 原文通りの並び
 var taxi_map = Array(
 	[101000000, 0],
 	[102000000, 0],
@@ -23,22 +23,22 @@ function action(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 1:
 			{
-				// �����}�}
-				var text = "�N�͏��S�҂ł͂Ȃ��ȁH�Ȃ痿���͋K��ǂ���ɂ����������H�����A�ǂ̑��֍s�������񂾂��H\r\n";
+				// 原文ママ
+				var text = "君は初心者ではないな？なら料金は規定どおりにいただくぜ？さあ、どの村へ行きたいんだい？\r\n";
 				var mapid = cm.getMapId();
 				for (var i = 0; i < taxi_map.length; i++) {
-					// ���݂̃}�b�v�̓X�L�b�v
+					// 現在のマップはスキップ
 					if (mapid == taxi_map[i][0]) {
 						continue;
 					}
-					text += "#L" + taxi_map[i][0] + "##b#m" + taxi_map[i][0] + "#(" + taxi_map[i][1] + "����)#k#l\r\n";
+					text += "#L" + taxi_map[i][0] + "##b#m" + taxi_map[i][0] + "#(" + taxi_map[i][1] + "メル)#k#l\r\n";
 				}
 				return cm.sendSimple(text);
 			}
 		case 2:
 			{
 				to_map = selection;
-				var text = "�����ł͂����p�����Ȃ��悤�ł��ˁB�{����#m" + to_map + "#�ֈړ����܂����H\r\n";
+				var text = "ここではもう用事がないようですね。本当に#m" + to_map + "#へ移動しますか？\r\n";
 				return cm.sendYesNo(text);
 			}
 		case 3:

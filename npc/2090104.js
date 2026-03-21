@@ -1,4 +1,4 @@
-/* Noma
+﻿/* Noma
 	Mu Lung Random/VIP Eye Change.
 */
 var status = -1;

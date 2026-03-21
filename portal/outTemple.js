@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Get out of Time Temple
  */
 

@@ -1,5 +1,5 @@
-// “¬‹Zê
-// ƒZƒU[ƒ‹
+ï»¿// é—˜æŠ€å ´
+// ã‚»ã‚¶ãƒ¼ãƒ«
 
 var npc_talk_status = -1;
 function action(mode, type, selection) {
@@ -12,11 +12,11 @@ function action(mode, type, selection) {
 		case 0:
 			{
 				var mapid = cm.getMapId();
-				var text = "‰½‚Ì‚æ‚¤‚¾H\r\n";
-				text += "#L" + 0 + "##bˆê”Ô–Ú“¬‹Zê(‹óº)#k#l\r\n";
-				text += "#L" + 1 + "##b“ñ”Ô–Ú“¬‹Zê(‹óº)#k#l\r\n";
-				text += "#L" + 2 + "##bO”Ô–Ú“¬‹Zê(‹óº)#k#l\r\n";
-				text += "#L" + 3 + "##b“¬‹Z‘å‰ï‚É‚Â‚¢‚Ä’m‚è‚½‚¢‚Å‚·B#k#l\r\n";
+				var text = "ä½•ã®ã‚ˆã†ã ï¼Ÿ\r\n";
+				text += "#L" + 0 + "##bä¸€ç•ªç›®é—˜æŠ€å ´(ç©ºå®¤)#k#l\r\n";
+				text += "#L" + 1 + "##bäºŒç•ªç›®é—˜æŠ€å ´(ç©ºå®¤)#k#l\r\n";
+				text += "#L" + 2 + "##bä¸‰ç•ªç›®é—˜æŠ€å ´(ç©ºå®¤)#k#l\r\n";
+				text += "#L" + 3 + "##bé—˜æŠ€å¤§ä¼šã«ã¤ã„ã¦çŸ¥ã‚ŠãŸã„ã§ã™ã€‚#k#l\r\n";
 				return cm.sendSimple(text);
 			}
 		case 1:

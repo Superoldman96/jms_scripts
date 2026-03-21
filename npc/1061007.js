@@ -1,5 +1,5 @@
-// ����Ă��鑜
-// �X���[�s�[�E�b�h�E��
+﻿// 崩れている像
+// スリーピーウッド忍耐
 
 var npc_talk_status = -1;
 
@@ -12,8 +12,8 @@ function action(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 0:
 			{
-				// BB��
-				var text = "�Α��Ɏ���o���Ă݂�ƕs�v�c�Ȍ��ɑS�g���܂�A���ɋz�����܂��悤�Ȋ��o�ɏP���܂����B���̂܂܃X���[�s�[�E�b�h�ɖ߂�܂����H�H\r\n";
+				// BB後
+				var text = "石像に手を出してみると不思議な光に全身を包まれ、中に吸い込まれるような感覚に襲われました。このままスリーピーウッドに戻りますか？？\r\n";
 				return cm.sendYesNo(text);
 			}
 		case 1:

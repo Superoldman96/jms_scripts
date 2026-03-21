@@ -1,4 +1,4 @@
-var status = -1;
+ï»¿var status = -1;
 
 function action(mode, type, selection) {
 	if (mode == 1) {
@@ -11,26 +11,26 @@ function action(mode, type, selection) {
 		switch (status) {
 			case 0:
 				{
-					var text = "‚³‚Ÿc‰½‚ğ‚·‚é‚ñ‚¾H\r\n";
-					text += "#L" + 1 + "##b" + "ƒ_ƒ“ƒWƒ‡ƒ““üêi“ïˆÕ“xFƒm[ƒ}ƒ‹E‰“ª‘à—pj" + "#l#k\r\n";
-					text += "#L" + 2 + "##b" + "ƒ_ƒ“ƒWƒ‡ƒ““üêi“ïˆÕ“xFƒn[ƒhE‰“ª‘à—pj" + "#l#k\r\n";
-					text += "#L" + 3 + "##b" + "ƒ{ƒXƒ‚ƒ“ƒXƒ^[‘Îíiƒ\ƒj" + "#l#k\r\n";
-					text += "#L" + 4 + "##b" + "ƒ{ƒXƒ‚ƒ“ƒXƒ^[‘ÎíiƒOƒ‹[ƒvj" + "#l#k\r\n";
-					text += "#L" + 5 + "##b" + "ƒtƒŠƒ}“üŒû‚Ö" + "#l#k\r\n";
+					var text = "ã•ãâ€¦ä½•ã‚’ã™ã‚‹ã‚“ã ï¼Ÿ\r\n";
+					text += "#L" + 1 + "##b" + "ãƒ€ãƒ³ã‚¸ãƒ§ãƒ³å…¥å ´ï¼ˆé›£æ˜“åº¦ï¼šãƒãƒ¼ãƒãƒ«ãƒ»é å¾éšŠç”¨ï¼‰" + "#l#k\r\n";
+					text += "#L" + 2 + "##b" + "ãƒ€ãƒ³ã‚¸ãƒ§ãƒ³å…¥å ´ï¼ˆé›£æ˜“åº¦ï¼šãƒãƒ¼ãƒ‰ãƒ»é å¾éšŠç”¨ï¼‰" + "#l#k\r\n";
+					text += "#L" + 3 + "##b" + "ãƒœã‚¹ãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼å¯¾æˆ¦ï¼ˆã‚½ãƒ­ï¼‰" + "#l#k\r\n";
+					text += "#L" + 4 + "##b" + "ãƒœã‚¹ãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼å¯¾æˆ¦ï¼ˆã‚°ãƒ«ãƒ¼ãƒ—ï¼‰" + "#l#k\r\n";
+					text += "#L" + 5 + "##b" + "ãƒ•ãƒªãƒå…¥å£ã¸" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return;
 				}
 			case 1:
 				{
 					if (selection == 3) {
-						cm.sendYesNo("ƒNƒŠƒ€ƒ]ƒ“ƒEƒbƒh‚Ì¹’n‚É–°‚é“G‚Æˆêl‚Åí‚Á‚Ä‚İ‚é‚©H");
+						cm.sendYesNo("ã‚¯ãƒªãƒ ã‚¾ãƒ³ã‚¦ãƒƒãƒ‰ã®è–åœ°ã«çœ ã‚‹æ•µã¨ä¸€äººã§æˆ¦ã£ã¦ã¿ã‚‹ã‹ï¼Ÿ");
 						return;
 					}
 					else if (selection == 5) {
 						cm.warp(910000000, "out00");
 					}
 					else {
-						cm.sendOk("ƒ{ƒXƒ‚ƒ“ƒXƒ^[‘Îíiƒ\ƒj‚ğ‘I‘ğ‚µ‚Ä‚­‚¾‚³‚¢");
+						cm.sendOk("ãƒœã‚¹ãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼å¯¾æˆ¦ï¼ˆã‚½ãƒ­ï¼‰ã‚’é¸æŠã—ã¦ãã ã•ã„");
 					}
 					break;
 				}
@@ -50,7 +50,7 @@ function action(mode, type, selection) {
 	else {
 		var id = cm.getNpc();
 		var mapid = cm.getMapId();
-		var text = "ƒfƒoƒbƒOî•ñ\r\n";
+		var text = "ãƒ‡ãƒãƒƒã‚°æƒ…å ±\r\n";
 		text += "#p" + id + "#\r\n";
 		text += "NPC ID = #b" + id + "#k\r\n";
 		text += "#m" + mapid + "#\r\n";

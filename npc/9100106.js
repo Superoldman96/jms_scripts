@@ -1,14 +1,14 @@
-// ƒKƒVƒƒƒ|ƒ“ ƒLƒmƒR_Ğ
+ï»¿// ã‚¬ã‚·ãƒ£ãƒãƒ³ ã‚­ãƒã‚³ç¥ç¤¾
 
 var rewards = new Array(
-	// ƒ}ƒ“ƒg
+	// ãƒãƒ³ãƒˆ
 	1102040,
 	1102041,
 	1102042,
 	1102084,
 	1102085,
 	1102086,
-	// –Xq
+	// å¸½å­
 	1002391,
 	1002392,
 	1002894,
@@ -20,7 +20,7 @@ var rewards = new Array(
 	1002900,
 	1002901,
 	1002902,
-	// è‘Ü
+	// æ‰‹è¢‹
 	1082002,
 	1082145,
 	1082146,
@@ -28,16 +28,16 @@ var rewards = new Array(
 	1082148,
 	1082149,
 	1082150,
-	// ŒC
+	// é´
 	1072264,
-	// –Ú
+	// ç›®
 	1022047,
 	1022060,
 	1022067,
-	// Šç
+	// é¡”
 	1012056,
 	1012135,
-	// •Ší
+	// æ­¦å™¨
 	1402013,
 	1302105,
 	1312039,
@@ -55,7 +55,7 @@ var rewards = new Array(
 	1472077,
 	1482029,
 	1492030,
-	// –h‹ï
+	// é˜²å…·
 	1050100,
 	1050127,
 	1051098,
@@ -84,7 +84,7 @@ var rewards = new Array(
 	1002668,
 	1003112,
 	1002574,
-	2022025 // ‚½‚±Ä‚«ƒWƒƒƒ“ƒ{
+	2022025 // ãŸã“ç„¼ãã‚¸ãƒ£ãƒ³ãƒœ
 );
 
 function RandomRewards() {
@@ -93,7 +93,7 @@ function RandomRewards() {
 }
 
 function ShowProb() {
-	var text = "”roŠm—¦\r\n";
+	var text = "æ’å‡ºç¢ºç‡\r\n";
 
 	for (var i = 0; i < rewards.length; i++) {
 		text += "#v" + rewards[i] + "##t" + rewards[i] + "# #b(" + Math.floor(1 / rewards.length * 100) + "%)#k\r\n";
@@ -115,9 +115,9 @@ function action(mode, type, selection) {
 		case 0:
 			{
 				if (old_selection == -1) {
-					var text = "ƒKƒVƒƒƒ|ƒ“‚Å‚·B\r\n";
-					text += "#L" + 1 + "##b" + "ƒKƒVƒƒƒ|ƒ“‚ğ—˜—p‚µ‚½‚¢‚Å‚·" + "#l#k\r\n";
-					text += "#L" + 0 + "##b" + "”ro—¦" + "#l#k\r\n";
+					var text = "ã‚¬ã‚·ãƒ£ãƒãƒ³ã§ã™ã€‚\r\n";
+					text += "#L" + 1 + "##b" + "ã‚¬ã‚·ãƒ£ãƒãƒ³ã‚’åˆ©ç”¨ã—ãŸã„ã§ã™" + "#l#k\r\n";
+					text += "#L" + 0 + "##b" + "æ’å‡ºç‡" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return;
 				}
@@ -136,11 +136,11 @@ function action(mode, type, selection) {
 						{
 							var ticket = 5220000;
 							if (cm.haveItem(ticket)) {
-								cm.sendYesNo("ƒKƒVƒƒƒ|ƒ“‚ª’u‚¢‚Ä‚ ‚éB#t" + ticket + "#‚ğg‚¢‚Ü‚·‚©H");
+								cm.sendYesNo("ã‚¬ã‚·ãƒ£ãƒãƒ³ãŒç½®ã„ã¦ã‚ã‚‹ã€‚#t" + ticket + "#ã‚’ä½¿ã„ã¾ã™ã‹ï¼Ÿ");
 								return;
 							}
 							else {
-								cm.sendNext("ƒKƒVƒƒƒ|ƒ“‚ª’u‚¢‚Ä‚ ‚éc");
+								cm.sendNext("ã‚¬ã‚·ãƒ£ãƒãƒ³ãŒç½®ã„ã¦ã‚ã‚‹â€¦");
 							}
 
 							break;
@@ -157,7 +157,7 @@ function action(mode, type, selection) {
 					var reward = RandomRewards();
 					cm.gainItem(5220000, -1);
 					cm.Gashapon(reward, 1);
-					cm.sendOk("#b#t" + reward + "##k‚PŒÂ‚ğŠl“¾‚µ‚Ü‚µ‚½I");
+					cm.sendOk("#b#t" + reward + "##kï¼‘å€‹ã‚’ç²å¾—ã—ã¾ã—ãŸï¼");
 				}
 				break;
 			}

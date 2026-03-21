@@ -1,7 +1,7 @@
-// ƒKƒVƒƒƒ|ƒ“ ƒwƒlƒVƒX
+ï»¿// ã‚¬ã‚·ãƒ£ãƒãƒ³ ãƒ˜ãƒã‚·ã‚¹
 
 var rewards = new Array(
-	// İ’u
+	// è¨­ç½®
 	3010013,
 	3010058,
 	3010091,
@@ -15,16 +15,16 @@ var rewards = new Array(
 	// ETC
 	4001396,
 	4130012,
-	4001010, // ƒ}ƒ}ƒVƒ…‚ÌÁ‚µƒSƒ€ “¯‚¶‚Ì‚ª2‚Â‚ ‚é?
+	4001010, // ãƒãƒã‚·ãƒ¥ã®æ¶ˆã—ã‚´ãƒ  åŒã˜ã®ãŒ2ã¤ã‚ã‚‹?
 	4001039,
-	// Á”ï
+	// æ¶ˆè²»
 	2049002,
 	2000019,
 	2000004,
 
-	// ƒeƒXƒg
-	2022025, // ƒwƒlƒVƒX
-	2022027 // ƒwƒlƒVƒX
+	// ãƒ†ã‚¹ãƒˆ
+	2022025, // ãƒ˜ãƒã‚·ã‚¹
+	2022027 // ãƒ˜ãƒã‚·ã‚¹
 );
 
 function RandomRewards() {
@@ -33,7 +33,7 @@ function RandomRewards() {
 }
 
 function ShowProb() {
-	var text = "”roŠm—¦\r\n";
+	var text = "æ’å‡ºç¢ºç‡\r\n";
 
 	for (var i = 0; i < rewards.length; i++) {
 		text += "#v" + rewards[i] + "##t" + rewards[i] + "# #b(" + Math.floor(1 / rewards.length * 100) + "%)#k\r\n";
@@ -55,9 +55,9 @@ function action(mode, type, selection) {
 		case 0:
 			{
 				if (old_selection == -1) {
-					var text = "ƒKƒVƒƒƒ|ƒ“‚Å‚·B\r\n";
-					text += "#L" + 1 + "##b" + "ƒKƒVƒƒƒ|ƒ“‚ğ—˜—p‚µ‚½‚¢‚Å‚·" + "#l#k\r\n";
-					text += "#L" + 0 + "##b" + "”ro—¦" + "#l#k\r\n";
+					var text = "ã‚¬ã‚·ãƒ£ãƒãƒ³ã§ã™ã€‚\r\n";
+					text += "#L" + 1 + "##b" + "ã‚¬ã‚·ãƒ£ãƒãƒ³ã‚’åˆ©ç”¨ã—ãŸã„ã§ã™" + "#l#k\r\n";
+					text += "#L" + 0 + "##b" + "æ’å‡ºç‡" + "#l#k\r\n";
 					cm.sendSimple(text);
 					return;
 				}
@@ -76,11 +76,11 @@ function action(mode, type, selection) {
 						{
 							var ticket = 5220000;
 							if (cm.haveItem(ticket)) {
-								cm.sendYesNo("ƒKƒVƒƒƒ|ƒ“‚ª’u‚¢‚Ä‚ ‚éB#t" + ticket + "#‚ğg‚¢‚Ü‚·‚©H");
+								cm.sendYesNo("ã‚¬ã‚·ãƒ£ãƒãƒ³ãŒç½®ã„ã¦ã‚ã‚‹ã€‚#t" + ticket + "#ã‚’ä½¿ã„ã¾ã™ã‹ï¼Ÿ");
 								return;
 							}
 							else {
-								cm.sendNext("ƒKƒVƒƒƒ|ƒ“‚ª’u‚¢‚Ä‚ ‚éc");
+								cm.sendNext("ã‚¬ã‚·ãƒ£ãƒãƒ³ãŒç½®ã„ã¦ã‚ã‚‹â€¦");
 							}
 
 							break;
@@ -97,7 +97,7 @@ function action(mode, type, selection) {
 					var reward = RandomRewards();
 					cm.gainItem(5220000, -1);
 					cm.gainItem(reward, 1);
-					cm.sendOk("#b#t" + reward + "##k‚PŒÂ‚ğŠl“¾‚µ‚Ü‚µ‚½I");
+					cm.sendOk("#b#t" + reward + "##kï¼‘å€‹ã‚’ç²å¾—ã—ã¾ã—ãŸï¼");
 				}
 				break;
 			}

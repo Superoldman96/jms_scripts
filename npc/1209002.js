@@ -1,4 +1,4 @@
-2
+﻿2
 var status = 0;
 
 function start() {

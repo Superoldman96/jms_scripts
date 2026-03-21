@@ -1,4 +1,4 @@
-// �����V�B���p�t
+﻿// 風来坊錬金術師
 
 var npc_talk_status = 0;
 
@@ -11,21 +11,21 @@ function action(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 1:
 			{
-				// BB��
-				var text = "���O���̐�ƃt�N���E�̚{��1:1�̔䗦�ō������킹�āc����I�ق̂��Ȍ��̕������邱�Ƃ�Y��Ă��B��ρ`�I����H�����炻���ɂ��܂����H���c�l�����܂�ɂ��d���ɖ����ɂȂ��Ă��ċC�Â��Ă��Ȃ������̂��B����͎��h�B\r\n";
+				// BB後
+				var text = "モグラの舌とフクロウの嘴を1:1の比率で混ぜ合わせて…あれ！ほのかな光の粉を入れることを忘れてた。大変～！あれ？いつからそこにいました？あ…僕があまりにも仕事に夢中になっていて気づいていなかったのか。これは失敬。\r\n";
 				return cm.sendSimple(text);
 			}
 		case 2:
 			{
-				// BB��
-				var text = "�����̒ʂ�A�l�͕����V�̘B���p�t�ł��B�܂����n�҂ł����A���Ȃ����K�v�Ȃ��̂����邩������܂���B��x���Ă݂܂����H\r\n";
-				text += "#L" + 4006000 + "##b���@�̐΍��#k#l\r\n";
-				text += "#L" + 4006001 + "##b�����̐΍��#k#l\r\n";
+				// BB後
+				var text = "ご覧の通り、僕は風来坊の錬金術師です。まだ未熟者ですが、あなたが必要なものを作れるかもしれません。一度見てみますか？\r\n";
+				text += "#L" + 4006000 + "##b魔法の石作り#k#l\r\n";
+				text += "#L" + 4006001 + "##b召喚の石作り#k#l\r\n";
 				return cm.sendSimple(text);
 			}
 		case 3:
 			{
-				// �f�o�b�O���[�h
+				// デバッグモード
 				var itemid = selection;
 				cm.gainItem(itemid, 100);
 				return cm.dispose();

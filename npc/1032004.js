@@ -1,5 +1,5 @@
-// ���C�X
-// �G���j�A�E��
+﻿// ルイス
+// エリニア忍耐
 
 var npc_talk_status = -1;
 
@@ -12,8 +12,8 @@ function action(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 0:
 			{
-				// BB��
-				var text = "�O�֏o�����̂��H�@�h���̂��c���̂��炢�ł�����߂�Ȃ�B��x��������o��ƁA���߂����蒼�����Ƃ������Ƃ͊o�債�Ă���ȁB�ǂ����A�o��̂��H";
+				// BB後
+				var text = "外へ出たいのか？　辛いのか…このくらいであきらめるなよ。一度ここから出ると、初めからやり直しだということは覚悟しているな。どうだ、出るのか？";
 				return cm.sendYesNo(text);
 			}
 		case 1:

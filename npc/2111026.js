@@ -1,4 +1,4 @@
-// –¢Š®¬–‚–@w
+ï»¿// æœªå®Œæˆé­”æ³•é™£
 var npc_talk_status = -1;
 
 function action(mode, type, selection) {
@@ -10,10 +10,10 @@ function action(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 0:
 			{
-				// ‚Å‚¡‚Æ‚Æ‚ë‚¢
+				// ã§ãƒã¨ã¨ã‚ã„
 				cm.getMap().killMonster(8090000);
-				// BBŒã
-				var text = "Šô‰½Šw‚È–Í—l‚ª•`‚©‚ê‚Ä‚¢‚é–‚•ûw‚¾BŠ®¬‚É‚ÍŠ‚Á‚Ä‚¢‚È‚¢‚æ‚¤‚¾‚ªcB\r\n";
+				// BBå¾Œ
+				var text = "å¹¾ä½•å­¦ãªæ¨¡æ§˜ãŒæã‹ã‚Œã¦ã„ã‚‹é­”æ–¹é™£ã ã€‚å®Œæˆã«ã¯è‡³ã£ã¦ã„ãªã„ã‚ˆã†ã ãŒâ€¦ã€‚\r\n";
 				return cm.sendOk(text);
 			}
 		case 1:

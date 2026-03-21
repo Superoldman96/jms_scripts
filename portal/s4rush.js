@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     if (pi.getQuestStatus(6110) == 1) {
 	 if (pi.getParty() != null) {
 	     if (!pi.isLeader()) {

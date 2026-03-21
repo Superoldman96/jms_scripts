@@ -1,5 +1,5 @@
-// �V�F�C��
-// �G���j�A�E��
+﻿// シェイン
+// エリニア忍耐
 
 var npc_talk_status = 0;
 
@@ -12,13 +12,13 @@ function action(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 1:
 			{
-				// BB��
-				var text = "#b�T�r�g���}#k���痊�܂�Ė򑐂����ɗ��������āH�@�����A�����͕��������󂯂���؂ȏꏊ�Ȃ񂾂�c�B�{���Ȃ�N��������ɂ͂����Ȃ��񂾂��A#r6000#k �������������Θb�͈Ⴄ���B�ǂ����A�����𕥂������H";
+				// BB後
+				var text = "#bサビトラマ#kから頼まれて薬草を取りに来ただって？　だが、ここは父から譲り受けた大切な場所なんだよ…。本当なら誰も入れる訳にはいけないんだが、#r6000#k メルさえ払えば話は違うぞ。どうだ、メルを払うかい？";
 				return cm.sendYesNo(text);
 			}
 		case 2:
 			{
-				var text = "�f�o�b�O���[�h\r\n";
+				var text = "デバッグモード\r\n";
 				// cm.getQuestStatus(2050) == 1
 				text += "#L" + 101000100 + "##r#m" + 101000100 + "##k#l\r\n";
 				text += "#L" + 101000101 + "##r#m" + 101000101 + "##k#l\r\n";

@@ -1,4 +1,4 @@
-/*
+﻿/*
 	NPC Name: 		Kin
 	Map(s): 		Victoria Road : Ellinia (180000000)
 	Description: 		Changes your skin, hair, hair color, face and eye color for both male and female

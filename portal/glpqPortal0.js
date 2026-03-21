@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     var em = pi.getEventManager("CWKPQ");
     if (em != null) {
 	if (em.getProperty("glpq1").equals("1")) {

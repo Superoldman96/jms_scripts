@@ -1,4 +1,4 @@
-/*
+﻿/*
 Stage 3: Exit Door - Guild Quest
 
 @Author Lerk

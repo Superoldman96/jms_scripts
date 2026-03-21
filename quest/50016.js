@@ -1,4 +1,4 @@
-/*
+﻿/*
 	NPC Name: 		Dida
 	Description: 		Quest - Break of Blaze
 */

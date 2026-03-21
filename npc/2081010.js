@@ -1,4 +1,4 @@
-/*
+﻿/*
 Moose, Power of Shield
 */
 var status = -1;

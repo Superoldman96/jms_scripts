@@ -1,4 +1,4 @@
-/*
+﻿/*
 	NPC Name: 		Nineheart
 	Description: 		Quest - Are you sure you can leave?
 */

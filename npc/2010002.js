@@ -1,4 +1,4 @@
-/* Franz the Owner
+﻿/* Franz the Owner
 	Orbis VIP Eye Change.
 */
 var status = -1;

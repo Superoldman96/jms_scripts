@@ -1,5 +1,5 @@
-// �v��
-// ���G���ւ̑D
+﻿// プロ
+// リエンへの船
 
 var npc_talk_status = -1;
 
@@ -12,8 +12,8 @@ function action(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 0:
 			{
-				// BB��̃e�L�X�g
-				var text = "������r�N�g���A�A�C�����h�𗣂�A��X�̑��ɍs�����肩�H���̑D�ɏ���#b���G��#k�܂ŏ悹�Ă����Ă��邪�c#b����800#k�����K�v���B���G���ɍs�������H�s���̂ɂ����鎞�Ԃ́A��1�����B";
+				// BB後のテキスト
+				var text = "もしやビクトリアアイランドを離れ、我々の村に行くつもりか？この船に乗ると#bリエン#kまで乗せていってやれるが…#b料金800#kメル必要だ。リエンに行くかい？行くのにかかる時間は、訳1分だ。";
 				return cm.sendYesNo(text);
 			}
 		case 1:

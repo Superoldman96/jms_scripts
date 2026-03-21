@@ -1,4 +1,4 @@
-/*
+﻿/*
 	Pink Balloon - LudiPQ Bonus stage NPC
 */
 

@@ -1,4 +1,4 @@
-/*
+﻿/*
  * 4th Job Fire Demon
  */
 

@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     if (java.lang.Math.random() < 0.1) {
 	pi.warp(930000300,"16st");
     } else {

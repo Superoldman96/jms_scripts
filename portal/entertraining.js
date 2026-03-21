@@ -1,5 +1,5 @@
-// �`���҂̏C�������
-// �}�C�̏C�s
+﻿// 冒険者の修練場入口
+// マイの修行
 function enter(pi) {
 	/*
 	if (pi.getQuestStatus(1041) == 1) {
@@ -15,6 +15,6 @@ function enter(pi) {
 	}
 	*/
 
-	// �ʏ�͉�b�s��NPC�ƂȂ��Ă��邪�ABB��d�l�ɍ��킹�Ă݂�
+	// 通常は会話不可のNPCとなっているが、BB後仕様に合わせてみる
 	return pi.openNpc(12100);
 }

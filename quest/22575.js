@@ -1,4 +1,4 @@
-var status = -1;
+﻿var status = -1;
 //this quest is SECRET ORGANIZATION 2
 function start(mode, type, selection) {
 	if (qm.canHold(4032471,1)) {

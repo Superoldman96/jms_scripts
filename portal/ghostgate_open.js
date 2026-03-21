@@ -1,4 +1,4 @@
-/*
+﻿/*
 Sharen III's Grave Exit - Guild Quest
 
 @Author Lerk

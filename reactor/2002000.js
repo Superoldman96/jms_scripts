@@ -1,4 +1,4 @@
-/* @Author Lerk
+﻿/* @Author Lerk
  * 
  * 2002000.js: Orbis Box - drops meso, orange/white pots, and Empty Potion Bottles (quest item)
 */

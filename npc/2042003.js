@@ -1,4 +1,4 @@
-var status = 0;
+﻿var status = 0;
 var request;
 
 function start() {

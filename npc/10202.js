@@ -1,13 +1,13 @@
-// �R�u�V���J���ė���
-// �I���̕����ꓹ
+﻿// コブシを開いて立て
+// 選択の分かれ道
 
 var npc_talk_status = 0;
 
 function action(mode, type, selection) {
 	if (mode != 1) {
 		if (npc_talk_status == 2) {
-			// BB��
-			var text = "��m��̌����Ă݂��������������x���ɐ��������Ă����B";
+			// BB後
+			var text = "戦士を体験してみたかったらもう一度俺に声をかけてくれよ。";
 			cm.sendSimple(text);
 		}
 		return cm.dispose();
@@ -17,19 +17,19 @@ function action(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 1:
 			{
-				// BB��
-				var text = "��m�́A���܂����U���͂Ƒ̗͂����E�ƂŁA���̍őO���ł��̐^���𔭊�����񂾁B��{�U���͂��ƂĂ������E�ƂŁA�����x���̃X�L�����o����΂����Ƌ����͂𔭊����鎖���ł����B";
+				// BB後
+				var text = "戦士は、凄まじい攻撃力と体力を持つ職業で、戦場の最前線でその真価を発揮するんだ。基本攻撃力がとても強い職業で、高レベルのスキルを覚えればもっと強い力を発揮する事ができるよ。";
 				return cm.sendSimple(text);
 			}
 		case 2:
 			{
-				// BB��
-				var text = "�ǂ������H��m��̌����Ă݂Ȃ����H";
+				// BB後
+				var text = "どうだい？戦士を体験してみないか？";
 				return cm.sendYesNo(text);
 			}
 		case 3:
 			{
-				// �E�Ƒ̌��J�b�g�V�[��
+				// 職業体験カットシーン
 				cm.MovieClipIntroUI(true);
 				cm.warp(1020100, 0);
 				return cm.dispose();

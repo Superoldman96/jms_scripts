@@ -1,4 +1,4 @@
-/**
+﻿/**
 	Advancement - Cygnus 3rd job
 **/
 

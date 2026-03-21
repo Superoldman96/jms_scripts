@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
 	if (pi.isQuestActive(22596)) {
 		pi.warp(922030001,0);
 		pi.forceCompleteQuest(22596);

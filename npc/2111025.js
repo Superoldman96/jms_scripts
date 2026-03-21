@@ -1,4 +1,4 @@
-function start() {
+﻿function start() {
 	cm.getMap().killMonster(7090000);
 	cm.dispose();
 }

@@ -1,4 +1,4 @@
-// �p�`���R�f�r���[
+﻿// パチンコデビュー
 
 var npc_talk_status = -1;
 
@@ -11,26 +11,26 @@ function start(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 0:
 			{
-				// BB��
+				// BB後
 				//qm.forceCompleteQuest();
 				//qm.forceStartQuest();
-				return qm.sendSimple("��������悤�B�����͂ǂ���܂��ˁB�J�ł��~��̂�����B");
+				return qm.sendSimple("ごきげんよう。今日はどんより曇り空ね。雨でも降るのかしら。");
 			}
 		case 1:
 			{
-				// BB��
-				return qm.sendSimple("����ȓ��ɂ͖`����������A���K�Ȏ����ŋC���]���������񂶂�Ȃ�������B");
+				// BB後
+				return qm.sendSimple("こんな日には冒険するよりも、快適な室内で気分転換もいいんじゃないかしら。");
 			}
 		case 2:
 			{
-				// BB��
-				return qm.sendSimple("�C���]���Ƃ����΃p�`���R�ˁB���������ǁA�p�`���R�͂�������Ƃ��邩����H�C�y�Ɋy���߂���B���x����V������ׂ����Ƃ��낾����A��x����Ă݂�Ƃ�����B");
+				// BB後
+				return qm.sendSimple("気分転換といえばパチンコね。早速だけど、パチンコはやったことあるかしら？気軽に楽しめるわよ。丁度今回新台も入荷したところだから、一度やってみるといいわ。");
 				// prev next
 			}
 		case 3:
 			{
 				// prev next
-				return qm.sendSimple("�p�`���R���܂ŗ��Ă�������΃p�`���R�ʂ������������B�߂��̒����炷���ɂł������͂�����B");
+				return qm.sendSimple("パチンコ屋まで来てくださればパチンコ玉を少しあげるわ。近くの町からすぐにでも来れるはずだわ。");
 			}
 		case 4:
 			{
@@ -52,22 +52,22 @@ function end(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 0:
 			{
-				// BB��
-				return qm.sendSimple("����A���Ă��ꂽ�̂ˁB���ꂶ�Ⴀ�p�`���R�ʂ�������Ƃ����邩��A����Ńp�`���R�f�r���[���Ă����Ȃ����B");
+				// BB後
+				return qm.sendSimple("あら、来てくれたのね。それじゃあパチンコ玉をちょっとあげるから、これでパチンコデビューしてごらんなさい。");
 			}
 		case 1:
 			{
-				// BB��
-				return qm.sendSimple("�����̌��ʂ��C�}�C�`�ł��A�����܂�������Ƌʂ𕪂��Ă����邠����S�z�Ȃ��y����ŗ��ĂˁB");
+				// BB後
+				return qm.sendSimple("今日の結果がイマイチでも、明日またちょっと玉を分けてあげるあｋら心配なく楽しんで来てね。");
 			}
 		case 2:
 			{
-				// BB��
-				return qm.sendSimple("�����ʂ�����Ȃ���΁A�������ɂ���#b�p�`���R�ʌ����@�𗘗p����Ƃ������B#k");
+				// BB後
+				return qm.sendSimple("もし玉が足りなければ、そっちにある#bパチンコ玉交換機を利用するといいわよ。#k");
 			}
 		case 3:
 			{
-				// �p�`���R�ʂ�100�ʒǉ����鏈��
+				// パチンコ玉を100玉追加する処理
 				qm.forceCompleteQuest();
 				return qm.dispose();
 			}

@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     var eim = pi.getEventManager("LudiPQ").getInstance("LudiPQ");
     
     // only let people through if the eim is ready

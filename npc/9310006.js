@@ -1,5 +1,5 @@
-// �x�@���~�J�[�t�@�C
-// ������ ���� �剤���J�f��
+﻿// 警察官ミカーファイ
+// 抜け道 から 大王ムカデへ
 // !npc 9310006
 
 function EnterAreaBossMap(mapid, mobid, x, y) {
@@ -31,14 +31,14 @@ function action(mode, type, selection) {
 	switch (status) {
 		case 0:
 			{
-				// ���Ƃ��ƌ뎚�H
-				cm.sendNext("�剤���J�f��|���ɗ������ł��ˁB�ł́A�C�����s�ɂ��߁A�剤���J�f������Ƃ���ɍs���Ă݂܂��傤�B");
+				// もともと誤字？
+				cm.sendNext("大王ムカデを倒しに来た方ですね。では、任務遂行にため、大王ムカデがいるところに行ってみましょう。");
 				return;
 			}
 		case 1:
 			{
-				// �剤���J�f����������Ȃ�...?
-				// ��������10��
+				// 大王ムカデが召喚されない...?
+				// 制限時間10分
 				//EnterAreaBossMap(701010323, 5220004, 2160, 823);
 				EnterBossMap(701010323);
 				break;

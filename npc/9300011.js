@@ -1,4 +1,4 @@
-/*
+﻿/*
 	NPC Name: 		Cai Shen
 	Map(s): 		Everywhere, towns
 	Description: 		Introduction to Gachapon

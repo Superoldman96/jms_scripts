@@ -1,4 +1,4 @@
-/* Gordon
+﻿/* Gordon
 	El Nath: El Nath Market (211000100)
 	
 	Refining NPC: 

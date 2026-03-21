@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     if (pi.getQuestStatus(21000) == 0) {
 	pi.playerMessage(5, "You can only exit after you accept the quest from Athena Pierce, who is to your right.");
     } else {

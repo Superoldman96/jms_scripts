@@ -1,15 +1,15 @@
-// ƒrƒŠ@ƒlƒbƒgƒJƒtƒF
-// ƒpƒPƒbƒgƒfƒoƒbƒO
+ï»¿// ãƒ“ãƒª@ãƒãƒƒãƒˆã‚«ãƒ•ã‚§
+// ãƒ‘ã‚±ãƒƒãƒˆãƒ‡ãƒãƒƒã‚°
 
-// ƒ_ƒ[ƒWƒGƒtƒFƒNƒg
+// ãƒ€ãƒ¡ãƒ¼ã‚¸ã‚¨ãƒ•ã‚§ã‚¯ãƒˆ
 function DoSomething_00AD() {
 	var p = cm.getOutPacket();
 	// header
 	p.writeShort(0x00AD);
 
 	// data
-	p.writeInt(0x00007DBC); // ƒŠƒŒƒ~ƒg
-	p.writeInt(-1); // ƒ_ƒ[ƒW
+	p.writeInt(0x00007DBC); // ãƒªãƒ¬ãƒŸãƒˆ
+	p.writeInt(-1); // ãƒ€ãƒ¡ãƒ¼ã‚¸
 	p.writeZeroBytes(100);
 	// ProcessPacket
 	cm.DebugPacket(p.getPacket());
@@ -22,7 +22,7 @@ function DoSomething_CID() {
 	p.writeShort(0x00B2);
 
 	// data
-	p.writeInt(0x00007DBC); // ƒŠƒŒƒ~ƒg
+	p.writeInt(0x00007DBC); // ãƒªãƒ¬ãƒŸãƒˆ
 	p.writeInt(0);
 	//p.writeShort(1);
 	//p.writeShort(0);
@@ -39,8 +39,8 @@ function DoSomething_3F() {
 
 	// data
 	//p.write(0x07);
-	//p.writeMapleAsciiString("ƒŠƒŒƒ~ƒg" + " : " + "NAYN!");
-	//p.writeMapleAsciiString("ƒŠƒŒƒ~ƒg");
+	//p.writeMapleAsciiString("ãƒªãƒ¬ãƒŸãƒˆ" + " : " + "NAYN!");
+	//p.writeMapleAsciiString("ãƒªãƒ¬ãƒŸãƒˆ");
 	//p.writeInt(1472117);
 	//p.writeInt(1);
 	//p.writeInt(0x00007DBC);

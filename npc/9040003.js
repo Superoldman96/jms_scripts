@@ -1,4 +1,4 @@
-/* 
+﻿/* 
  * Sharen III's Soul, Sharenian: Sharen III's Grave (990000700)
  * Guild Quest - end of stage 4
  */

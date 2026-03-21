@@ -1,6 +1,6 @@
-// �{�X�L
+﻿// ボス猫
 
 function action(mode, type, selection) {
-	cm.sendOk("�ӂӥ�������o�����ɒ��킵�����̂��B�ł��A�N�ł������Œ���o������񂶂�Ȃ��B");
+	cm.sendOk("ふふ･･･私が出す問題に挑戦したいのか。でも、誰でもただで挑戦出来るもんじゃない。");
 	cm.dispose();
 }

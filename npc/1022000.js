@@ -1,5 +1,5 @@
-// �R�u�V���J���ė���
-// ��m�]�E
+﻿// コブシを開いて立て
+// 戦士転職
 
 
 var job_1st_level = 10;
@@ -27,21 +27,21 @@ var job_4th = Array(
 );
 
 var npc_talk_status = 0;
-// �]�E���ɏ������؂�ւ���Ă��܂�����NPC��b�J�n���ɐE��ID��ێ�����
+// 転職中に条件が切り替わってしまうためNPC会話開始時に職業IDを保持する
 var jobid = -1;
 
 /*
-	�}�C�������Ă��l���N���H#h0#�c�ӂށB�ޏ��Ɍ���ꂽ�ǂ���ɁA���Ȃ莑��������悤�Ȏᑢ���ȁc�����A�����ɂȂ肽�����āH�����ɂ��ĕ������Ă邩�H
-	�����Ƃ����Ƃ����ۂ��Ȃ����D���v���l�����邪�A���͈Ⴄ�񂾁B���C�v�����[���h�̓����͈ł̒��ŉs���Z���Ǝ藠���Ő키�l�������B�����������琳�X���X�Ƃ��ĂȂ����������邩������Ȃ��B�����A����������̖{���B�ے肷��K�v�͂Ȃ�����B
-	�E�ƂƂ��Ă̓����͑f�����ċ��͂ȃX�L���œG���U������񂾁B�̗͎͂ア�ق������A���̕��������������߃����X�^�[�������̂�����Ȃ��B���͂ȉ^�ŃN���e�B�J���ȍU�������܂����ȁB
-	�ǂ����H�����̓������ɕ��ނ��H�N�������̓��ɐi�ނƌ��߂���]�E���̓����ŌN��������#b�J�j���O�V�e�B�[�A�����̃A�W�g#k�ɏ��҂���c�B���ȏ���������h�Ɏv���񂾂ȁB#r�����A���̐E�Ƃ������Ɨǂ�������H����Ȃ�f���Ă���B��������Ȃ����̓��𐄑E���邩��#k�B
+	マイが言ってた人が君か？#h0#…ふむ。彼女に言われたどおりに、かなり資質があるような若造だな…おい、盗賊になりたいって？盗賊について分かってるか？
+	盗賊というとちっぽけなこそ泥を思う人もいるが、実は違うんだ。メイプルワールドの盗賊は闇の中で鋭い短刀と手裏剣で戦う人たちだ。もしかしたら正々堂々としてない部分があるかもしれない。だが、それも盗賊の本質。否定する必要はないだろ。
+	職業としての盗賊は素早くて強力なスキルで敵を攻撃するんだ。体力は弱いほうだが、その分動きが早いためモンスターを避けるのも難しくない。強力な運でクリティカルな攻撃もうまいしな。
+	どうだ？盗賊の道を共に歩むか？君が盗賊の道に進むと決めたら転職官の特権で君をすぐに#bカニングシティー、盗賊のアジト#kに招待する…隠密な所だから光栄に思うんだな。#rだが、他の職業がもっと良かったら？それなら断ってくれ。盗賊じゃない他の道を推薦するから#k。
 */
 
 function JobChange1(mode, type, selection) {
 	if (mode != 1) {
 		if (npc_talk_status == 1) {
-			// BB��
-			var text = "�܂��S�̏������ł��ĂȂ����H";
+			// BB後
+			var text = "まだ心の準備ができてないか？";
 			cm.sendSimple(text);
 		}
 		return cm.dispose();
@@ -52,34 +52,34 @@ function JobChange1(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 1:
 			{
-				// BB��
-				var text = "�����̃A�W�g�ւ悤�����B�����ł����Ȃ��Ɠ������Ȃ��Ȃ�������h�������B�ӂӁA�o�鎞�ɖ���悭�����Ă����Ă���B����A�����ɂȂ鏀���͂ł������H";
+				// BB後
+				var text = "盗賊のアジトへようこそ。こうでもしないと入口もなかなか分かり辛い所だ。ふふ、出る時に門をよく憶えておいてくれ。じゃ、盗賊になる準備はできたか？";
 				return cm.sendYesNo(text);
 			}
 		case 2:
 			{
 				cm.resetStats(4, 25, 4, 4);
 				cm.changeJob(job_1st);
-				// BB��
-				var text = "����ŌN�͓����ɂȂ����B�����̃X�L�����g�p�ł���悤�ɂȂ�������X�L���E�B���h�E���J���Ă݂Ă���B���x�����グ��Ƃ�葽���̃X�L�����o���邱�Ƃ��ł���񂾁B";
+				// BB後
+				var text = "これで君は盗賊になった。盗賊のスキルが使用できるようになったからスキルウィンドウを開いてみてくれ。レベルを上げるとより多くのスキルを覚えることができるんだ。";
 				return cm.sendSimple(text);
 			}
 		case 3:
 			{
-				// BB��
-				var text = "�X�L�������ł͕�����Ȃ��ȁH�X�e�[�^�X�������炵���Ȃ�Ȃ��Ɩ{���̓�������Ȃ��ȁB������LUK�����C���X�e�[�^�X�ŁADEX���⏕�X�e�[�^�X�ɂȂ�B�X�e�[�^�X�̏グ����������Ȃ�������#b�����z��#k���g�p����Ƃ����B";
+				// BB後
+				var text = "スキルだけでは物足りないな？ステータスも盗賊らしくならないと本物の盗賊じゃないな。盗賊はLUKがメインステータスで、DEXが補助ステータスになる。ステータスの上げ方が分からなかったら#b自動配分#kを使用するといい。";
 				return cm.sendSimple(text);
 			}
 		case 4:
 			{
-				// BB��
-				var text = "�����āA�v���[���g�����邼�B�N�̑�����ETC�A�C�e���̕ۊǔ��̌��𑝂₵�Ă������񂾁B�C���x���g�����L���Ɨ����y�����Ȃ���́B�ӂӁc";
+				// BB後
+				var text = "そして、プレゼントがあるぞ。君の装備とETCアイテムの保管箱の個数を増やしてあげたんだ。インベントリが広いと旅が楽しくなるもの。ふふ…";
 				return cm.sendSimple(text);
 			}
 		case 5:
 			{
-				// BB��
-				var text = "���āI�����N�ɋ�������̂͂����܂ł��B�N�ɖ𗧂悤�ȕ�����������n�������痷�����Ȃ��玩�g��b���Ă݂Ă���B";
+				// BB後
+				var text = "さて！俺が君に教えられるのはここまでだ。君に役立つような武器もいくつか渡したから旅をしながら自身を鍛えてみてくれ。";
 				return cm.sendSimple(text);
 			}
 		default:
@@ -92,8 +92,8 @@ function JobChange1(mode, type, selection) {
 function JobChange2(mode, type, selection) {
 	if (mode != 1) {
 		if (npc_talk_status == 1) {
-			// BB��
-			var text = "�܂��S�̏������ł��ĂȂ����H";
+			// BB後
+			var text = "まだ心の準備ができてないか？";
 			cm.sendSimple(text);
 		}
 		return cm.dispose();
@@ -104,44 +104,44 @@ function JobChange2(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 1:
 			{
-				// 2���]�E�\���
+				// 2次転職可能状態
 				if (cm.haveItem(4031012)) {
-					// ���@�g��
+					// 魔法使い
 					// var text = "";
-					// �����}�}
-					var text = "�����c�����ɋA���Ă����ˁI�@�N�Ȃ炻��Ȏ������炢�͊ȒP�Ƀp�X����Ǝv�����ˁB�N���{���ɋ�����m�Ƃ������Ƃ�F�߂悤�B�����c�N�������Ƌ������Ă�����B���̑O�Ɂc�I�@�N��3�̓��̒��ň��I�����Ȃ���΂Ȃ�Ȃ��B������Ƃ����m��Ȃ����c������Ȃ����Ƃ��������畷���Ȃ����B";
+					// 原文ママ
+					var text = "おお…無事に帰ってきたね！　君ならそんな試験くらいは簡単にパスすると思ったね。君が本当に強い戦士ということを認めよう。さあ…君をもっと強くしてあげる。その前に…！　君は3つの道の中で一つを選択しなければならない。難しいことかも知れないが…分からないことがあったら聞きなさい。";
 					return cm.sendSimple(text);
 				}
-				// �����}�}
-				var text = "�ق��c�N�͌��Ⴆ��悤�ɐ��������ȁI�@���̑O�̂Ў�Ȏp�͂ǂ����ɍs���č��͐�m�Ƃ��Ă̈Ќ����������Ă���ł͂Ȃ����I�@�����c�ǂ����H�@�����ł���ɋ����Ȃ肽���Ȃ����ˁH�@�ȒP�Ȏ��������p�X������N������w�������Ă������I�@����Ă݂Ȃ����ˁH";
+				// 原文ママ
+				var text = "ほう…君は見違えるように成長したな！　この前のひ弱な姿はどこかに行って今は戦士としての威厳が満ち溢れているではないか！　さあ…どうだ？　ここでさらに強くなりたくないかね？　簡単な試験さえパスしたら君をより一層強くしてあげるよ！　やってみないかね？";
 				return cm.sendYesNo(text);
 			}
 		case 2:
 			{
-				// 2���]�E�\���
+				// 2次転職可能状態
 				if (cm.haveItem(4031012)) {
-					// �����}�}
-					var text = "�����c���肪�I�������c��ԉ��ɂ���[�E�Ƃ�I�����܂��I]��I�����Ȃ����B\r\n";
-					text += "#L" + 1 + "##b�\�[�h�}���ɂ��Đ������ĉ������B#k#l\r\n"
-					text += "#L" + 2 + "##b�y�[�W�ɂ��Đ������ĉ������B#k#l\r\n"
-					text += "#L" + 3 + "##b�X�s�A�}���ɂ��Đ������ĉ������B#k#l\r\n"
-					text += "#L" + 0 + "##b�E�Ƃ�I�����܂��I#k#l\r\n"
+					// 原文ママ
+					var text = "さあ…決定が終わったら…一番下にある[職業を選択します！]を選択しなさい。\r\n";
+					text += "#L" + 1 + "##bソードマンについて説明して下さい。#k#l\r\n"
+					text += "#L" + 2 + "##bページについて説明して下さい。#k#l\r\n"
+					text += "#L" + 3 + "##bスピアマンについて説明して下さい。#k#l\r\n"
+					text += "#L" + 0 + "##b職業を選択します！#k#l\r\n"
 					return cm.sendSimple(text);
 				}
-				// �����}�}
-				var text = "�悭�l�����ȁB�N�͋������Ɍ����邪���ꂪ�{���Ȃ̂��m�F���Ă݂�K�v������B�ȒP�ȃe�X�g������N�Ȃ�[���Ƀp�X���邱�Ƃ��ł��邾�낤�B�����c�܂������Ŏ��̎莆���󂯎���Ă���B�Y��Ȃ��悤�ɋC��t�����B";
+				// 原文ママ
+				var text = "よく考えたな。君は強そうに見えるがそれが本物なのか確認してみる必要がある。簡単なテストだから君なら充分にパスすることができるだろう。さあ…まずここで私の手紙を受け取ってくれ。忘れないように気を付けろよ。";
 				return cm.sendSimple(text);
 			}
 		case 3:
 			{
-				// 2���]�E�\���
+				// 2次転職可能状態
 				if (cm.haveItem(4031012)) {
-					// �����}�}
+					// 原文ママ
 					if (selection == 0) {
-						var text = "�����c�S�͌��߂��̂��H�@2���]�E�������E�Ƃ�I�����Ȃ����B\r\n";
-						text += "#L" + 0 + "##b�\�[�h�}��(Swordman)#k#l\r\n"
-						text += "#L" + 1 + "##b�y�[�W(Page)#k#l\r\n"
-						text += "#L" + 2 + "##b�X�s�A�}��(Spearman)#k#l\r\n"
+						var text = "さあ…心は決めたのか？　2次転職したい職業を選択しなさい。\r\n";
+						text += "#L" + 0 + "##bソードマン(Swordman)#k#l\r\n"
+						text += "#L" + 1 + "##bページ(Page)#k#l\r\n"
+						text += "#L" + 2 + "##bスピアマン(Spearman)#k#l\r\n"
 						return cm.sendSimple(text);
 					}
 					return cm.dispose();
@@ -149,21 +149,21 @@ function JobChange2(mode, type, selection) {
 				cm.gainItem(4031008, 1);
 				if (!cm.haveItem(4031008)) {
 					// error
-					var text = "�C���x���g�����J���Ă�������";
+					var text = "インベントリを開けてください";
 					return cm.sendSimple(text);
 				}
-				// �����}�}
-				var text = "���̎莆���y���I���ӂ�#b#m102020300##k�̂ǂ����ɂ���#b#p1072000##k�ɓ`����悤�ɁB�Z�������̑���ɋ����̎d�������Ă����L���l���B�莆��`���Ă����ΌN�����V�̑���Ƀe�X�g���Ă����B�ڂ������Ƃ͔ނɒ��ڕ����΂킩��B���ꂶ�ᖳ���ɋA���ė��Ăق����B";
-				// ���ۂ�Prev Next�ȑI����
+				// 原文ママ
+				var text = "この手紙をペリオン辺り#b#m102020300##kのどこかにいる#b#p1072000##kに伝えるように。忙しい私の代わりに教官の仕事をしてくれる有り難い人だ。手紙を伝えてくれれば君をワシの代わりにテストしてくれる。詳しいことは彼に直接聞けばわかる。それじゃ無事に帰って来てほしい。";
+				// 実際はPrev Nextな選択肢
 				return cm.sendSimple(text);
 			}
 		case 4:
 			{
-				// 2���]�E�\���
+				// 2次転職可能状態
 				if (cm.haveItem(4031012)) {
-					// �����}�}
+					// 原文ママ
 					if (selection == 0) {
-						var text = "#b�\�[�h�}��#k��2���]�E�������̂��ȁH�@��x���߂�Α���2���]�E�E�Ƃɂ͓]�E���邱�Ƃ��ł��Ȃ����B���̌��S�c�ԈႢ�Ȃ����ˁH";
+						var text = "#bソードマン#kで2次転職したいのだな？　一度決めれば他の2次転職職業には転職することができないぞ。その決心…間違いないかね？";
 						return cm.sendYesNo(text);
 					}
 					return cm.dispose();
@@ -172,13 +172,13 @@ function JobChange2(mode, type, selection) {
 			}
 		case 5:
 			{
-				// 2���]�E�\���
+				// 2次転職可能状態
 				if (cm.haveItem(4031012)) {
 					cm.changeJob(110);
 					cm.gainItem(4031012, -1);
-					// �����}�}
+					// 原文ママ
 
-					var text = "�悵�I�@�N�͂��ꂩ��#b�\�[�h�}��#k���I�@�\�[�h�}���͋��������߂Ȃ���₦���������́c�����Ă��̂��Ƃ�Y�ꂸ�ɑO�ɐi�݂Ȃ����B�������̗͂ŌN�������Ƌ������悤�B";
+					var text = "よし！　君はこれから#bソードマン#kだ！　ソードマンは強さを求めながら絶えず闘うもの…決してそのことを忘れずに前に進みなさい。さあ私の力で君をもっと強くしよう。";
 					// prev next
 					return cm.sendSimple(text);
 				}
@@ -186,15 +186,15 @@ function JobChange2(mode, type, selection) {
 			}
 		case 6:
 			{
-				// �����}�}
-				var text = "�N�ɍ�����\�[�h�}�����w�ׂ�X�L����������Ă���{��^���悤�B���̖{�ɂ͂��܂��܂ȃt�@�C�^�[�ƌW���X�L����������Ă���B����ɏ���AETC�ɃA�C�e����ۊǂł��鐔�����������B���ꂼ��1���C�������Ă��邾�낤�B�ő�HP�����������ˁc���m�F���Ȃ����B";
+				// 原文ママ
+				var text = "君に今からソードマンが学べるスキルが書かれている本を与えよう。その本にはさまざまなファイターと係わるスキルが書かれている。それに消費、ETCにアイテムを保管できる数も増えたぞ。それぞれ1ライン増えているだろう。最大HPも増えたしね…一回確認しなさい。";
 				return cm.sendSimple(text);
 			}
 		case 7:
 			{
 				// sp
-				// �����}�}
-				var text = "�N�ɏ�����#bSP#k������������A#b�X�L�����j���[#k���J���Ă݂�B�V���ɓ���2���X�L���������邱�Ƃ��ł���B�������͂��߂���S�Ă������邱�Ƃ͂ł��Ȃ��B���̃X�L����������x�グ�Ă����w�Ԃ��Ƃ��ł���X�L�������邩��ȁB�o���Ă����悤�ɁB";
+				// 原文ママ
+				var text = "君に少しの#bSP#kをあげたから、#bスキルメニュー#kを開けてみろ。新たに得た2次スキルをあげることができる。ただしはじめから全てをあげることはできない。他のスキルをある程度上げてこそ学ぶことができるスキルもあるからな。覚えておくように。";
 				return cm.sendSimple(text);
 
 			}
@@ -207,8 +207,8 @@ function JobChange2(mode, type, selection) {
 function JobChange3(mode, type, selection) {
 	if (mode != 1) {
 		if (npc_talk_status == 1) {
-			// BB��
-			var text = "�܂��S�̏������ł��ĂȂ����H";
+			// BB後
+			var text = "まだ心の準備ができてないか？";
 			cm.sendSimple(text);
 		}
 		return cm.dispose();
@@ -219,8 +219,8 @@ function JobChange3(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 1:
 			{
-				// BB��
-				var text = "3���]�E�e�X�g\r\n";
+				// BB後
+				var text = "3次転職テスト\r\n";
 				for (var i = 0; i < job_3rd.length; i++) {
 					text += "#L" + job_3rd[i] + "##b" + job_3rd[i] + "#k#l\r\n";
 				}
@@ -230,8 +230,8 @@ function JobChange3(mode, type, selection) {
 			{
 				var next_job = selection;
 				cm.changeJob(next_job);
-				// BB��
-				var text = "3���]�E";
+				// BB後
+				var text = "3次転職";
 				return cm.sendSimple(text);
 			}
 		default:
@@ -243,8 +243,8 @@ function JobChange3(mode, type, selection) {
 function JobChange4(mode, type, selection) {
 	if (mode != 1) {
 		if (npc_talk_status == 1) {
-			// BB��
-			var text = "�܂��S�̏������ł��ĂȂ����H";
+			// BB後
+			var text = "まだ心の準備ができてないか？";
 			cm.sendSimple(text);
 		}
 		return cm.dispose();
@@ -255,8 +255,8 @@ function JobChange4(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 1:
 			{
-				// BB��
-				var text = "4���]�E�e�X�g\r\n";
+				// BB後
+				var text = "4次転職テスト\r\n";
 				for (var i = 0; i < job_4th.length; i++) {
 					text += "#L" + job_4th[i] + "##b" + job_4th[i] + "#k#l\r\n";
 				}
@@ -266,8 +266,8 @@ function JobChange4(mode, type, selection) {
 			{
 				var next_job = selection;
 				cm.changeJob(next_job);
-				// BB��
-				var text = "4���]�E";
+				// BB後
+				var text = "4次転職";
 				return cm.sendSimple(text);
 			}
 		default:
@@ -288,31 +288,31 @@ function JobCheck(jobid_list, jobid) {
 }
 
 function JobChange(mode, type, selection) {
-	// �E��ID�ƃ��x�����擾
+	// 職業IDとレベルを取得
 	if (jobid == -1) {
 		jobid = cm.getJob();
 	}
 	var level = cm.getPlayer().getLevel();
 
-	// 1���]�E����
+	// 1次転職条件
 	if (job_1st_level <= level && jobid == 0) {
 		JobChange1(mode, type, selection);
 		return true;
 	}
 
-	// 2���]�E����
+	// 2次転職条件
 	if (job_2nd_level <= level && job_1st == jobid) {
 		JobChange2(mode, type, selection);
 		return true;
 	}
 
-	// 3���]�E����
+	// 3次転職条件
 	if (job_3rd_level <= level && JobCheck(job_2nd, jobid)) {
 		JobChange3(mode, type, selection);
 		return true;
 	}
 
-	// 4���]�E����
+	// 4次転職条件
 	if (job_4th_level <= level && JobCheck(job_3rd, jobid)) {
 		JobChange4(mode, type, selection);
 		return true;
@@ -326,14 +326,14 @@ function action(mode, type, selection) {
 		return;
 	}
 	/*
-	// �E��ID�ƃ��x�����擾
+	// 職業IDとレベルを取得
 	var jobid = cm.getJob();
 	var level = cm.getPlayer().getLevel();
 
 	if (mode != 1) {
 		if (npc_talk_status == 1) {
-			// BB��
-			var text = "�܂��S�̏������ł��ĂȂ����H";
+			// BB後
+			var text = "まだ心の準備ができてないか？";
 			cm.sendSimple(text);
 		}
 		return cm.dispose();
@@ -345,14 +345,14 @@ function action(mode, type, selection) {
 		case 1:
 			{
 				if (jobid == 0 && level >= 10) {
-					// BB��
-					var text = "�����̃A�W�g�ւ悤�����B�����ł����Ȃ��Ɠ������Ȃ��Ȃ�������h�������B�ӂӁA�o�鎞�ɖ���悭�����Ă����Ă���B����A�����ɂȂ鏀���͂ł������H";
+					// BB後
+					var text = "盗賊のアジトへようこそ。こうでもしないと入口もなかなか分かり辛い所だ。ふふ、出る時に門をよく憶えておいてくれ。じゃ、盗賊になる準備はできたか？";
 					return cm.sendYesNo(text);
 				}
-				// BB��
-				var text = "�B���ȉ�b�c�H�B���ȍs�������Z�̓��������A����͓G�Ɛ키���x�ŏ[�����B";
-				// BB�O?
-				// �`���������Ȃ邱�Ƃ��ǂ����y���݂Ȃ���邵�����Ȃ����c�H�@��X�ƈꏏ�ɐ��̒����y���݂Ȃ��琶���čs���̂͂ǂ����H�@�{���ɖʔ������H
+				// BB後
+				var text = "隠密な会話…？隠密な行動が特技の盗賊だが、それは敵と戦う程度で充分だ。";
+				// BB前?
+				// 冒険も強くなることも良いが楽しみながら暮したくないか…？　我々と一緒に世の中を楽しみながら生きて行くのはどうだ？　本当に面白いぞ？
 				cm.sendSimple(text);
 				return cm.dispose();
 			}
@@ -361,38 +361,38 @@ function action(mode, type, selection) {
 				cm.resetStats(4, 25, 4, 4);
 				//cm.expandInventory(1, 4);
 				//cm.expandInventory(4, 4);
-				// ����s
+				// 盗賊s
 				cm.changeJob(400);
 				//if (cm.getQuestStatus(1048) == 1) {
 				//	cm.forceCompleteQuest(1048);
 				//}
-				// BB��
-				var text = "����ŌN�͓����ɂȂ����B�����̃X�L�����g�p�ł���悤�ɂȂ�������X�L���E�B���h�E���J���Ă݂Ă���B���x�����グ��Ƃ�葽���̃X�L�����o���邱�Ƃ��ł���񂾁B";
+				// BB後
+				var text = "これで君は盗賊になった。盗賊のスキルが使用できるようになったからスキルウィンドウを開いてみてくれ。レベルを上げるとより多くのスキルを覚えることができるんだ。";
 				return cm.sendSimple(text);
 			}
 		case 3:
 			{
-				// BB��
-				var text = "�X�L�������ł͕�����Ȃ��ȁH�X�e�[�^�X�������炵���Ȃ�Ȃ��Ɩ{���̓�������Ȃ��ȁB������LUK�����C���X�e�[�^�X�ŁADEX���⏕�X�e�[�^�X�ɂȂ�B�X�e�[�^�X�̏グ����������Ȃ�������#b�����z��#k���g�p����Ƃ����B";
+				// BB後
+				var text = "スキルだけでは物足りないな？ステータスも盗賊らしくならないと本物の盗賊じゃないな。盗賊はLUKがメインステータスで、DEXが補助ステータスになる。ステータスの上げ方が分からなかったら#b自動配分#kを使用するといい。";
 				return cm.sendSimple(text);
 			}
 		case 4:
 			{
-				// BB��
-				var text = "�����āA�v���[���g�����邼�B�N�̑�����ETC�A�C�e���̕ۊǔ��̌��𑝂₵�Ă������񂾁B�C���x���g�����L���Ɨ����y�����Ȃ���́B�ӂӁc";
+				// BB後
+				var text = "そして、プレゼントがあるぞ。君の装備とETCアイテムの保管箱の個数を増やしてあげたんだ。インベントリが広いと旅が楽しくなるもの。ふふ…";
 				return cm.sendSimple(text);
 			}
 		case 5:
 			{
-				// BB��
-				var text = "���āI�����N�ɋ�������̂͂����܂ł��B�N�ɖ𗧂悤�ȕ�����������n�������痷�����Ȃ��玩�g��b���Ă݂Ă���B";
+				// BB後
+				var text = "さて！俺が君に教えられるのはここまでだ。君に役立つような武器もいくつか渡したから旅をしながら自身を鍛えてみてくれ。";
 				return cm.sendSimple(text);
 			}
 		default:
 			break;
 	}
 	*/
-	var text = "�B���ȉ�b�c�H�B���ȍs�������Z�̓��������A����͓G�Ɛ키���x�ŏ[�����B";
+	var text = "隠密な会話…？隠密な行動が特技の盗賊だが、それは敵と戦う程度で充分だ。";
 	cm.sendSimple(text);
 	return cm.dispose();
 }

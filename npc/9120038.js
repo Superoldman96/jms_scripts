@@ -1,4 +1,4 @@
-/*
+﻿/*
 	NPC Name: 		Dida
 	Map(s): 		2095 Park
 	Description: 		Battle starter

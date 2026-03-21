@@ -1,4 +1,4 @@
-/* 	Eric
+﻿/* 	Eric
 	Singapore VIP Hair/Color Changer
 */
 var status = -1;

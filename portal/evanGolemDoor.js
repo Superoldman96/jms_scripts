@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     if (pi.isQuestActive(22557)) {
 	pi.forceCompleteQuest(22557);
 	pi.playerMessage(5, "Camilla rescued!");

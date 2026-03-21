@@ -1,4 +1,4 @@
-function start() {
+﻿function start() {
 	cm.sendYesNo("Would you like to leave this place?");
 }
 

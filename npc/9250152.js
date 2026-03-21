@@ -1,4 +1,4 @@
-// OS3Aƒ}ƒV[ƒ“ ’n‰º“¹“üŒû, 502010010
+ï»¿// OS3Aãƒã‚·ãƒ¼ãƒ³ åœ°ä¸‹é“å…¥å£, 502010010
 var status = -1;
 function action(mode, type, selection) {
 	if (mode == 1) {
@@ -10,10 +10,10 @@ function action(mode, type, selection) {
 	switch (status) {
 		case 0:
 			{
-				var text = "s‚«æ‚ğ‘I‘ğ‚µ‚Ä‚­‚¾‚³‚¢iƒeƒXƒgj\r\n";
-				// ”é–§Šî’n’n‰º“¹
+				var text = "è¡Œãå…ˆã‚’é¸æŠã—ã¦ãã ã•ã„ï¼ˆãƒ†ã‚¹ãƒˆï¼‰\r\n";
+				// ç§˜å¯†åŸºåœ°åœ°ä¸‹é“
 				text += "#L" + 502010100 + "##b#m502010100##l\r\n";
-				// OSSS”é–§Šî’nŠi”[ŒÉ
+				// OSSSç§˜å¯†åŸºåœ°æ ¼ç´åº«
 				text += "#L" + 502010000 + "##b#m502010000##l\r\n";
 				cm.sendSimple(text);
 				return;

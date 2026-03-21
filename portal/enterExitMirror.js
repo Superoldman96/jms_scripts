@@ -1,4 +1,4 @@
-// ‹¾‚Ì’†‚Ì‹à”“›
+ï»¿// é¡ã®ä¸­ã®é‡‘ç®”å¯º
 function enter(pi) {
 	var mapid = pi.getMapId();
 

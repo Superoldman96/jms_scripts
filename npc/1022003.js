@@ -1,4 +1,4 @@
-/* Mr. Thunder
+﻿/* Mr. Thunder
 	Victoria Road: Perion (102000000)
 	
 	Refining NPC: 

@@ -1,4 +1,4 @@
-function action(mode, type, selection) {
+﻿function action(mode, type, selection) {
     if (!cm.haveItem(4032649)) {
 	cm.sendNext("You need the empty bottle for Ancient Glacial Water.");
     } else {

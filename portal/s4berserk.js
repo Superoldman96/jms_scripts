@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     if (pi.getQuestStatus(6153) == 1) {
 	if (!pi.haveItem(4031471)) {
 	    if (pi.haveItem(4031475)) {

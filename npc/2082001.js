@@ -1,5 +1,5 @@
-// ƒ^ƒ~
-// ƒŠƒvƒŒ‚©‚çƒIƒ‹ƒrƒX
+ï»¿// ã‚¿ãƒŸ
+// ãƒªãƒ—ãƒ¬ã‹ã‚‰ã‚ªãƒ«ãƒ“ã‚¹
 
 var npc_talk_status = -1;
 var ticket_itemid = 4031045;
@@ -13,12 +13,12 @@ function action(mode, type, selection) {
 	switch (npc_talk_status) {
 		case 0:
 			{
-				// ƒfƒoƒbƒOƒ‚[ƒh
+				// ãƒ‡ãƒãƒƒã‚°ãƒ¢ãƒ¼ãƒ‰
 				if (!cm.haveItem(ticket_itemid)) {
 					cm.gainItem(ticket_itemid, 1);
 				}
-				// “K“–
-				var text = "‚¢‚Á‚½‚ñ‘D‚Éæ‚é‚Æ’·—·‚É‚È‚è‚Ü‚·‚Ì‚Å‹}‚È—p‚ª‚ ‚ê‚Îæ‚É‰ğŒˆ‚µ‚Ä‚­‚¾‚³‚¢B‚¢‚©‚ª‚Å‚·‚©H‘D‚Éæ‚è‚Ü‚·‚©H";
+				// é©å½“
+				var text = "ã„ã£ãŸã‚“èˆ¹ã«ä¹—ã‚‹ã¨é•·æ—…ã«ãªã‚Šã¾ã™ã®ã§æ€¥ãªç”¨ãŒã‚ã‚Œã°å…ˆã«è§£æ±ºã—ã¦ãã ã•ã„ã€‚ã„ã‹ãŒã§ã™ã‹ï¼Ÿèˆ¹ã«ä¹—ã‚Šã¾ã™ã‹ï¼Ÿ";
 				return cm.sendYesNo(text);
 			}
 		case 1:
@@ -27,7 +27,7 @@ function action(mode, type, selection) {
 					cm.gainItem(ticket_itemid, -1);
 				}
 
-				// ƒIƒ‹ƒrƒXƒ`ƒPƒbƒg”„ê
+				// ã‚ªãƒ«ãƒ“ã‚¹ãƒã‚±ãƒƒãƒˆå£²å ´
 				cm.warp(200000100);
 				return cm.dispose();
 			}

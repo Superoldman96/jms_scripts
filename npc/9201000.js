@@ -1,4 +1,4 @@
-var status = -1;
+﻿var status = -1;
 var firstSelection = -1;
 var secondSelection = -1;
 var ingredients_0 = Array(4011004, 4021007);

@@ -1,4 +1,4 @@
-function enter(pi) {
+﻿function enter(pi) {
     var map = 0;
     if (pi.getQuestStatus(20701) == 1) {
 	map = 913000000;

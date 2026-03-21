@@ -1,5 +1,5 @@
-// –rÀ
+ï»¿// ç¦å®Ÿ
 function action(mode, type, selection) {
-	cm.sendOk("‚Í‚ŸI„‚Í¡Cs’†‚Å‚·I");
+	cm.sendOk("ã¯ãï¼ç§ã¯ä»Šä¿®è¡Œä¸­ã§ã™ï¼");
 	cm.dispose();
 }

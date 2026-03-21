@@ -1,4 +1,4 @@
-// ƒOƒ‹[ƒvƒNƒGƒXƒg 1
+ï»¿// ã‚°ãƒ«ãƒ¼ãƒ—ã‚¯ã‚¨ã‚¹ãƒˆ 1
 
 var npc_talk_status = -1;
 function action(mode, type, selection) {
@@ -11,12 +11,12 @@ function action(mode, type, selection) {
 		case 0:
 			{
 				var mapid = cm.getMapId();
-				var text = "‚¨`A‰ï‚¦‚ÄŠğ‚µ‚¢‚æI—_‚Ì“ƒ‚ğ–`Œ¯‚µ‚½‚¢‚ÌHƒOƒ‹[ƒv‚ÉímA–‚–@g‚¢A“‘¯A‹|g‚¢‚ªŠe1–¼ˆÈã‚¢‚é‚ÆƒEƒBƒ“ƒL‚Ìj•Ÿ‚ğ‚©‚¯‚Ä‚ ‚°‚é‚íB\r\n";
-				text += "#L" + 0 + "##b“üê‚ğ\‚µ‚ŞB#k#l\r\n";
-				text += "#L" + 1 + "##b—_‚Ì“ƒ‚É‚Â‚¢‚Ä•·‚­B#k#l\r\n";
-				text += "#L" + 2 + "##bƒEƒBƒ“ƒL‚ÉH‚×•¨‚ğ“n‚·B#k#l\r\n";
-				text += "#L" + 3 + "##b—_‚Ì‰H‚É‚Â‚¢‚Ä•·‚­B#k#l\r\n";
-				text += "#L" + 777 + "##bƒfƒoƒbƒOƒ‚[ƒh#k#l\r\n";
+				var text = "ãŠï½ã€ä¼šãˆã¦å¬‰ã—ã„ã‚ˆï¼å¥³ç¥ã®å¡”ã‚’å†’é™ºã—ãŸã„ã®ï¼Ÿã‚°ãƒ«ãƒ¼ãƒ—ã«æˆ¦å£«ã€é­”æ³•ä½¿ã„ã€ç›—è³Šã€å¼“ä½¿ã„ãŒå„1åä»¥ä¸Šã„ã‚‹ã¨ã‚¦ã‚£ãƒ³ã‚­ã®ç¥ç¦ã‚’ã‹ã‘ã¦ã‚ã’ã‚‹ã‚ã€‚\r\n";
+				text += "#L" + 0 + "##bå…¥å ´ã‚’ç”³ã—è¾¼ã‚€ã€‚#k#l\r\n";
+				text += "#L" + 1 + "##bå¥³ç¥ã®å¡”ã«ã¤ã„ã¦èãã€‚#k#l\r\n";
+				text += "#L" + 2 + "##bã‚¦ã‚£ãƒ³ã‚­ã«é£Ÿã¹ç‰©ã‚’æ¸¡ã™ã€‚#k#l\r\n";
+				text += "#L" + 3 + "##bå¥³ç¥ã®ç¾½ã«ã¤ã„ã¦èãã€‚#k#l\r\n";
+				text += "#L" + 777 + "##bãƒ‡ãƒãƒƒã‚°ãƒ¢ãƒ¼ãƒ‰#k#l\r\n";
 				return cm.sendSimple(text);
 			}
 		case 1:
@@ -25,10 +25,10 @@ function action(mode, type, selection) {
 				if (selection == 777) {
 					var em = cm.getEventManager("OrbisPQ");
 					if (em == null) {
-						cm.sendOk("ƒIƒ‹ƒNƒG –¢À‘•");
+						cm.sendOk("ã‚ªãƒ«ã‚¯ã‚¨ æœªå®Ÿè£…");
 					}
 					else {
-						cm.sendOk("ƒIƒ‹ƒNƒG ŠJÃ’†");
+						cm.sendOk("ã‚ªãƒ«ã‚¯ã‚¨ é–‹å‚¬ä¸­");
 						var prop = em.getProperty("state");
 						if (prop == null || prop.equals("0")) {
 							em.startInstance(cm.getParty(), cm.getMap());

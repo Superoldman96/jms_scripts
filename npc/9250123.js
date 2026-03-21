@@ -1,7 +1,7 @@
-// ƒrƒWƒ^[ ƒ}ƒ“ƒz[ƒ‹‚­‚ñ
+ï»¿// ãƒ“ã‚¸ã‚¿ãƒ¼ ãƒãƒ³ãƒ›ãƒ¼ãƒ«ãã‚“
 // test
 
-// ®Œ`
+// æ•´å½¢
 var face_list_male = Array(
 	20000,
 	20001,
@@ -90,7 +90,7 @@ function Surgery_male() {
 		face_list_male[i] += my_face_color;
 	}
 
-	cm.sendStyle("®Œ`i’jj", face_list_male);
+	cm.sendStyle("æ•´å½¢ï¼ˆç”·ï¼‰", face_list_male);
 }
 
 function Surgery_female() {
@@ -105,28 +105,28 @@ function Surgery_female() {
 		face_list_female[i] -= face_color;
 	}
 
-	// –Ú‚ÌF”’ + —‚¾‚¯ƒoƒO‚ ‚è
+	// ç›®ã®è‰²ç™½ + å¥³ã ã‘ãƒã‚°ã‚ã‚Š
 	if (my_face_color != 800) {
 		for (i = 0; i < face_list_female.length; i++) {
 			face_list_female[i] += my_face_color;
 		}
 	}
-	cm.sendStyle("®Œ`i—j", face_list_female);
+	cm.sendStyle("æ•´å½¢ï¼ˆå¥³ï¼‰", face_list_female);
 }
 
-// ’²”¯
+// èª¿é«ª
 var hair_list_male = Array(
-	// ’j
+	// ç”·
 	30000,
-	//30010, // “Áê
+	//30010, // ç‰¹æ®Š
 	30020,
 	30030,
 	30040,
 	30050,
 	30060,
-	//30070, // “Áê
-	//30080, // “Áê
-	//30090, // “Áê
+	//30070, // ç‰¹æ®Š
+	//30080, // ç‰¹æ®Š
+	//30090, // ç‰¹æ®Š
 	30100,
 	30110,
 	30120,
@@ -365,7 +365,7 @@ function ChangeHair_male() {
 		hair_list_male[i] -= hair_list_male[i] % 10;
 		hair_list_male[i] += color;
 	}
-	cm.sendStyle("’²”¯i’jj", hair_list_male);
+	cm.sendStyle("èª¿é«ªï¼ˆç”·ï¼‰", hair_list_male);
 }
 
 function ChangeHair_female() {
@@ -374,7 +374,7 @@ function ChangeHair_female() {
 		hair_list_female[i] -= hair_list_female[i] % 10;
 		hair_list_female[i] += color;
 	}
-	cm.sendStyle("’²”¯i—j", hair_list_female);
+	cm.sendStyle("èª¿é«ªï¼ˆå¥³ï¼‰", hair_list_female);
 }
 
 function ChangeHair_female2() {
@@ -383,10 +383,10 @@ function ChangeHair_female2() {
 		hair_list_female2[i] -= hair_list_female2[i] % 10;
 		hair_list_female2[i] += color;
 	}
-	cm.sendStyle("’²”¯i—j", hair_list_female2);
+	cm.sendStyle("èª¿é«ªï¼ˆå¥³ï¼‰", hair_list_female2);
 }
 
-// õ–Ñ
+// æŸ“æ¯›
 var hair_color_list = new Array();
 function HairDyeing() {
 	var my_hair_color = Math.floor((cm.getPlayerStat("HAIR") / 10)) * 10;
@@ -395,10 +395,10 @@ function HairDyeing() {
 	for (var i = 0; i < 8; i++) {
 		hair_color_list[i] = my_hair_color + i;
 	}
-	cm.sendStyle("õ–Ñ", hair_color_list);
+	cm.sendStyle("æŸ“æ¯›", hair_color_list);
 }
 
-// –Ú‚ÌF
+// ç›®ã®è‰²
 var face_color_list = new Array();
 function FaceColor() {
 	var my_face_gender = (cm.getPlayerStat("FACE") >= 21000) ? true : false;
@@ -415,13 +415,13 @@ function FaceColor() {
 	for (var i = 0; i < 9; i++) {
 		face_color_list[i] = my_face + (i * 100);
 	}
-	cm.sendStyle("–Ú‚ÌF", face_color_list);
+	cm.sendStyle("ç›®ã®è‰²", face_color_list);
 }
 
-// ƒXƒLƒ“ƒPƒA
+// ã‚¹ã‚­ãƒ³ã‚±ã‚¢
 var skin_list = Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11);
 function SkinCare() {
-	cm.sendStyle("ƒXƒLƒ“ƒPƒA", skin_list);
+	cm.sendStyle("ã‚¹ã‚­ãƒ³ã‚±ã‚¢", skin_list);
 }
 
 var status = -1;
@@ -438,18 +438,18 @@ function action(mode, type, selection) {
 			{
 				//cm.sendOk("test hair color" + (cm.getPlayerStat("HAIR") % 10));
 				//break;
-				var text = "ƒfƒoƒbƒOƒLƒƒƒ‰ƒNƒ^[ƒNƒŠƒGƒCƒg\r\n";
-				text += "ƒpƒ[ƒGƒŠƒNƒT[‚ª•K—v‚Å‚·\r\n";
-				text += "–Ú‚ÌF”’ + —‚ÌŠç‚Ìˆê•”, ’j‚Ì”¯Œ^‚Ìˆê•” + õ–Ñ‚ÅƒoƒO‚ ‚è\r\n";
-				text += "#L" + 1 + "##r®Œ`i’jj#k#l\r\n";
-				text += "#L" + 2 + "##r’²”¯i’jj#k#l\r\n";
-				text += "#L" + 3 + "##rõ–Ñ#k#l\r\n";
-				text += "#L" + 4 + "##rƒXƒLƒ“ƒPƒA#k#l\r\n";
-				text += "#L" + 5 + "##r–Ú‚ÌF#k#l\r\n";
-				text += "#L" + 6 + "##r«“]Š·#k#l\r\n";
-				text += "#L" + 7 + "##r’²”¯i—j#k#l\r\n";
-				text += "#L" + 8 + "##r’²”¯i—j#k#l\r\n";
-				text += "#L" + 9 + "##r®Œ`i—j#k#l\r\n";
+				var text = "ãƒ‡ãƒãƒƒã‚°ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã‚¯ãƒªã‚¨ã‚¤ãƒˆ\r\n";
+				text += "ãƒ‘ãƒ¯ãƒ¼ã‚¨ãƒªã‚¯ã‚µãƒ¼ãŒå¿…è¦ã§ã™\r\n";
+				text += "ç›®ã®è‰²ç™½ + å¥³ã®é¡”ã®ä¸€éƒ¨, ç”·ã®é«ªå‹ã®ä¸€éƒ¨ + æŸ“æ¯›ã§ãƒã‚°ã‚ã‚Š\r\n";
+				text += "#L" + 1 + "##ræ•´å½¢ï¼ˆç”·ï¼‰#k#l\r\n";
+				text += "#L" + 2 + "##rèª¿é«ªï¼ˆç”·ï¼‰#k#l\r\n";
+				text += "#L" + 3 + "##ræŸ“æ¯›#k#l\r\n";
+				text += "#L" + 4 + "##rã‚¹ã‚­ãƒ³ã‚±ã‚¢#k#l\r\n";
+				text += "#L" + 5 + "##rç›®ã®è‰²#k#l\r\n";
+				text += "#L" + 6 + "##ræ€§è»¢æ›#k#l\r\n";
+				text += "#L" + 7 + "##rèª¿é«ªï¼ˆå¥³ï¼‰#k#l\r\n";
+				text += "#L" + 8 + "##rèª¿é«ªï¼ˆå¥³ï¼‰#k#l\r\n";
+				text += "#L" + 9 + "##ræ•´å½¢ï¼ˆå¥³ï¼‰#k#l\r\n";
 				if (!cm.haveItem(2000005)) {
 					cm.gainItem(2000005, 1);
 				}
@@ -481,10 +481,10 @@ function action(mode, type, selection) {
 						}
 					case 6:
 						{
-							cm.sendSimple("ì¬’†....");
+							cm.sendSimple("ä½œæˆä¸­....");
 							break;
 						}
-					// ”¯Œ^‚ª0x7F‚ÅƒI[ƒo[ƒtƒ[‚µ‚Ä‚»‚êˆÈ~‚Ì‘I‘ğˆ‚ªƒLƒƒƒ“ƒZƒ‹ˆµ‚¢
+					// é«ªå‹ãŒ0x7Fã§ã‚ªãƒ¼ãƒãƒ¼ãƒ•ãƒ­ãƒ¼ã—ã¦ãã‚Œä»¥é™ã®é¸æŠè‚¢ãŒã‚­ãƒ£ãƒ³ã‚»ãƒ«æ‰±ã„
 					case 7:
 						{
 							return ChangeHair_female();

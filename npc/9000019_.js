@@ -1,4 +1,4 @@
-var compchoice; 
+﻿var compchoice; 
 var playerchoice; 
 var Frock = "#fUI/UIWindow.img/RpsGame/Frock#"; 
 var Fpaper = "#fUI/UIWindow.img/RpsGame/Fpaper#"; 

@@ -1,4 +1,4 @@
-var status = -1;
+﻿var status = -1;
 //this quest is NEVER GIVE UP
 function start(mode, type, selection) {
 	qm.sendNext("Let's talk to Mir.");

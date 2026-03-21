@@ -1,4 +1,4 @@
-/*
+﻿/*
 	NPC Name: 		Grendel the really old
 	Description: 		Quest - In search of the lost memory
 */

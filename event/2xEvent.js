@@ -1,4 +1,4 @@
-var year;
+﻿var year;
 var month;
 var day;
 var weekday;

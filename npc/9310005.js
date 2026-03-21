@@ -1,5 +1,5 @@
-// �x�@���~���I
-// �剤���J�f��
+﻿// 警察官ミャオ
+// 大王ムカデへ
 
 var status = -1;
 function action(mode, type, selection) {
@@ -14,14 +14,14 @@ function action(mode, type, selection) {
 	switch (status) {
 		case 0:
 			{
-				// �O��N�G�X�g�̃`�F�b�N�������K�v
-				cm.sendNext("�閧�C�����s�̂��߁A�ʘH�ɂ����肵�܂��B");
+				// 前提クエストのチェック処理が必要
+				cm.sendNext("秘密任務遂行のため、通路にお送りします。");
 				return;
 			}
 		case 1:
 			{
-				// ������
-				// 10���̐������ԕK�v
+				// 抜け道
+				// 10分の制限時間必要
 				cm.warp(701010322, 0);
 				break;
 			}

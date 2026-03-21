@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Yai bua - Fortune Teller
  */
 var reward = -1;

@@ -1,4 +1,4 @@
-var status = -1;
+﻿var status = -1;
 var skills = Array(21001003, 21000000, 21100000, 21100002, 21100004, 21100005, 21110002);
 //polearm booster, combo ability, polearm mastery, final charge, combo smash, combo drain, full swing
 

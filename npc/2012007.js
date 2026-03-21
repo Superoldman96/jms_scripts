@@ -1,4 +1,4 @@
-/* Rinz the assistant
+﻿/* Rinz the assistant
 	Orbis Random Hair/Hair Color Change.
 */
 var status = -1;

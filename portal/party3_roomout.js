@@ -1,8 +1,8 @@
-function enter(pi) {
+ï»¿function enter(pi) {
 	if (pi.getPlayer().getParty() != null && pi.isLeader()) {
                 if (pi.getMapId() == 920010200) {
                     if (pi.isLeader()) {
-                        pi.mapMessage("¶¤ªø¦b<´²¨B¸ô>°h³õ¤F¡C");
+                        pi.mapMessage("ï½¶ï½¤ï½ªî™…b<ï½´ï½²ï½¨Bï½¸ãƒ»ï½°hï½³îFï½¡C");
                     }
 	            var eim = pi.getEventInstance();
 	            var players = eim.getPlayers();
@@ -13,7 +13,7 @@ function enter(pi) {
 //		    pi.warp(920010100, 4);
                 } else if (pi.getMapId() == 920010300) {
                     if (pi.isLeader()) {
-                        pi.mapMessage("¶¤ªø¦b<­Ü®w>°h³õ¤F¡C");
+                        pi.mapMessage("ï½¶ï½¤ï½ªî™…b<ï½­ï¾œï½®w>ï½°hï½³îFï½¡C");
                     }
 	            var eim = pi.getEventInstance();
 	            var players = eim.getPlayers();
@@ -24,7 +24,7 @@ function enter(pi) {
 //		    pi.warp(920010100, 12);
                 } else if (pi.getMapId() == 920010400) {
                     if (pi.isLeader()) {
-                        pi.mapMessage("¶¤ªø¦b<¥ğ®§«Ç>°h³õ¤F¡C");
+                        pi.mapMessage("ï½¶ï½¤ï½ªî™…b<ï½¥î­ï½§ï½«ï¾‡>ï½°hï½³îFï½¡C");
                     }
 	            var eim = pi.getEventInstance();
 	            var players = eim.getPlayers();
@@ -35,7 +35,7 @@ function enter(pi) {
 //		    pi.warp(920010100, 5);
                 } else if (pi.getMapId() == 920010500) {
                     if (pi.isLeader()) {
-                        pi.mapMessage("¶¤ªø¦b<«Ê¦L¤§«Ç>°h³õ¤F¡C");
+                        pi.mapMessage("ï½¶ï½¤ï½ªî™…b<ï½«ï¾Šï½¦Lï½¤ï½§ï½«ï¾‡>ï½°hï½³îFï½¡C");
                     }
 	            var eim = pi.getEventInstance();
 	            var players = eim.getPlayers();
@@ -46,7 +46,7 @@ function enter(pi) {
 //		    pi.warp(920010100, 13);
                 } else if (pi.getMapId() == 920010600) {
                     if (pi.isLeader()) {
-                        pi.mapMessage("¶¤ªø¦b<¤jÆU>°h³õ¤F¡C");
+                        pi.mapMessage("ï½¶ï½¤ï½ªî™…b<ï½¤jï¾†U>ï½°hï½³îFï½¡C");
                     }
 	            var eim = pi.getEventInstance();
 	            var players = eim.getPlayers();
@@ -57,7 +57,7 @@ function enter(pi) {
 //		    pi.warp(920010100, 15);
                 } else if (pi.getMapId() == 920010700) {
                     if (pi.isLeader()) {
-                        pi.mapMessage("¶¤ªø¦b<¦V¤W³q¹D>°h³õ¤F¡C");
+                        pi.mapMessage("ï½¶ï½¤ï½ªî™…b<ï½¦Vï½¤Wï½³qï½¹D>ï½°hï½³îFï½¡C");
                     }
 	            var eim = pi.getEventInstance();
 	            var players = eim.getPlayers();
@@ -68,7 +68,7 @@ function enter(pi) {
 //		    pi.warp(920010100, 14);
                 } else if (pi.getMapId() == 920010800) {
                     if (pi.isLeader()) {
-                        pi.mapMessage("¶¤ªø¦b<®x¶é>°h³õ¤F¡C");
+                        pi.mapMessage("ï½¶ï½¤ï½ªî™…b<ï½®xï½¶ãƒ»ï½°hï½³îFï½¡C");
                     }
 	            var eim = pi.getEventInstance();
 	            var players = eim.getPlayers();
@@ -79,7 +79,7 @@ function enter(pi) {
 //		    pi.warp(920010100, 3);
                 } else if (pi.getMapId() == 920011000) {
                     if (pi.isLeader()) {
-                        pi.mapMessage("¶¤ªø¦b<¶Â·t¤§«Ç>°h³õ¤F¡C");
+                        pi.mapMessage("ï½¶ï½¤ï½ªî™…b<ï½¶ï¾‚ï½·tï½¤ï½§ï½«ï¾‡>ï½°hï½³îFï½¡C");
                     }
 	            var eim = pi.getEventInstance();
 	            var players = eim.getPlayers();
@@ -91,6 +91,6 @@ function enter(pi) {
                 }
 		pi.playPortalSE();
 	} else {
-		pi.playerMessage("¥u¦³¶¤ªø¤~¯à¨M©w­n¤£­n¥X¥h");
+		pi.playerMessage("ï½¥uï½¦ï½³ï½¶ï½¤ï½ªî™ƒ~ï½¯çˆ²Mï½©wï½­nï½¤ï½£ï½­nï½¥Xï½¥h");
 	}
 }

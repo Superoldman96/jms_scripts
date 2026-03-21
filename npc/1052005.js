@@ -1,4 +1,4 @@
-/* Dr. Feeble
+﻿/* Dr. Feeble
 	Henesys Random Eye Change.
 */
 var status = 0;

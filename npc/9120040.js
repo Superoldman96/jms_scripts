@@ -1,5 +1,5 @@
-// ƒ|ƒjƒ`ƒƒƒ‹
-// ƒxƒ‹ƒKƒ‚ƒbƒg
+ï»¿// ãƒãƒ‹ãƒãƒ£ãƒ«
+// ãƒ™ãƒ«ã‚¬ãƒ¢ãƒƒãƒˆ
 
 function EnterAreaBossMap(mapid, mobid, x, y) {
 	var first_user = cm.getPlayerCount(mapid) ? false : true;
@@ -21,10 +21,10 @@ function action(mode, type, selection) {
 	switch (status) {
 		case 0:
 			{
-				var text = "ƒxƒ‹ƒKƒ‚ƒbƒgƒeƒXƒg\r\n";
-				text += "#L" + 1 + "##b" + "“üê" + "#l#k\r\n";
-				text += "#L" + 2 + "##b" + "‘Şo" + "#l#k\r\n";
-				text += "#L" + 0 + "##b" + "ƒtƒŠƒ}" + "#l#k\r\n";
+				var text = "ãƒ™ãƒ«ã‚¬ãƒ¢ãƒƒãƒˆãƒ†ã‚¹ãƒˆ\r\n";
+				text += "#L" + 1 + "##b" + "å…¥å ´" + "#l#k\r\n";
+				text += "#L" + 2 + "##b" + "é€€å‡º" + "#l#k\r\n";
+				text += "#L" + 0 + "##b" + "ãƒ•ãƒªãƒ" + "#l#k\r\n";
 				cm.sendSimple(text);
 				return;
 			}
