@@ -6,10 +6,5 @@ function act() {
 	rm.changeMusic("Bgm06/FinalFight");
 	rm.spawnZakum();
 	rm.mapMessage("火の目の力でジャクムが召喚されます。");
-
-	if (!rm.getPlayer().isGM()) {
-		rm.getMap().startSpeedRun();
-	}
-
 	return true;
 }

@@ -26,7 +26,6 @@ function action(mode, type, selection) {
 			} else if (cm.getPlayerCount(220080001) <= 0) {
 				var map = cm.getMap(220080001);
 				map.resetFully();
-				map.startSpeedRun(cm.getPlayer().getName());
 				cm.playerMessage(5, "The Speed Run has started!");
 				cm.warp(220080001, "st00");
 			} else {
